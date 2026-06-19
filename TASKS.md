@@ -13,6 +13,7 @@
 - [x] Add GitHub Actions Java 21 build.
 - [x] Make `.\gradlew.bat clean build` pass.
 - [x] Add repeatable Windows Prism LAB install script.
+- [x] Add repeatable Prism LAB runtime dependency installer.
 - [x] Install verified production jar into Prism LAB.
 
 ## Phase 1 - Core State, Config, and Attributes

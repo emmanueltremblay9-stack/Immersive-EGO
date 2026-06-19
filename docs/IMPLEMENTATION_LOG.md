@@ -21,6 +21,25 @@ Validation:
 - Final installed SHA-256: `b790c3f21838f6afa4233d97c11db2819577bf3fdeb8cf5cb31ebc58cee895fc`.
 - `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
 
+### Bug Hunt 3
+
+Implemented:
+
+- Fixed the reproducibility gap where required LAB runtime dependencies were installed manually outside the repo workflow.
+- Added `scripts/install-runtime-deps.ps1` with pinned URLs and SHA-256 checks for Apothic Attributes, Placebo, MariesLib, Curios, and Cloth Config API.
+- Updated `scripts/install-mod.ps1` to run the runtime dependency installer by default, with `-SkipRuntimeDependencies` for deliberate jar-only installs.
+- Bumped the test build from `0.1.0-alpha.3` to `0.1.0-alpha.4`.
+
+Validation:
+
+- `.\scripts\install-runtime-deps.ps1` passed and wrote `build/runtime-deps-report.json` with hash matches for all dependencies.
+- `.\gradlew.bat clean build` passed for version `0.1.0-alpha.4`.
+- `.\scripts\install-mod.ps1` installed pinned runtime dependencies and `immersive_ego-0.1.0-alpha.4.jar` into Prism LAB.
+- Deleted old installed jar: `immersive_ego-0.1.0-alpha.3.jar`.
+- Final installed SHA-256: `ab913e19eefbf065dba1e175c5e094c0844fb2b4c60ce13b58882bdd9275bdcc`.
+- `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
+- `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
+
 ### Bootstrap
 
 Implemented:

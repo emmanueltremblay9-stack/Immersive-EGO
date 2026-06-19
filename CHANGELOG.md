@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-alpha.4
+
+- Added `scripts/install-runtime-deps.ps1` to reproduce Prism LAB runtime dependency installation with pinned URLs and SHA-256 checks.
+- Updated `scripts/install-mod.ps1` to install and verify runtime dependencies by default before installing Immersive EGO.
+- Added `build/runtime-deps-report.json` generation for dependency hash/count proof.
+
 ## 0.1.0-alpha.3
 
 - Fixed GitHub Actions bootstrap risk by tracking `gradlew` as executable, preserving LF line endings for shell scripts, and adding a workflow `chmod` guard.

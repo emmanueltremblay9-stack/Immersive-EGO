@@ -1,7 +1,8 @@
 param(
     [string]$ModsDir = "C:\Users\Emmanuel Tremblay\AppData\Roaming\PrismLauncher\instances\1.21.1 TesT LaB\minecraft\mods",
     [string]$BuildDir = "",
-    [string]$ModId = "immersive_ego"
+    [string]$ModId = "immersive_ego",
+    [switch]$SkipRuntimeDependencies
 )
 
 Set-StrictMode -Version Latest
@@ -14,6 +15,14 @@ if ([string]::IsNullOrWhiteSpace($BuildDir)) {
 $BuildDir = (Resolve-Path -LiteralPath $BuildDir).Path
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $ReportPath = Join-Path $RepoRoot "build\install-report.json"
+
+if (-not $SkipRuntimeDependencies) {
+    $runtimeDepInstaller = Join-Path $PSScriptRoot "install-runtime-deps.ps1"
+    if (-not (Test-Path -LiteralPath $runtimeDepInstaller)) {
+        throw "Runtime dependency installer not found: $runtimeDepInstaller"
+    }
+    & $runtimeDepInstaller -ModsDir $ModsDir | Out-Host
+}
 
 function Get-JarMetadata {
     param([Parameter(Mandatory = $true)][string]$JarPath)
@@ -153,6 +162,7 @@ $report = [pscustomobject]@{
     deletedOldJars = $deleted
     remainingJarsForMod = $remaining
     remainingInstalledJarCount = $remaining.Count
+    runtimeDependenciesReport = if ($SkipRuntimeDependencies) { $null } else { Join-Path $RepoRoot "build\runtime-deps-report.json" }
 }
 
 $report | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $ReportPath -Encoding UTF8

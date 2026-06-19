@@ -12,7 +12,7 @@ Etat actuel: bootstrap Phase 0. Le projet compile, les dependances initiales son
 .\gradlew.bat clean build
 ```
 
-Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.3.jar`.
+Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.4.jar`.
 
 ## Installation
 
@@ -25,6 +25,14 @@ Installer aussi:
 - Placebo, requis par Apothic Attributes
 
 Apotheosis est optionnel.
+
+## Installation Prism LAB
+
+```powershell
+.\scripts\install-mod.ps1
+```
+
+Le script verifie et installe les dependances runtime epinglees par defaut, puis installe Immersive EGO. Il ecrit `build/runtime-deps-report.json` et `build/install-report.json`.
 
 ## Commandes et config
 
