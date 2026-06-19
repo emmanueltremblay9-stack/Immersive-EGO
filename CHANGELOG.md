@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-alpha.3
+
+- Fixed GitHub Actions bootstrap risk by tracking `gradlew` as executable, preserving LF line endings for shell scripts, and adding a workflow `chmod` guard.
+- Fixed `EgoMath.weightedMean` so NaN and infinite weights fail fast instead of collapsing calculations to `0.0`.
+- Added unit coverage for non-finite weight rejection.
+
 ## 0.1.0-alpha.2
 
 - Initialized NeoForge 1.21.1 / Java 21 project from the official NeoForge MDK.

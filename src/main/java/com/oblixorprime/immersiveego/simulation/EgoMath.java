@@ -19,8 +19,8 @@ public final class EgoMath {
         double totalWeight = 0.0D;
         for (int index = 0; index < values.length; index++) {
             double weight = weights[index];
-            if (weight < 0.0D) {
-                throw new IllegalArgumentException("weights must be non-negative");
+            if (!Double.isFinite(weight) || weight < 0.0D) {
+                throw new IllegalArgumentException("weights must be finite and non-negative");
             }
             weightedSum += clamp01(values[index]) * weight;
             totalWeight += weight;

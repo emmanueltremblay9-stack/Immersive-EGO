@@ -2,7 +2,7 @@
 
 ## Current State
 
-Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.2`.
+Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.3`.
 
 The project currently registers only bootstrap server/client config and safe event hooks. No custom blocks, items, entities, fluids, menus, workstations, or copied third-party assets are registered.
 
