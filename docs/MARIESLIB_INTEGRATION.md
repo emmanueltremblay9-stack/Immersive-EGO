@@ -4,6 +4,8 @@ Status: planned.
 
 MariesLib is required as a separate runtime mod and resolves from Modrinth Maven as `maven.modrinth:marieslib:0.1.0-beta.5`.
 
+MariesLib `0.1.0-beta.5` declares `cloth_config` `[15.0.0,)` as a client-side dependency. Prism LAB currently uses Cloth Config API `15.0.140+neoforge`.
+
 ## Rules
 
 - Do not JarJar MariesLib.

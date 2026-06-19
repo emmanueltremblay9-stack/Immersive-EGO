@@ -12,6 +12,7 @@ Audit date: 2026-06-19.
 | Apothic Attributes | 2.9.1 | `dev.shadowsoffire:ApothicAttributes:1.21.1-2.9.1` | MIT code, All Rights Reserved assets | Required attribute UI/stat dependency |
 | Placebo | 9.9.1 | `dev.shadowsoffire:Placebo:1.21.1-9.9.1` | MIT | Required transitively by Apothic Attributes |
 | MariesLib | 0.1.0-beta.5 | `maven.modrinth:marieslib:0.1.0-beta.5` | LGPL-3.0-only | Required separate runtime library |
+| Cloth Config API | 15.0.140+neoforge | Modrinth `9s6osm5g`, file `cloth-config-15.0.140-neoforge.jar` | LGPL-3.0-only | Client-side dependency declared by MariesLib |
 | Apotheosis | 8.5.4 | source branch inspected, optional runtime metadata only | MIT code, All Rights Reserved assets | Optional future compatibility |
 | Curios API | 9.5.1+1.21.1 | transitive from Apothic Attributes | LGPL-3.0 | Development/runtime transitive dependency; not used directly |
 
@@ -24,6 +25,7 @@ Audit date: 2026-06-19.
 | Placebo | `Shadows-of-Fire/Placebo` branch `1.21`, commit `621c883c49c1d025b88fb626eabf0a84891b34d1`; upstream `gradle.properties` lists `mod_version=9.9.1` |
 | Apotheosis | `Shadows-of-Fire/Apotheosis` branch `1.21`, commit `a4f6a6cdcd8e42013a2c0115caca2c7c2a524370`; upstream `gradle.properties` lists `mod_version=8.5.4` |
 | MariesLib | `kgbcupcake/MarieLib` main commit `62aaee5eee001c0ab89115bb8c6aaba632ebd331`; Modrinth version `0.1.0-beta.5`, published 2026-06-19 |
+| Cloth Config API | Modrinth project `9s6osm5g`; NeoForge 1.21/1.21.1 version `15.0.140+neoforge`, published 2024-09-16 |
 
 ## Repository Decisions
 
@@ -31,6 +33,7 @@ Audit date: 2026-06-19.
 - Mod metadata requires NeoForge `[21.1.228,)` because MariesLib declares NeoForge `21.1.228+` in its current source metadata.
 - Apothic Attributes and Placebo are compiled as dependencies from Shadows' Maven.
 - MariesLib resolves from Modrinth Maven and remains a separate mod dependency.
+- Cloth Config is not a compile dependency of Immersive EGO, but it is installed in Prism LAB because MariesLib declares `cloth_config` as a client-side dependency.
 - Apotheosis is not on the compile classpath yet because no optional compat API is implemented in this phase.
 - Curios repository is configured only because Apothic Attributes pulls Curios transitively.
 
@@ -40,6 +43,7 @@ Audit date: 2026-06-19.
 - Apothic Attributes: no direct API calls yet.
 - Placebo: no direct API calls.
 - MariesLib: no direct API calls yet.
+- Cloth Config: no direct API calls.
 - Apotheosis: no direct API calls yet.
 - Curios: no direct API calls.
 

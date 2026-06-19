@@ -21,6 +21,7 @@ Installer aussi:
 - NeoForge 21.1.228 ou plus recent pour Minecraft 1.21.1
 - Apothic Attributes 2.9.1 ou plus recent
 - MariesLib 0.1.0-beta.5 ou plus recent, separement
+- Cloth Config 15.0.140 ou plus recent cote client, car MariesLib le declare
 - Placebo, requis par Apothic Attributes
 
 Apotheosis est optionnel.

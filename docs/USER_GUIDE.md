@@ -10,6 +10,7 @@ Install the jar with its required runtime dependencies:
 - Apothic Attributes
 - Placebo
 - MariesLib
+- Cloth Config API on clients
 
 The current jar loads bootstrap code and config only. The survival simulation, `/ego` commands, Apothic mirrored attributes, origins, sleep, nutrition, and recovery systems are planned but not implemented yet.
 

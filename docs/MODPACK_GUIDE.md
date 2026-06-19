@@ -8,6 +8,7 @@ Current release status: technical bootstrap.
 - Apothic Attributes
 - Placebo
 - MariesLib
+- Cloth Config API on clients
 
 ## Optional Mods
 

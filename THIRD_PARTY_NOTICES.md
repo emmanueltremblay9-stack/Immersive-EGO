@@ -18,6 +18,7 @@ The original example Java and resource content was removed.
 - Apothic Attributes: MIT code, All Rights Reserved assets. Required separate dependency. No assets copied.
 - Placebo: MIT code. Transitive runtime dependency of Apothic Attributes.
 - MariesLib: LGPL-3.0-only. Required separate dependency. No code copied.
+- Cloth Config API: LGPL-3.0-only. Client-side runtime dependency declared by MariesLib.
 - Apotheosis: MIT code, All Rights Reserved assets. Optional integration target. No assets copied.
 - Curios API: LGPL-3.0. Transitive development/runtime dependency pulled by Apothic Attributes; Immersive EGO does not call it directly.
 

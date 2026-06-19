@@ -19,6 +19,7 @@ The runtime artifact is written to `build/libs/immersive_ego-0.1.0-alpha.2.jar`.
 - NeoForge 21.1.228 or newer for Minecraft 1.21.1
 - Apothic Attributes 2.9.1 or newer
 - MariesLib 0.1.0-beta.5 or newer, installed separately
+- Cloth Config 15.0.140 or newer on clients because MariesLib declares it client-side
 - Placebo as required transitively by Apothic Attributes
 
 Apotheosis 8.5.4 or newer is optional.

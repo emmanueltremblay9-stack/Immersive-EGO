@@ -10,6 +10,7 @@
 | Apothic Attributes assets | All Rights Reserved | Runtime dependency assets | Do not copy |
 | Placebo | MIT | Transitive required dependency | Do not call directly unless unavoidable |
 | MariesLib | LGPL-3.0-only | Separate runtime dependency | Do not JarJar; do not copy code into MIT project |
+| Cloth Config API | LGPL-3.0-only | Client-side runtime dependency of MariesLib | Runtime dependency only; no direct calls |
 | Apotheosis code | MIT | Optional compat target | Isolate optional integration |
 | Apotheosis assets | All Rights Reserved | Runtime dependency assets | Do not copy |
 | Curios API | LGPL-3.0 | Transitive dependency | Do not call directly in current scope |
