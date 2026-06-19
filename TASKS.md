@@ -35,6 +35,7 @@
 
 - [x] Add initial pure Java normalized math helpers.
 - [x] Add initial EGO Load aggregation helper.
+- [x] Stabilize weighted mean aggregation for very large finite weights.
 - [ ] Add immutable simulation frames.
 - [ ] Add scheduler.
 - [ ] Add configurable curves.

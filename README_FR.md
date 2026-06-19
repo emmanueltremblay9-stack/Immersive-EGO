@@ -12,7 +12,7 @@ Etat actuel: bootstrap Phase 0. Le projet compile, les dependances initiales son
 .\gradlew.bat clean build
 ```
 
-Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.6.jar`.
+Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.7.jar`.
 
 ## Installation
 

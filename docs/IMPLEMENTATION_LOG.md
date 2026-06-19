@@ -2,6 +2,26 @@
 
 ## 2026-06-19
 
+### Bug Hunt 6
+
+Implemented:
+
+- Fixed `EgoMath.weightedMean` overflow behavior for very large finite weights by scaling all weights against the maximum input weight before accumulation.
+- Added regression coverage for large finite weights that previously could overflow both weighted sum and total weight.
+- Bumped the test build from `0.1.0-alpha.6` to `0.1.0-alpha.7`.
+
+Validation:
+
+- `.\gradlew.bat test --tests com.oblixorprime.immersiveego.simulation.EgoMathTest` passed, including the new large finite weight regression.
+- `.\gradlew.bat clean build` passed for version `0.1.0-alpha.7`.
+- `.\scripts\install-mod.ps1` installed pinned runtime dependencies and `immersive_ego-0.1.0-alpha.7.jar` into Prism LAB.
+- Deleted old installed jar: `immersive_ego-0.1.0-alpha.6.jar`.
+- Final installed SHA-256: `9e75a6b31b671ec9063d7cde54cc486dff46437bf9b62077411e248882cd43eb`.
+- `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
+- `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
+- `jar tf build\libs\immersive_ego-0.1.0-alpha.7.jar` confirms mod metadata, compiled classes, and the project logo are present.
+- `git diff --check` passed.
+
 ### Bug Hunt 5
 
 Implemented:
@@ -21,6 +41,7 @@ Validation:
 - `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
 - `jar tf build\libs\immersive_ego-0.1.0-alpha.6.jar` confirms mod metadata, compiled classes, and the project logo are present.
 - `git diff --check` passed.
+- GitHub Actions `Build` passed on run `27846334653`.
 
 ### Bug Hunt 2
 

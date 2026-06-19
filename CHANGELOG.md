@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-alpha.7
+
+- Fixed `EgoMath.weightedMean` so very large finite weights cannot overflow the accumulator and collapse a valid result to `0.0`.
+- Added regression coverage for large finite weighted-mean inputs.
+
 ## 0.1.0-alpha.6
 
 - Hardened `scripts/install-mod.ps1` and `scripts/install-runtime-deps.ps1` so mistyped Prism paths cannot silently create a full fake target tree.

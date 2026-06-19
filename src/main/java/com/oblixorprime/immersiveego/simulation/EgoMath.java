@@ -15,16 +15,24 @@ public final class EgoMath {
         if (values.length != weights.length) {
             throw new IllegalArgumentException("values and weights must have the same length");
         }
-        double weightedSum = 0.0D;
-        double totalWeight = 0.0D;
-        for (int index = 0; index < values.length; index++) {
-            double weight = weights[index];
+        double maxWeight = 0.0D;
+        for (double weight : weights) {
             if (!Double.isFinite(weight) || weight < 0.0D) {
                 throw new IllegalArgumentException("weights must be finite and non-negative");
             }
-            weightedSum += clamp01(values[index]) * weight;
-            totalWeight += weight;
+            maxWeight = Math.max(maxWeight, weight);
         }
-        return totalWeight == 0.0D ? 0.0D : clamp01(weightedSum / totalWeight);
+        if (maxWeight == 0.0D) {
+            return 0.0D;
+        }
+
+        double weightedSum = 0.0D;
+        double totalWeight = 0.0D;
+        for (int index = 0; index < values.length; index++) {
+            double normalizedWeight = weights[index] / maxWeight;
+            weightedSum += clamp01(values[index]) * normalizedWeight;
+            totalWeight += normalizedWeight;
+        }
+        return clamp01(weightedSum / totalWeight);
     }
 }

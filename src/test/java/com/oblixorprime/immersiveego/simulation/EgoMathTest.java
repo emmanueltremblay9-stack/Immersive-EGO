@@ -22,6 +22,15 @@ class EgoMathTest {
     }
 
     @Test
+    void weightedMeanHandlesLargeFiniteWeightsWithoutOverflow() {
+        double value = EgoMath.weightedMean(
+                new double[] { 1.0D, 0.0D, 1.0D },
+                new double[] { Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE });
+
+        assertEquals(2.0D / 3.0D, value, 1.0E-12D);
+    }
+
+    @Test
     void weightedMeanRejectsMismatchedArrays() {
         assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { 1.0D }, new double[] { 1.0D, 1.0D }));
     }
