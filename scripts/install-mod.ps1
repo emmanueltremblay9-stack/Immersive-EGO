@@ -16,6 +16,36 @@ $BuildDir = (Resolve-Path -LiteralPath $BuildDir).Path
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $ReportPath = Join-Path $RepoRoot "build\install-report.json"
 
+function Resolve-SafeModsDirectory {
+    param([Parameter(Mandatory = $true)][string]$Path)
+
+    if ([string]::IsNullOrWhiteSpace($Path)) {
+        throw "ModsDir cannot be blank."
+    }
+
+    $fullPath = [System.IO.Path]::GetFullPath($Path)
+    if (Test-Path -LiteralPath $fullPath) {
+        $item = Get-Item -LiteralPath $fullPath
+        if (-not $item.PSIsContainer) {
+            throw "ModsDir exists but is not a directory: $fullPath"
+        }
+        return $item.FullName
+    }
+
+    $leaf = Split-Path -Path $fullPath -Leaf
+    if ($leaf -ne "mods") {
+        throw "ModsDir does not exist and its final segment is not 'mods'; refusing to create ambiguous target directory: $fullPath"
+    }
+
+    $parent = Split-Path -Path $fullPath -Parent
+    if ([string]::IsNullOrWhiteSpace($parent) -or -not (Test-Path -LiteralPath $parent -PathType Container)) {
+        throw "ModsDir parent does not exist; refusing to create full target tree: $parent"
+    }
+
+    New-Item -ItemType Directory -Path $fullPath | Out-Null
+    return (Resolve-Path -LiteralPath $fullPath).Path
+}
+
 if (-not $SkipRuntimeDependencies) {
     $runtimeDepInstaller = Join-Path $PSScriptRoot "install-runtime-deps.ps1"
     if (-not (Test-Path -LiteralPath $runtimeDepInstaller)) {
@@ -82,8 +112,7 @@ if ($runtimeCandidates.Count -ne 1) {
 $sourceJar = $runtimeCandidates[0].file
 $sourceMetadata = $runtimeCandidates[0].metadata
 
-New-Item -ItemType Directory -Force -Path $ModsDir | Out-Null
-$ModsDir = (Resolve-Path -LiteralPath $ModsDir).Path
+$ModsDir = Resolve-SafeModsDirectory -Path $ModsDir
 
 $matchedInstalled = @()
 Get-ChildItem -LiteralPath $ModsDir -Filter "*.jar" -File | ForEach-Object {

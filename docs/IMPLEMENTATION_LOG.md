@@ -2,6 +2,26 @@
 
 ## 2026-06-19
 
+### Bug Hunt 5
+
+Implemented:
+
+- Fixed installer path safety: `scripts/install-mod.ps1` and `scripts/install-runtime-deps.ps1` no longer create an entire missing target tree from a mistyped `-ModsDir`.
+- Added a shared guard pattern that accepts an existing mods directory, or creates only a missing final `mods` folder when its parent already exists.
+- Bumped the test build from `0.1.0-alpha.5` to `0.1.0-alpha.6`.
+
+Validation:
+
+- `.\scripts\install-runtime-deps.ps1 -ModsDir <missing-parent-test-path>` refused to create a full missing target tree before download/install work.
+- `.\gradlew.bat clean build` passed for version `0.1.0-alpha.6`.
+- `.\scripts\install-mod.ps1` installed pinned runtime dependencies and `immersive_ego-0.1.0-alpha.6.jar` into Prism LAB.
+- Deleted old installed jar: `immersive_ego-0.1.0-alpha.5.jar`.
+- Final installed SHA-256: `f0e86aadafc965da20fc22effeadda9caae06ae1dc40756bd85f4fd131eb3959`.
+- `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
+- `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
+- `jar tf build\libs\immersive_ego-0.1.0-alpha.6.jar` confirms mod metadata, compiled classes, and the project logo are present.
+- `git diff --check` passed.
+
 ### Bug Hunt 2
 
 Implemented:
@@ -55,7 +75,7 @@ Validation:
 - Final installed SHA-256: `f8ca4ff12b6bc1ae7cffab21503a9eaeff55e60ffa31516d3c14925f6aa2b399`.
 - `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
 - `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
-- Pending in this run: CI.
+- GitHub Actions `Build` passed on run `27845439246`.
 
 ### Bootstrap
 

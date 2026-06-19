@@ -11,9 +11,38 @@ if ([string]::IsNullOrWhiteSpace($DownloadDir)) {
     $DownloadDir = Join-Path $RepoRoot "build\runtime-deps-downloads"
 }
 
-New-Item -ItemType Directory -Force -Path $ModsDir | Out-Null
+function Resolve-SafeModsDirectory {
+    param([Parameter(Mandatory = $true)][string]$Path)
+
+    if ([string]::IsNullOrWhiteSpace($Path)) {
+        throw "ModsDir cannot be blank."
+    }
+
+    $fullPath = [System.IO.Path]::GetFullPath($Path)
+    if (Test-Path -LiteralPath $fullPath) {
+        $item = Get-Item -LiteralPath $fullPath
+        if (-not $item.PSIsContainer) {
+            throw "ModsDir exists but is not a directory: $fullPath"
+        }
+        return $item.FullName
+    }
+
+    $leaf = Split-Path -Path $fullPath -Leaf
+    if ($leaf -ne "mods") {
+        throw "ModsDir does not exist and its final segment is not 'mods'; refusing to create ambiguous target directory: $fullPath"
+    }
+
+    $parent = Split-Path -Path $fullPath -Parent
+    if ([string]::IsNullOrWhiteSpace($parent) -or -not (Test-Path -LiteralPath $parent -PathType Container)) {
+        throw "ModsDir parent does not exist; refusing to create full target tree: $parent"
+    }
+
+    New-Item -ItemType Directory -Path $fullPath | Out-Null
+    return (Resolve-Path -LiteralPath $fullPath).Path
+}
+
+$ModsDir = Resolve-SafeModsDirectory -Path $ModsDir
 New-Item -ItemType Directory -Force -Path $DownloadDir | Out-Null
-$ModsDir = (Resolve-Path -LiteralPath $ModsDir).Path
 $DownloadDir = (Resolve-Path -LiteralPath $DownloadDir).Path
 $ReportPath = Join-Path $RepoRoot "build\runtime-deps-report.json"
 

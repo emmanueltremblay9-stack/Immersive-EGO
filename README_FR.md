@@ -12,7 +12,7 @@ Etat actuel: bootstrap Phase 0. Le projet compile, les dependances initiales son
 .\gradlew.bat clean build
 ```
 
-Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.5.jar`.
+Le jar produit est `build/libs/immersive_ego-0.1.0-alpha.6.jar`.
 
 ## Installation
 
@@ -32,7 +32,7 @@ Apotheosis est optionnel.
 .\scripts\install-mod.ps1
 ```
 
-Le script verifie et installe les dependances runtime epinglees par defaut, puis installe Immersive EGO. Il ecrit `build/runtime-deps-report.json` et `build/install-report.json`.
+Le script verifie et installe les dependances runtime epinglees par defaut, puis installe Immersive EGO. Il ecrit `build/runtime-deps-report.json` et `build/install-report.json`. Il refuse de creer toute une arborescence cible manquante; seul un dossier mods existant, ou un dossier final `mods` manquant sous un parent existant, est accepte.
 
 ## Commandes et config
 

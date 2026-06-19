@@ -12,7 +12,7 @@ Current status: Phase 0 bootstrap. The repository builds, pins the initial depen
 .\gradlew.bat clean build
 ```
 
-The runtime artifact is written to `build/libs/immersive_ego-0.1.0-alpha.5.jar`.
+The runtime artifact is written to `build/libs/immersive_ego-0.1.0-alpha.6.jar`.
 
 ## Required Runtime Mods
 
@@ -30,7 +30,7 @@ Apotheosis 8.5.4 or newer is optional.
 .\scripts\install-mod.ps1
 ```
 
-The installer verifies and installs the pinned runtime dependency jars by default, then installs Immersive EGO and writes `build/runtime-deps-report.json` and `build/install-report.json`.
+The installer verifies and installs the pinned runtime dependency jars by default, then installs Immersive EGO and writes `build/runtime-deps-report.json` and `build/install-report.json`. It refuses to create a full missing target tree; only an existing mods directory or a missing final `mods` folder under an existing parent is accepted.
 
 ## Development Rules
 

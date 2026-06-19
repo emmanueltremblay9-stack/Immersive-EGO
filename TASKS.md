@@ -14,6 +14,7 @@
 - [x] Make `.\gradlew.bat clean build` pass.
 - [x] Add repeatable Windows Prism LAB install script.
 - [x] Add repeatable Prism LAB runtime dependency installer.
+- [x] Harden Prism LAB installers against mistyped missing target trees.
 - [x] Install verified production jar into Prism LAB.
 
 ## Phase 1 - Core State, Config, and Attributes

@@ -2,7 +2,7 @@
 
 ## Current State
 
-Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.5`.
+Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.6`.
 
 The project currently registers only bootstrap server/client config and safe event hooks. No custom blocks, items, entities, fluids, menus, workstations, or copied third-party assets are registered.
 
@@ -30,7 +30,7 @@ Expected target:
 
 The script writes `build/install-report.json`.
 
-By default it also runs `scripts/install-runtime-deps.ps1`, which installs and verifies pinned runtime dependencies and writes `build/runtime-deps-report.json`. Use `-SkipRuntimeDependencies` only for a deliberate jar-only reinstall.
+By default it also runs `scripts/install-runtime-deps.ps1`, which installs and verifies pinned runtime dependencies and writes `build/runtime-deps-report.json`. Use `-SkipRuntimeDependencies` only for a deliberate jar-only reinstall. The installers refuse to create a full missing target tree; they accept an existing mods directory or a missing final `mods` folder under an existing parent.
 
 ## Important Boundaries
 

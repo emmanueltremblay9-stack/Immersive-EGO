@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-alpha.6
+
+- Hardened `scripts/install-mod.ps1` and `scripts/install-runtime-deps.ps1` so mistyped Prism paths cannot silently create a full fake target tree.
+- Kept the normal LAB install path supported while allowing only a missing final `mods` folder under an existing parent to be created.
+
 ## 0.1.0-alpha.5
 
 - Updated GitHub Actions to Node 24 based action versions: `actions/checkout@v7`, `actions/setup-java@v5`, and `gradle/actions/setup-gradle@v6`.
