@@ -1,0 +1,8 @@
+{
+  "mod.immersive_ego.name": "Immersive EGO",
+  "config.immersive_ego.core.enable_simulation": "Activer la simulation",
+  "config.immersive_ego.core.mirror_update_epsilon": "Seuil de mise a jour des miroirs",
+  "config.immersive_ego.core.state_schema_version": "Version du schema d'etat",
+  "config.immersive_ego.client.show_context_warnings": "Afficher les avertissements contextuels",
+  "config.immersive_ego.client.enable_debug_overlay": "Activer le calque de debogage"
+}
