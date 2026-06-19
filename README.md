@@ -12,7 +12,7 @@ Current status: Phase 0 bootstrap. The repository builds, pins the initial depen
 .\gradlew.bat clean build
 ```
 
-The runtime artifact is written to `build/libs/immersive_ego-0.1.0-alpha.4.jar`.
+The runtime artifact is written to `build/libs/immersive_ego-0.1.0-alpha.5.jar`.
 
 ## Required Runtime Mods
 

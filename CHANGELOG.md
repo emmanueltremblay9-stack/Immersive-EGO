@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-alpha.5
+
+- Updated GitHub Actions to Node 24 based action versions: `actions/checkout@v7`, `actions/setup-java@v5`, and `gradle/actions/setup-gradle@v6`.
+- Removed the CI Node 20 deprecation warning path while keeping the same Java 21 Gradle build.
+
 ## 0.1.0-alpha.4
 
 - Added `scripts/install-runtime-deps.ps1` to reproduce Prism LAB runtime dependency installation with pinned URLs and SHA-256 checks.

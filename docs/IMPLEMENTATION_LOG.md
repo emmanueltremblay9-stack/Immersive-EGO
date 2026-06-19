@@ -40,6 +40,23 @@ Validation:
 - `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
 - `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
 
+### Bug Hunt 4
+
+Implemented:
+
+- Fixed the GitHub Actions Node 20 deprecation warning path by updating action pins to current Node 24 based majors.
+- Bumped the test build from `0.1.0-alpha.4` to `0.1.0-alpha.5`.
+
+Validation:
+
+- `.\gradlew.bat clean build` passed for version `0.1.0-alpha.5`.
+- `.\scripts\install-mod.ps1` installed pinned runtime dependencies and `immersive_ego-0.1.0-alpha.5.jar` into Prism LAB.
+- Deleted old installed jar: `immersive_ego-0.1.0-alpha.4.jar`.
+- Final installed SHA-256: `f8ca4ff12b6bc1ae7cffab21503a9eaeff55e60ffa31516d3c14925f6aa2b399`.
+- `build/runtime-deps-report.json` confirms all pinned dependency hashes match and exactly one jar remains for each dependency.
+- `build/install-report.json` confirms source and installed hashes match and exactly one installed jar remains for `immersive_ego`.
+- Pending in this run: CI.
+
 ### Bootstrap
 
 Implemented:
