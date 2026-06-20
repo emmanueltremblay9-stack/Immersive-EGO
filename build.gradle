@@ -162,6 +162,8 @@ dependencies {
     testImplementation platform("org.junit:junit-bom:${junit_version}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testRuntimeOnly "com.electronwill.night-config:core:${night_config_version}"
+    testRuntimeOnly "com.electronwill.night-config:toml:${night_config_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

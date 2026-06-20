@@ -19,16 +19,16 @@
 
 ## Phase 1 - Core State, Config, and Attributes
 
-- [ ] Register all required SERVER config files.
-- [ ] Add dynamic TOML loader under serverconfig/immersive_ego/.
-- [ ] Implement EgoState attachment and versioned codec.
-- [ ] Implement state migration and clamping.
-- [ ] Register capability attributes.
-- [ ] Register display-only mirror attributes.
-- [ ] Attach attributes to players.
-- [ ] Implement mirror update service without duplicate modifiers.
-- [ ] Add `/ego status` and `/ego debug state`.
-- [ ] Expand en_us and fr_fr translations.
+- [x] Register all required SERVER config files.
+- [x] Add dynamic TOML loader under serverconfig/immersive_ego/.
+- [x] Implement EgoState attachment and versioned codec.
+- [x] Implement state migration and clamping.
+- [x] Register capability attributes.
+- [x] Register display-only mirror attributes.
+- [x] Attach attributes to players.
+- [x] Implement mirror update service without duplicate modifiers.
+- [x] Add `/ego status` and `/ego debug state`.
+- [x] Expand en_us and fr_fr translations.
 - [ ] Verify EGO attributes appear in Apothic Attributes.
 
 ## Phase 2 - Simulation Engine and Synergy Graph
@@ -36,13 +36,15 @@
 - [x] Add initial pure Java normalized math helpers.
 - [x] Add initial EGO Load aggregation helper.
 - [x] Stabilize weighted mean aggregation for very large finite weights.
-- [ ] Add immutable simulation frames.
-- [ ] Add scheduler.
-- [ ] Add configurable curves.
-- [ ] Add synergy edge parser and validator.
-- [ ] Add cycle detection.
-- [ ] Add `/ego synergy trace`.
-- [ ] Add deterministic unit coverage for all curve and graph behavior.
+- [x] Add immutable simulation frames.
+- [x] Add scheduler.
+- [x] Connect scheduler frames to the first derived EGO Load and Readiness calculation.
+- [x] Add configurable curves.
+- [x] Add synergy edge parser and validator.
+- [x] Add cycle detection.
+- [x] Add `/ego synergy trace`.
+- [x] Load synergy edges from dynamic TOML.
+- [x] Add deterministic unit coverage for all curve and graph behavior.
 
 ## Phase 3 - Environment and Thermoregulation
 
@@ -61,7 +63,7 @@
 
 - [ ] Implement activity costs and regeneration.
 - [ ] Implement weight resolver and inventory cache.
-- [ ] Add hysteresis and load synergies.
+- [ ] Add encumbrance hysteresis and stamina load synergies.
 
 ## Phase 6 - Sleep and Fatigue
 
@@ -78,7 +80,7 @@
 ## Phase 8 - Psychology, Pain, and Recovery
 
 - [ ] Implement stress, fear, stability, focus, comfort, pain, injury memory, and recovery budget.
-- [ ] Connect derived states through configured synergy edges.
+- [ ] Connect full derived gameplay systems through configured synergy edges.
 
 ## Phase 9 - Biome Origins and Acclimation
 
@@ -97,4 +99,4 @@
 - [ ] Add GameTests and dedicated-server smoke tests.
 - [ ] Complete documentation and CurseForge metadata.
 - [ ] Complete source provenance and credits review.
-- [ ] Verify no forbidden assets or registrations exist.
+- [x] Verify no forbidden assets or registrations exist.

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "immersive_ego:stamina_capacity",
+    "immersive_ego:hydration_efficiency",
+    "immersive_ego:respiration_efficiency",
+    "immersive_ego:thermal_tolerance",
+    "immersive_ego:load_tolerance",
+    "immersive_ego:sleep_recovery",
+    "immersive_ego:stress_resilience",
+    "immersive_ego:acclimation_gain"
+  ]
+}

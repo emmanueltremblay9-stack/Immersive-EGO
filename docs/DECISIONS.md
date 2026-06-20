@@ -16,10 +16,22 @@ Reason: this is the newest mutually compatible baseline found during the audit.
 
 Register a server config master switch defaulted to `false`.
 
-Reason: the vertical slice is not implemented yet, and the prompt forbids fake placeholders that silently affect gameplay.
+Reason at bootstrap: the vertical slice was not implemented yet, and the prompt forbids fake placeholders that silently affect gameplay.
 
 ## 2026-06-19 - No direct Apothic/MariesLib API use in Phase 0
 
 Add and resolve dependencies, but do not call their APIs until source inspection is performed for the specific integration surface.
 
 Reason: the master prompt requires not inventing external APIs.
+
+## 2026-06-20 - Keep active gameplay simulation disabled after Phase 1 foundation
+
+Keep `enableSimulation` defaulted to `false` even though the state attachment, display mirrors, commands, GameTests, and dynamic serverconfig loader now exist.
+
+Reason: active state-changing simulation systems are not implemented yet, and unfinished systems must not silently alter gameplay.
+
+## 2026-06-20 - Keep first derived scheduler bridge opt-in
+
+Keep both scheduler gates required after adding EGO Load and Readiness derivation.
+
+Reason: the scheduler can now persist changed display state, but the broader environment, physiology, sleep, nutrition, psychology, and recovery systems are still incomplete.

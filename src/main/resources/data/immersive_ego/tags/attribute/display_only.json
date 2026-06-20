@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "immersive_ego:ego_load",
+    "immersive_ego:readiness",
+    "immersive_ego:hydration",
+    "immersive_ego:stamina",
+    "immersive_ego:fatigue",
+    "immersive_ego:thermal_strain",
+    "immersive_ego:respiratory_strain",
+    "immersive_ego:nutrition_balance",
+    "immersive_ego:stress",
+    "immersive_ego:focus",
+    "immersive_ego:comfort",
+    "immersive_ego:recovery_capacity"
+  ]
+}

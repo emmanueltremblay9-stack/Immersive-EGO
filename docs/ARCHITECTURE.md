@@ -32,6 +32,16 @@ Each stat has one authoritative owner:
 
 Current Java code is intentionally minimal:
 
-- `ImmersiveEgo`: mod bootstrap and config registration.
+- `ImmersiveEgo`: mod bootstrap, attachment registration, attribute registration, and config registration.
+- `EgoCommands`: `/ego status` and `/ego debug state` server commands.
 - `EgoCoreConfig` and `EgoClientConfig`: first safe config specs.
+- `EgoServerModuleConfigCatalog` and `EgoServerModuleConfigs`: required roadmap SERVER config file registration with default-off module gates.
+- `EgoDynamicServerConfig`, `EgoDynamicServerConfigLoader`, `EgoDynamicSynergyConfig`, and `EgoDynamicSynergyConfigLoader`: per-world dynamic TOML config foundation under `serverconfig/immersive_ego/`.
+- `EgoAttributeCatalog` and `EgoAttributes`: first capability and display-only attribute registry.
+- `EgoState`, `EgoStateCodecs`, and `EgoAttachments`: first persisted player state attachment.
+- `EgoAttributeMirrorService`: server-side display mirror updater with stable transient modifier IDs.
+- `EgoSimulationFrame`, `EgoSimulationSchedule`, and `EgoSimulationScheduler`: immutable frames and a double-gated scheduler foundation.
+- `EgoCurvePoint` and `EgoCurve`: normalized validated curve primitive for config-driven simulation response curves.
+- `EgoSynergyEdge`, `EgoSynergyEdgeParser`, `EgoSynergyCycleDetector`, `EgoSynergyValidator`, and `EgoSynergyEvaluator`: first declarative synergy edge parser, cycle detector, catalog validator, topological evaluator, TOML-backed graph input, and evaluation trace.
+- `EgoDerivedStateCalculator`: first derived-state bridge for scheduler-driven EGO Load and Readiness updates.
 - `EgoMath` and `EgoLoadCalculator`: pure deterministic calculation seed.

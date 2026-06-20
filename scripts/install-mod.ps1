@@ -118,7 +118,9 @@ $matchedInstalled = @()
 Get-ChildItem -LiteralPath $ModsDir -Filter "*.jar" -File | ForEach-Object {
     $jar = $_
     $matchedBy = @()
-    if ($jar.Name -like "$ModId*.jar" -or $jar.Name -like "immersive-ego*.jar") {
+    $modIdFilePattern = "(?i)^$([regex]::Escape($ModId))(-.*)?[.]jar$"
+    $legacyFilePattern = "(?i)^immersive-ego(-.*)?[.]jar$"
+    if ($jar.Name -match $modIdFilePattern -or $jar.Name -match $legacyFilePattern) {
         $matchedBy += "filename"
     }
     try {

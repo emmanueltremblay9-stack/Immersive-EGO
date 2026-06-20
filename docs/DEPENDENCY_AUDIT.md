@@ -15,6 +15,7 @@ Audit date: 2026-06-19.
 | Cloth Config API | 15.0.140+neoforge | Modrinth `9s6osm5g`, file `cloth-config-15.0.140-neoforge.jar` | LGPL-3.0-only | Client-side dependency declared by MariesLib |
 | Apotheosis | 8.5.4 | source branch inspected, optional runtime metadata only | MIT code, All Rights Reserved assets | Optional future compatibility |
 | Curios API | 9.5.1+1.21.1 | transitive from Apothic Attributes | LGPL-3.0 | Development/runtime transitive dependency; not used directly |
+| NightConfig | 3.8.3 | transitive from NeoForge, explicit test runtime pin | LGPL-3.0-only | TOML parsing for dynamic server config tests |
 
 ## Source Evidence
 
@@ -40,7 +41,9 @@ Audit date: 2026-06-19.
 ## API Surface Used
 
 - NeoForge: `@Mod`, mod event bus, global event bus, config registration, server start event.
-- Apothic Attributes: no direct API calls yet.
+- Apothic Attributes: source-inspected native GUI path; no direct runtime API calls are required for the initial foundation.
+- NeoForge attributes: `DeferredRegister<Attribute>`, `PercentageAttribute`, `EntityAttributeModificationEvent`, and attribute tags for local metadata.
+- NightConfig: `CommentedFileConfig` and `CommentedConfig` for the dynamic per-world serverconfig loader.
 - Placebo: no direct API calls.
 - MariesLib: no direct API calls yet.
 - Cloth Config: no direct API calls.
@@ -49,6 +52,7 @@ Audit date: 2026-06-19.
 
 ## Open Audit Items
 
-- Inspect the pinned Apothic Attributes source before implementing attributes, modifier sources, or client mixins.
+- Client-smoke the Apothic Attributes GUI path after the display mirror foundation.
+- Inspect modifier source integration before implementing mirror update tooltips or client mixins.
 - Inspect MariesLib stable API annotations before implementing `MarieLibFacade`.
 - Inspect Apotheosis data formats before adding optional examples or compatibility code.

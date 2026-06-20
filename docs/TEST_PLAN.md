@@ -3,7 +3,21 @@
 ## Current Automated Tests
 
 - `EgoMathTest`
+- `EgoCurveTest`
+- `EgoProjectBoundaryTest`
 - `EgoLoadCalculatorTest`
+- `EgoAttributesTest`
+- `EgoDerivedStateCalculatorTest`
+- `EgoDynamicServerConfigLoaderTest`
+- `EgoDynamicSynergyConfigLoaderTest`
+- `EgoServerModuleConfigsTest`
+- `EgoSimulationFrameTest`
+- `EgoSimulationScheduleTest`
+- `EgoSynergyCycleDetectorTest`
+- `EgoSynergyEdgeParserTest`
+- `EgoSynergyEvaluatorTest`
+- `EgoSynergyValidatorTest`
+- `EgoStateTest`
 
 Run:
 
@@ -11,15 +25,22 @@ Run:
 .\gradlew.bat clean build
 ```
 
+Current GameTests:
+
+- `player_attribute_supplier_contains_every_ego_attribute`
+- `mirror_service_updates_display_attributes_without_duplicate_modifiers`
+- `server_registers_ego_status_and_debug_state_commands`, including `/ego synergy trace`
+
+Run:
+
+```powershell
+.\gradlew.bat runGameTestServer
+```
+
 ## Required Future Unit Tests
 
-- clamp and normalization
-- curve types
-- synergy edge evaluation
-- cycle detection
 - config validation and migration
-- EGO Load
-- Readiness
+- codec round-trip under the NeoForge runtime classpath
 - Recovery Budget allocation
 - origin modifier resolution
 - acclimation gain and decay
@@ -31,11 +52,10 @@ Run:
 ## Required Future GameTests
 
 - mod loads on dedicated server
-- required attributes attach to player
+- attribute catalog has unique paths, valid ranges, and correct positive/negative display sentiment
 - state attachment persists
 - death and respawn policy
 - dimension change
-- Apothic mirrors update without duplicates
 - hydration consumption
 - stamina cost and recovery
 - fatigue and sleep debt progression
@@ -44,6 +64,6 @@ Run:
 - nutrition value registration through MariesLib
 - origin assignment
 - malformed config fallback
-- command permissions
+- command permissions beyond registration
 - optional Apotheosis absence
 - no client class load on server
