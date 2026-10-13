@@ -1,5 +1,5 @@
 param(
-    [string]$ModsDir = "C:\Users\Emmanuel Tremblay\AppData\Roaming\PrismLauncher\instances\1.21.1 TesT LaB\minecraft\mods",
+    [string]$ModsDir = (Join-Path $env:APPDATA "PrismLauncher\instances\1.21.1 TesT LaB\minecraft\mods"),
     [string]$DownloadDir = ""
 )
 
@@ -168,6 +168,7 @@ foreach ($dependency in $Dependencies) {
     }
     if (-not $sourceExists) {
         Write-Host "Downloading $($dependency.fileName)"
+        New-Item -ItemType Directory -Force -Path (Split-Path -Path $sourcePath -Parent) | Out-Null
         Invoke-WebRequest -Uri $dependency.url -OutFile $sourcePath
     }
 

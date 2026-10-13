@@ -26,7 +26,7 @@ class EgoAttributesTest {
 
         for (EgoAttributeSpec spec : EgoAttributeCatalog.capabilitySpecs()) {
             assertEquals(1.0D, spec.defaultValue(), spec.path());
-            assertEquals(0.0D, spec.minValue(), spec.path());
+            assertEquals(0.25D, spec.minValue(), spec.path());
             assertEquals(4.0D, spec.maxValue(), spec.path());
             assertEquals(EgoAttributeSentiment.POSITIVE, spec.sentiment(), spec.path());
         }

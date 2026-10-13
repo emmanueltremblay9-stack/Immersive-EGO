@@ -7,7 +7,7 @@ Current implemented config files:
 Server config.
 
 - `enableSimulation`: master switch for server-authoritative simulation. Default `false`; enabling it can allow opt-in scheduler-driven state updates when the per-world scheduler switch is also enabled.
-- `mirrorUpdateEpsilon`: normalized delta required before display mirror updates. Default `0.005`.
+- `mirrorUpdateEpsilon`: normalized delta required before non-scheduler display mirror modifier refreshes. Default `0.005`.
 - `stateSchemaVersion`: current persisted state schema version. Default `1`.
 
 ## `immersive_ego-client.toml`
@@ -19,7 +19,7 @@ Client config.
 
 ## Roadmap SERVER Module Configs
 
-The following NeoForge SERVER config files are registered. They are inert module gates for future slices; each currently exposes:
+The following NeoForge SERVER config files are registered. They are default-off module gates; each currently exposes:
 
 - `enabled`: default `false`.
 - `debugLogging`: default `false`.
@@ -41,9 +41,9 @@ Files:
 
 Per-world dynamic server config. Created and range-repaired on server startup.
 
-- `scheduler.enabled`: server-authoritative scheduler switch. Default `false`; when both scheduler gates are enabled, the current scheduler derives EGO Load and Readiness from existing `EgoState` values.
+- `scheduler.enabled`: server-authoritative scheduler switch. Default `false`; when all relevant gates are enabled, the current scheduler applies the implemented environment, physiology, encumbrance, sleep, nutrition, psychology, and origins slices before deriving EGO Load and Readiness.
 - `scheduler.intervalTicks`: scheduler interval in server ticks. Default `20`, range `1..1200`.
-- `display.mirrorUpdateEpsilon`: scheduler-driven mirror update epsilon for changing frames. Default `0.005`, range `0..1`.
+- `display.mirrorUpdateEpsilon`: normalized delta required before scheduler-driven display mirror modifier refreshes. Default `0.005`, range `0..1`.
 
 ## `serverconfig/immersive_ego/synergies.toml`
 
@@ -53,4 +53,4 @@ Per-world dynamic synergy graph config. Created and repaired on server startup.
 - Targets must be known display-only EGO paths. Capability paths may be sources when the evaluator receives normalized external values.
 - Duplicate source-target pairs, unknown endpoints, unsafe weights, and cyclic graphs are repaired to an empty graph.
 
-Additional dynamic TOML maps under `serverconfig/immersive_ego/` are still future work.
+Origin profiles, acclimation tuning, injury-memory tuning, and beta presets are still code-defined; additional dynamic TOML maps under `serverconfig/immersive_ego/` remain future work.

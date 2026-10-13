@@ -1,0 +1,35 @@
+You are working in the Immersive EGO repository near release.
+
+Goal: hardening and release-prep audit.
+
+Required checks:
+1. Java 21 build.
+2. Minecraft target exactly 1.21.1.
+3. NeoForge dependencies resolve.
+4. Apothic Attributes required.
+5. MariesLib required separate dependency.
+6. Apotheosis optional and absent-safe.
+7. Cold Sweat absent.
+8. No custom blocks/items/entities/fluids registered.
+9. No restricted assets copied.
+10. Config entries exist for material gameplay rules.
+11. Dynamic TOML profiles validate and migrate.
+12. State persists and syncs.
+13. EGO attributes display in Apothic Attributes.
+14. Display mirrors do not drive gameplay.
+15. Deterministic synergies connect core modules.
+16. First vertical slice works.
+17. Automated tests pass.
+18. Dedicated server starts.
+19. Documentation and credits complete.
+20. Source provenance is honest.
+21. TASKS.md contains no unchecked release-blocking item.
+
+Final report exactly:
+1. IMPLEMENTED
+2. FILES CHANGED
+3. BUILD AND TESTS
+4. DEPENDENCIES
+5. LICENSE/ASSET CHECK
+6. REMAINING WORK
+7. NEXT ACTION

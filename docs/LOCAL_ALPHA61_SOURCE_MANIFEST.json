@@ -1,0 +1,1312 @@
+[
+  {
+    "path": "branding/README.md",
+    "sha256": "2fb5f247e389dd8a4d62ad76514f28ba720139374a2e5da0138dd7e758a3a59c",
+    "snapshot_sha256": "2fb5f247e389dd8a4d62ad76514f28ba720139374a2e5da0138dd7e758a3a59c"
+  },
+  {
+    "path": "branding/curseforge_banner.svg",
+    "sha256": "d6b485146bb72988f5e81bef56ab773b8590d46573ca65759ee878215ceabf5a",
+    "snapshot_sha256": "d6b485146bb72988f5e81bef56ab773b8590d46573ca65759ee878215ceabf5a"
+  },
+  {
+    "path": "branding/immersive_ego_logo.svg",
+    "sha256": "260d703d8fca73ea44b5232696348d7aca1c0014646009ee961f6b3e5880a3ef",
+    "snapshot_sha256": "260d703d8fca73ea44b5232696348d7aca1c0014646009ee961f6b3e5880a3ef"
+  },
+  {
+    "path": "branding/logo_generation_prompt.txt",
+    "sha256": "8e3c63bb8baf8ef60d4a1930dd782e37537c9fe02813d210ad64abd09db3af56",
+    "snapshot_sha256": "8e3c63bb8baf8ef60d4a1930dd782e37537c9fe02813d210ad64abd09db3af56"
+  },
+  {
+    "path": "build.gradle.template",
+    "sha256": "41e56c1130f79a637b82b8ed3c533286a70292d173fb05b63e5d7ef0a9da02ca",
+    "snapshot_sha256": "41e56c1130f79a637b82b8ed3c533286a70292d173fb05b63e5d7ef0a9da02ca"
+  },
+  {
+    "path": "codex_prompts/01_phase0_bootstrap_and_audit.txt",
+    "sha256": "a5e3a638a82b032ab1a8a5451890fcef293c0bd3f90102884be804d0d4d194d3",
+    "snapshot_sha256": "a5e3a638a82b032ab1a8a5451890fcef293c0bd3f90102884be804d0d4d194d3"
+  },
+  {
+    "path": "codex_prompts/02_phase1_core_state_config_attributes.txt",
+    "sha256": "8c7c419f39bd034bf8a3f1611503936ed3f5800ed0f805834ba0e305381c52d2",
+    "snapshot_sha256": "8c7c419f39bd034bf8a3f1611503936ed3f5800ed0f805834ba0e305381c52d2"
+  },
+  {
+    "path": "codex_prompts/03_first_vertical_slice.txt",
+    "sha256": "7fa96324d4bf30caa1c57abba3150431b4cef12d40af71032014067c00d33cc6",
+    "snapshot_sha256": "7fa96324d4bf30caa1c57abba3150431b4cef12d40af71032014067c00d33cc6"
+  },
+  {
+    "path": "codex_prompts/04_release_hardening_audit.txt",
+    "sha256": "e7eb3bf3b11cdf5a3e6b4bdbf29f6429a84d198be96b315799d6b7f562bf5886",
+    "snapshot_sha256": "e7eb3bf3b11cdf5a3e6b4bdbf29f6429a84d198be96b315799d6b7f562bf5886"
+  },
+  {
+    "path": "codex_prompts/99_no_invention_guard.txt",
+    "sha256": "a09ca22ea5e6366defb0896c9ad4484efed30c4f8b1018627792bfddcbbe664b",
+    "snapshot_sha256": "a09ca22ea5e6366defb0896c9ad4484efed30c4f8b1018627792bfddcbbe664b"
+  },
+  {
+    "path": "config_templates/README.md",
+    "sha256": "4d29dae16138abc8cc682befed451bab96fe48beba4df8e866859875ab749154",
+    "snapshot_sha256": "4d29dae16138abc8cc682befed451bab96fe48beba4df8e866859875ab749154"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-apothic.toml",
+    "sha256": "1ff171d2b7b1f5b849bef2b6599d3ce2209fd4fba62ff0fbeb978b71b030cca1",
+    "snapshot_sha256": "1ff171d2b7b1f5b849bef2b6599d3ce2209fd4fba62ff0fbeb978b71b030cca1"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-client.toml",
+    "sha256": "3f2c33d4cfb5423ace13ad5611d3a31ef612cc3324febe536ee2eab6d14a3c0c",
+    "snapshot_sha256": "3f2c33d4cfb5423ace13ad5611d3a31ef612cc3324febe536ee2eab6d14a3c0c"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-core.toml",
+    "sha256": "0f0fba113d756773084f3cd2465dca9779de702d286cb86f42a5eda1a2d2cac7",
+    "snapshot_sha256": "0f0fba113d756773084f3cd2465dca9779de702d286cb86f42a5eda1a2d2cac7"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-encumbrance.toml",
+    "sha256": "bed3ab9a2a472e3fd026cbb35b9d869e55f0b13af31b287cd70df1d880a5e292",
+    "snapshot_sha256": "bed3ab9a2a472e3fd026cbb35b9d869e55f0b13af31b287cd70df1d880a5e292"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-environment.toml",
+    "sha256": "dd0a2ea93a2351266294d22ba8c40e6cba874b5c6c440662107a81c7b76e0d2a",
+    "snapshot_sha256": "dd0a2ea93a2351266294d22ba8c40e6cba874b5c6c440662107a81c7b76e0d2a"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-nutrition.toml",
+    "sha256": "d1954aab4fd0ee099a257b9c9b107403ea411fcaf8e6125fe442c42d23195018",
+    "snapshot_sha256": "d1954aab4fd0ee099a257b9c9b107403ea411fcaf8e6125fe442c42d23195018"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-origins.toml",
+    "sha256": "0391421ce63b5b92c6b130c9097818e8315fd266444c763fdd1a0822e02f4378",
+    "snapshot_sha256": "0391421ce63b5b92c6b130c9097818e8315fd266444c763fdd1a0822e02f4378"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-performance.toml",
+    "sha256": "4d021e921be259d7606b2283598b67f0a0b83eb46be9270709189f39fa1e0897",
+    "snapshot_sha256": "4d021e921be259d7606b2283598b67f0a0b83eb46be9270709189f39fa1e0897"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-physiology.toml",
+    "sha256": "6356205b5ba2df7481e9264ac176cfed1b8e26b1d4bc40011fad1b0e24b28c05",
+    "snapshot_sha256": "6356205b5ba2df7481e9264ac176cfed1b8e26b1d4bc40011fad1b0e24b28c05"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-psychology.toml",
+    "sha256": "b96c78d36a8054f92febe49feefd239aaea10f6981bcc5de06438c39874c76d3",
+    "snapshot_sha256": "b96c78d36a8054f92febe49feefd239aaea10f6981bcc5de06438c39874c76d3"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-sleep.toml",
+    "sha256": "287b77a7efe4db39676470e27ae275dac7e97caeb6514dc794ce323f7c126fb8",
+    "snapshot_sha256": "287b77a7efe4db39676470e27ae275dac7e97caeb6514dc794ce323f7c126fb8"
+  },
+  {
+    "path": "config_templates/serverconfig/immersive_ego-synergies.toml",
+    "sha256": "b18f897e4522516bed3d0ec80cf722ec1c75054d50123df1226009c221b05955",
+    "snapshot_sha256": "b18f897e4522516bed3d0ec80cf722ec1c75054d50123df1226009c221b05955"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/climate_profiles.toml",
+    "sha256": "9e885625a4160f73989fe659581fd6749643a6b88f49797ae15abc18bbfd95a4",
+    "snapshot_sha256": "9e885625a4160f73989fe659581fd6749643a6b88f49797ae15abc18bbfd95a4"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/dimension_profiles.toml",
+    "sha256": "d50b2b7df1539bc9bc1172ac0885b5646709a5c46e60a04bc4653cf16f662e66",
+    "snapshot_sha256": "d50b2b7df1539bc9bc1172ac0885b5646709a5c46e60a04bc4653cf16f662e66"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/food_overrides.toml",
+    "sha256": "f1aa33de5cf58c66bcbe7585e2dcc2fb451bb30eda666e9d6bae4bddfaad9aef",
+    "snapshot_sha256": "f1aa33de5cf58c66bcbe7585e2dcc2fb451bb30eda666e9d6bae4bddfaad9aef"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/item_weights.toml",
+    "sha256": "abcd2449a4581886cd8cc2e9585a15ade144dce53e125fa16edf6dcc76c71696",
+    "snapshot_sha256": "abcd2449a4581886cd8cc2e9585a15ade144dce53e125fa16edf6dcc76c71696"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/origin_profiles.toml",
+    "sha256": "fc0d0358b5bf75be44a6adc7ff6acabbb3460b9503e9c32ffd52fa3ae39d7c56",
+    "snapshot_sha256": "fc0d0358b5bf75be44a6adc7ff6acabbb3460b9503e9c32ffd52fa3ae39d7c56"
+  },
+  {
+    "path": "config_templates/world_serverconfig/immersive_ego/synergy_edges.toml",
+    "sha256": "354aa93f69ce121bd6f4aee48fd5cc4e155b444c609c7a82c8cc7177383c0ab1",
+    "snapshot_sha256": "354aa93f69ce121bd6f4aee48fd5cc4e155b444c609c7a82c8cc7177383c0ab1"
+  },
+  {
+    "path": "docs/API_SURFACE_PLAN.md",
+    "sha256": "201beec5c8536888e3656b532b6ee41fe87e0da65f15ec9b6644c543900a9be2",
+    "snapshot_sha256": "201beec5c8536888e3656b532b6ee41fe87e0da65f15ec9b6644c543900a9be2"
+  },
+  {
+    "path": "docs/COMMAND_TREE.md",
+    "sha256": "dde038766c184992f3f43484f0f6630eec340ed0fa0ff173f62833aea00c10cb",
+    "snapshot_sha256": "dde038766c184992f3f43484f0f6630eec340ed0fa0ff173f62833aea00c10cb"
+  },
+  {
+    "path": "docs/FULL_PROJECT_REVIEW.md",
+    "sha256": "21805a9a431cec764431cafd3ca94ae45fbdb876fc2ab199b513d3ca811313a1",
+    "snapshot_sha256": "823a905b7847fe2ca296296adacf77205bb6e0d002032d0eeced9668ce46a6e4"
+  },
+  {
+    "path": "docs/MISSING_WORK_AUDIT.md",
+    "sha256": "8ed4553ad094ad7003cba87c3c41d3421db571ec6dbce75277b2dc94556c40ad",
+    "snapshot_sha256": "8ed4553ad094ad7003cba87c3c41d3421db571ec6dbce75277b2dc94556c40ad"
+  },
+  {
+    "path": "docs/VERTICAL_SLICE_PLAN.md",
+    "sha256": "85ee087b683ac45904630603716cc29b39ae5da0977df0d26ed69cfef9e6bd95",
+    "snapshot_sha256": "85ee087b683ac45904630603716cc29b39ae5da0977df0d26ed69cfef9e6bd95"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/FILE_INDEX.md",
+    "sha256": "e936722d1294c7d5960f9c525816eb691bdffd6f51b9f3ecf1394cc0455971c1",
+    "snapshot_sha256": "e936722d1294c7d5960f9c525816eb691bdffd6f51b9f3ecf1394cc0455971c1"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/IMPORT_NOTES.md",
+    "sha256": "45b1395cc92ca688f4895cc35ff594af297bff81a9f02eb3cd962bde96e4bd12",
+    "snapshot_sha256": "a5a11e626545a1156321f72fb07b50aaec5ebf913abb51fb084abc234567bb1d"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/README_INSTALL.md",
+    "sha256": "27115aaca52a72030420b8bfbf7e58f6a5ee887bde8856eed128e886ac271c2a",
+    "snapshot_sha256": "27115aaca52a72030420b8bfbf7e58f6a5ee887bde8856eed128e886ac271c2a"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/SHA256.txt",
+    "sha256": "0397950cac57803d58753ee28dc5a166adced94283e336ba2aaaeac0ca8041bb",
+    "snapshot_sha256": "0397950cac57803d58753ee28dc5a166adced94283e336ba2aaaeac0ca8041bb"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/language_reference/en_us.json",
+    "sha256": "2d43d20a04a95dd9bbb4108c06380ed432ee6745c91802e947aae4bd44f6a00b",
+    "snapshot_sha256": "2d43d20a04a95dd9bbb4108c06380ed432ee6745c91802e947aae4bd44f6a00b"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/language_reference/fr_fr.json",
+    "sha256": "e80c3ca02065dae6949fc9476b666f71e6cd2ce429c4cd9209dbd9eb176b5564",
+    "snapshot_sha256": "e80c3ca02065dae6949fc9476b666f71e6cd2ce429c4cd9209dbd9eb176b5564"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/project_manifest.json",
+    "sha256": "c8c84d307a1345ad28a6fee5e382b319463a8dd08b65b38d2a373c76bb52105d",
+    "snapshot_sha256": "67fb7da5b273d71deabaf7b687b407f22724819f6707ee96bbaebe3bc1f0ab17"
+  },
+  {
+    "path": "docs/project_pack/immersive_ego_missing_project_pack/templates/src/main/resources/META-INF/neoforge.mods.toml.template",
+    "sha256": "74d3454b46d53aa56e1736b9475cc9735312528f00bdb7a3f53f0ea67430fc76",
+    "snapshot_sha256": "74d3454b46d53aa56e1736b9475cc9735312528f00bdb7a3f53f0ea67430fc76"
+  },
+  {
+    "path": "gradle.properties.template",
+    "sha256": "77791d879a3ce46633a55a46d6027f2f462d892502c5431f63984ac4203563ed",
+    "snapshot_sha256": "77791d879a3ce46633a55a46d6027f2f462d892502c5431f63984ac4203563ed"
+  },
+  {
+    "path": "scripts/smoke-dedicated-server.ps1",
+    "sha256": "220aa2afa0937728c29ca7e34dc807749e8b6a3145df03c1398efc18a9689d32",
+    "snapshot_sha256": "220aa2afa0937728c29ca7e34dc807749e8b6a3145df03c1398efc18a9689d32"
+  },
+  {
+    "path": "scripts/verify_ego_repo.ps1",
+    "sha256": "0dfacabc6d3d9e1d3bb93c5602ef9ea52abfcd175289bc778a7b90f63d24fe43",
+    "snapshot_sha256": "0dfacabc6d3d9e1d3bb93c5602ef9ea52abfcd175289bc778a7b90f63d24fe43"
+  },
+  {
+    "path": "settings.gradle.template",
+    "sha256": "ffc36013227f49661a4c0b8ea3e23cee5e0ea2bb7a27ad2536a5325bbc186dc3",
+    "snapshot_sha256": "ffc36013227f49661a4c0b8ea3e23cee5e0ea2bb7a27ad2536a5325bbc186dc3"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/compat/marieslib/EgoMariesLibFacade.java",
+    "sha256": "ed4394dba3896d98be27acd6288ead3dee6b26e98efaead0fc9a05a3e0439042",
+    "snapshot_sha256": "ed4394dba3896d98be27acd6288ead3dee6b26e98efaead0fc9a05a3e0439042"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoClimateProfile.java",
+    "sha256": "27893157783802ead9fe6a50a7642352a7f7d1ff4f1bdf63d31315f695a95f09",
+    "snapshot_sha256": "27893157783802ead9fe6a50a7642352a7f7d1ff4f1bdf63d31315f695a95f09"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoClimateProfileCatalog.java",
+    "sha256": "4f3fe05414e5d043fe62ba79d25cd0ee5f83f8ee26281e9264e69c4dc12837c5",
+    "snapshot_sha256": "4f3fe05414e5d043fe62ba79d25cd0ee5f83f8ee26281e9264e69c4dc12837c5"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentCache.java",
+    "sha256": "7b6e0b7cc3f3615613275dfc66f5ca1fbcb2d583ac50b14231034b70c5068570",
+    "snapshot_sha256": "7b6e0b7cc3f3615613275dfc66f5ca1fbcb2d583ac50b14231034b70c5068570"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentDebugCounters.java",
+    "sha256": "1d33dd4a7534819ce5167b8fb8b57b52afccae18ed6d19fd2db25eb066af3002",
+    "snapshot_sha256": "1d33dd4a7534819ce5167b8fb8b57b52afccae18ed6d19fd2db25eb066af3002"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentSampler.java",
+    "sha256": "57698b6022b1f1d0d2b198dc1b226245fc9ef46fcf32fd2a4c1c689a64a343bd",
+    "snapshot_sha256": "57698b6022b1f1d0d2b198dc1b226245fc9ef46fcf32fd2a4c1c689a64a343bd"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentService.java",
+    "sha256": "422d5b72ed78b86227562fcf44d46b981696cb9a02ef003e6e5987ee4606267d",
+    "snapshot_sha256": "422d5b72ed78b86227562fcf44d46b981696cb9a02ef003e6e5987ee4606267d"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentSnapshot.java",
+    "sha256": "649cdbf00cff229123fc4e492df7c2f7d2d9ac15cdc4553ed94ffeaaf07e9f0a",
+    "snapshot_sha256": "649cdbf00cff229123fc4e492df7c2f7d2d9ac15cdc4553ed94ffeaaf07e9f0a"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoExposureSample.java",
+    "sha256": "1a398ff831b29f966784540d0937f40b7ce18517bf150d5769459b77bae1ada1",
+    "snapshot_sha256": "1a398ff831b29f966784540d0937f40b7ce18517bf150d5769459b77bae1ada1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoSeasonPhase.java",
+    "sha256": "33cb9a9a92eab9e256b145a5b74c241196ef22815f195ab839e550ce15347027",
+    "snapshot_sha256": "33cb9a9a92eab9e256b145a5b74c241196ef22815f195ab839e550ce15347027"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoThermalMode.java",
+    "sha256": "58c4883314d96e534340ecd4fbbcad297677adfc46cc866f36c94516ba59da58",
+    "snapshot_sha256": "58c4883314d96e534340ecd4fbbcad297677adfc46cc866f36c94516ba59da58"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoThermalSnapshot.java",
+    "sha256": "24f4acc9e3c0321e00e858cae84d17ec2be6d85d34d2ef4d97d217bb22855e28",
+    "snapshot_sha256": "24f4acc9e3c0321e00e858cae84d17ec2be6d85d34d2ef4d97d217bb22855e28"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/environment/EgoThermalSnapshotCalculator.java",
+    "sha256": "9bf76df42a42b3aad460520785adcaa4ee8917b2546fbf8f3088357fc2b0ee64",
+    "snapshot_sha256": "9bf76df42a42b3aad460520785adcaa4ee8917b2546fbf8f3088357fc2b0ee64"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoDietaryMemory.java",
+    "sha256": "de41019479d7fc4c399e76daa3ec3eb1a9b2681e94cf15d8508c4f27d238d4e8",
+    "snapshot_sha256": "de41019479d7fc4c399e76daa3ec3eb1a9b2681e94cf15d8508c4f27d238d4e8"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoFoodNutritionProfile.java",
+    "sha256": "237d8b06c844e53106734ede3abc1cd0a985b16b50326500cee145c58a895a8f",
+    "snapshot_sha256": "237d8b06c844e53106734ede3abc1cd0a985b16b50326500cee145c58a895a8f"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoMealQuality.java",
+    "sha256": "65e619fbb7a3d2759d20bb7fe040b4c45f126985797308622df692dd6ec05737",
+    "snapshot_sha256": "65e619fbb7a3d2759d20bb7fe040b4c45f126985797308622df692dd6ec05737"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoMealQualityCalculator.java",
+    "sha256": "88a8200112e1014df8f60d7f297a26a0397d52ce1ae7aecd0c881fec992aabf2",
+    "snapshot_sha256": "88a8200112e1014df8f60d7f297a26a0397d52ce1ae7aecd0c881fec992aabf2"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionContext.java",
+    "sha256": "feaf049fc6f5a724fd5de839890205344932182efbff43b355164439496403e8",
+    "snapshot_sha256": "feaf049fc6f5a724fd5de839890205344932182efbff43b355164439496403e8"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionEvents.java",
+    "sha256": "c4f48ada4534deca60668e8996d7bdbc341162d60af4728a8ae4a33c2f2c0298",
+    "snapshot_sha256": "c4f48ada4534deca60668e8996d7bdbc341162d60af4728a8ae4a33c2f2c0298"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionGroup.java",
+    "sha256": "0e9a3b9c3efbff8f5b9df2edff8cad5eb0933afd2a4af00a29bc7a79efeadad3",
+    "snapshot_sha256": "0e9a3b9c3efbff8f5b9df2edff8cad5eb0933afd2a4af00a29bc7a79efeadad3"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionModule.java",
+    "sha256": "6186fda3c25f6a1e7aa7d026b2d3ab22c445530ff3e51d7edcf12bd62760418e",
+    "snapshot_sha256": "6186fda3c25f6a1e7aa7d026b2d3ab22c445530ff3e51d7edcf12bd62760418e"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionRuntime.java",
+    "sha256": "69639367e6466a8f721f3b8c7c3324f72b411e39e13afc4d3c2c01826519b523",
+    "snapshot_sha256": "69639367e6466a8f721f3b8c7c3324f72b411e39e13afc4d3c2c01826519b523"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionService.java",
+    "sha256": "f2ef5e25748432d4eea6958ed2c5a00601f74e7fa7a75a4ce3ffd01675c8e978",
+    "snapshot_sha256": "f2ef5e25748432d4eea6958ed2c5a00601f74e7fa7a75a4ce3ffd01675c8e978"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/nutrition/EgoVanillaFoodNutritionCatalog.java",
+    "sha256": "78aa8422f5195bc3cb77d202316496b2f16e7b17bf35a3cf33da277aad383743",
+    "snapshot_sha256": "78aa8422f5195bc3cb77d202316496b2f16e7b17bf35a3cf33da277aad383743"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoAcclimationCalculator.java",
+    "sha256": "69164945a4026cde56814a444d786e366a8728a705e49aab6f0d88984f59ba8d",
+    "snapshot_sha256": "69164945a4026cde56814a444d786e366a8728a705e49aab6f0d88984f59ba8d"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoAcclimationContext.java",
+    "sha256": "d231be5b032f8bb02067c07c7bfbd553d04ca849a44bb975783961d4c58a05e5",
+    "snapshot_sha256": "d231be5b032f8bb02067c07c7bfbd553d04ca849a44bb975783961d4c58a05e5"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginProfile.java",
+    "sha256": "8f0506bc77185190c55f3d577ee95f42ec743bb82471adfc688eb192b6aea260",
+    "snapshot_sha256": "8f0506bc77185190c55f3d577ee95f42ec743bb82471adfc688eb192b6aea260"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginProfileCatalog.java",
+    "sha256": "ede092652607de2cba163638321e1daeba34a282c5767c3ca2e945f2d3af553b",
+    "snapshot_sha256": "ede092652607de2cba163638321e1daeba34a282c5767c3ca2e945f2d3af553b"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginState.java",
+    "sha256": "ad51fadf5357f0c32ca9c56b74c065c35ca2d8005c4f47ffe6d7b7c5db5a23fd",
+    "snapshot_sha256": "ad51fadf5357f0c32ca9c56b74c065c35ca2d8005c4f47ffe6d7b7c5db5a23fd"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginStateCodecs.java",
+    "sha256": "6f6964e9892458796c000ab00afd036e1d60a4b29c82f3595722f46d3313ae12",
+    "snapshot_sha256": "6f6964e9892458796c000ab00afd036e1d60a4b29c82f3595722f46d3313ae12"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginsModule.java",
+    "sha256": "952e9061c81e9dcdb5936086da10e72c3139160764cfc6d54df02135c45030ed",
+    "snapshot_sha256": "952e9061c81e9dcdb5936086da10e72c3139160764cfc6d54df02135c45030ed"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginsRuntime.java",
+    "sha256": "dbfb3fb8465744ef4b5afa19080f2a7b38d7559bf2b643248a7a4077f1f6aced",
+    "snapshot_sha256": "dbfb3fb8465744ef4b5afa19080f2a7b38d7559bf2b643248a7a4077f1f6aced"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/origins/EgoOriginsService.java",
+    "sha256": "8f2ed2fff23c439b113727196c9dd4324b4fc1da2356c3d9c6377bd60fb8661c",
+    "snapshot_sha256": "8f2ed2fff23c439b113727196c9dd4324b4fc1da2356c3d9c6377bd60fb8661c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoDrinkItemResolver.java",
+    "sha256": "e7fa85b33531b72915f8510ac9b054e1de2ce3ef631ff99fc1fff829ef096911",
+    "snapshot_sha256": "e7fa85b33531b72915f8510ac9b054e1de2ce3ef631ff99fc1fff829ef096911"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoDrinkProfile.java",
+    "sha256": "a720e6ed0aad5ded7026951303a96559f28aefbe65425efa71167c66bdac83fd",
+    "snapshot_sha256": "a720e6ed0aad5ded7026951303a96559f28aefbe65425efa71167c66bdac83fd"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoDrinkProfileCatalog.java",
+    "sha256": "2476e255a529a19ea31bff719b988dfef6264f8a6ebbb03fa2dd7e1dd3d6522b",
+    "snapshot_sha256": "2476e255a529a19ea31bff719b988dfef6264f8a6ebbb03fa2dd7e1dd3d6522b"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceContext.java",
+    "sha256": "b538762516b287f11fac93cd89084f1acd6b3c3c2744c2fe35a4be3d49453783",
+    "snapshot_sha256": "b538762516b287f11fac93cd89084f1acd6b3c3c2744c2fe35a4be3d49453783"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceHysteresis.java",
+    "sha256": "514d42db4e3fd2a84e997e53ffb2df5105994e5286f0143e124ed335903ab508",
+    "snapshot_sha256": "514d42db4e3fd2a84e997e53ffb2df5105994e5286f0143e124ed335903ab508"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceLoadCalculator.java",
+    "sha256": "557dc511caba85c213c2848304ac69517ffd9a141beea6d6873ce5d51fc408ea",
+    "snapshot_sha256": "557dc511caba85c213c2848304ac69517ffd9a141beea6d6873ce5d51fc408ea"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceLoadDelta.java",
+    "sha256": "f9cc525cbd54db38eb389170bc69594265dab19f4f6802690c6ec6960ee85b09",
+    "snapshot_sha256": "f9cc525cbd54db38eb389170bc69594265dab19f4f6802690c6ec6960ee85b09"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceModule.java",
+    "sha256": "a931e278a7e44570df5ee29dfc6418c0c5ef416f1ba9a9ee46c20270182191a2",
+    "snapshot_sha256": "a931e278a7e44570df5ee29dfc6418c0c5ef416f1ba9a9ee46c20270182191a2"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceRuntime.java",
+    "sha256": "bc4bcb4bdd3daa3e169f3e7ce2e5bb79a3fdcbff34d3ff4779248d77e9f93ac9",
+    "snapshot_sha256": "bc4bcb4bdd3daa3e169f3e7ce2e5bb79a3fdcbff34d3ff4779248d77e9f93ac9"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceService.java",
+    "sha256": "be3f959ee5b8c9c045b23b60008239fad86e3769d198e104d5755866358462a9",
+    "snapshot_sha256": "be3f959ee5b8c9c045b23b60008239fad86e3769d198e104d5755866358462a9"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceTier.java",
+    "sha256": "060ce5cf08635a9831f3dccc3274013d916d5334206da3ffab44a65f3b949a0f",
+    "snapshot_sha256": "060ce5cf08635a9831f3dccc3274013d916d5334206da3ffab44a65f3b949a0f"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationDemand.java",
+    "sha256": "f623902f6b6c86978df4d30b5cf92b47cd6c2172591c52e2149bd9aacd59a638",
+    "snapshot_sha256": "f623902f6b6c86978df4d30b5cf92b47cd6c2172591c52e2149bd9aacd59a638"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationDemandCalculator.java",
+    "sha256": "59670ff7eb8df68efeaf35cf507012c5f86bc8c44d519331ab48cb9fac81ad67",
+    "snapshot_sha256": "59670ff7eb8df68efeaf35cf507012c5f86bc8c44d519331ab48cb9fac81ad67"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationDemandContext.java",
+    "sha256": "074baa91d08854e30086b547ca012b7d81a2ebe075dfe6a03e99f016c993b404",
+    "snapshot_sha256": "074baa91d08854e30086b547ca012b7d81a2ebe075dfe6a03e99f016c993b404"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationDemandInput.java",
+    "sha256": "7d061b1667f08074176748e3363bbe4f77cf88b4e9f52e9bc1e93ff6746d597a",
+    "snapshot_sha256": "7d061b1667f08074176748e3363bbe4f77cf88b4e9f52e9bc1e93ff6746d597a"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationEvents.java",
+    "sha256": "dceeda044f0e18f4cf41c7d23e01f172c95676445d4d955d96e98a2483fa378c",
+    "snapshot_sha256": "dceeda044f0e18f4cf41c7d23e01f172c95676445d4d955d96e98a2483fa378c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoHydrationService.java",
+    "sha256": "d6091df480cc0db6ff0d44e443b082a32d55735746de82bcdb0b24dd39087979",
+    "snapshot_sha256": "d6091df480cc0db6ff0d44e443b082a32d55735746de82bcdb0b24dd39087979"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightCache.java",
+    "sha256": "8dcdd5b0514fa0cc10b66abb34691adf69379b7d1f511e4ef653ceb377d32e70",
+    "snapshot_sha256": "8dcdd5b0514fa0cc10b66abb34691adf69379b7d1f511e4ef653ceb377d32e70"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightCalculator.java",
+    "sha256": "12bb1f00cc623d1e3933830e9807bc023a54e5a8572be3a8d80b1d47275142d9",
+    "snapshot_sha256": "12bb1f00cc623d1e3933830e9807bc023a54e5a8572be3a8d80b1d47275142d9"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightDebugCounters.java",
+    "sha256": "d5e2c59562c4127e3cca873793511d90e2fcfe26598107e9e89e4c8713a16018",
+    "snapshot_sha256": "d5e2c59562c4127e3cca873793511d90e2fcfe26598107e9e89e4c8713a16018"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightSampler.java",
+    "sha256": "1973605304f3a260048073f9ede52e67322e07fe51bb83a34d888bda42f4ab45",
+    "snapshot_sha256": "1973605304f3a260048073f9ede52e67322e07fe51bb83a34d888bda42f4ab45"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightService.java",
+    "sha256": "98a1991ea875db739da2dfe5b0e1e583eac03021d5e0db227e30ae66da2a0cef",
+    "snapshot_sha256": "98a1991ea875db739da2dfe5b0e1e583eac03021d5e0db227e30ae66da2a0cef"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightSnapshot.java",
+    "sha256": "675651a882a6f8c6ff19da7dc611f3e426ddc5146136f1560029b05a90fb4cea",
+    "snapshot_sha256": "675651a882a6f8c6ff19da7dc611f3e426ddc5146136f1560029b05a90fb4cea"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoItemWeightResolver.java",
+    "sha256": "d8f81b66c84fcfc0e5f61e754b9761079b9f985ae8e3ceac4bc18b887d389a33",
+    "snapshot_sha256": "d8f81b66c84fcfc0e5f61e754b9761079b9f985ae8e3ceac4bc18b887d389a33"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoPhysiologyModule.java",
+    "sha256": "c716f7b76ef348716d10031e6f1cba943c07ebd4fa5e29d104153a6c22dafa64",
+    "snapshot_sha256": "c716f7b76ef348716d10031e6f1cba943c07ebd4fa5e29d104153a6c22dafa64"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespirationRuntime.java",
+    "sha256": "d46494f7607e20fb5ee68ef1fa2c7414fd6fcfc5514467396fe1015760bb50a4",
+    "snapshot_sha256": "d46494f7607e20fb5ee68ef1fa2c7414fd6fcfc5514467396fe1015760bb50a4"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespirationService.java",
+    "sha256": "a4bc97e6f6def9c092c50439acf9d5d073a9d45d737f410df8d51b34298619fb",
+    "snapshot_sha256": "a4bc97e6f6def9c092c50439acf9d5d073a9d45d737f410df8d51b34298619fb"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespiratoryDimension.java",
+    "sha256": "660d6dc445d7d5d46c779b13d40e0667ada48428b452772c8784208bb0fb8058",
+    "snapshot_sha256": "660d6dc445d7d5d46c779b13d40e0667ada48428b452772c8784208bb0fb8058"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespiratoryPressureCalculator.java",
+    "sha256": "8b5fe792dc95fe92aeffffa380280f215bd0f78d5d16a0626c52da3edc7171d1",
+    "snapshot_sha256": "8b5fe792dc95fe92aeffffa380280f215bd0f78d5d16a0626c52da3edc7171d1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespiratorySample.java",
+    "sha256": "cf8ddaf64e467f33d4def63f6ef3b26a4ca470961aa0461bc0a2d78ed9fb224c",
+    "snapshot_sha256": "cf8ddaf64e467f33d4def63f6ef3b26a4ca470961aa0461bc0a2d78ed9fb224c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespiratorySampler.java",
+    "sha256": "3a9e6ff1732c13b54f04d4f2371efe94512fcda901b37ce4fbd422422fc0c071",
+    "snapshot_sha256": "3a9e6ff1732c13b54f04d4f2371efe94512fcda901b37ce4fbd422422fc0c071"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoRespiratoryStrainCalculator.java",
+    "sha256": "48366d0d3e22651cda4a914ed9252c58bcab2ba009f0450adf7aa9573f418070",
+    "snapshot_sha256": "48366d0d3e22651cda4a914ed9252c58bcab2ba009f0450adf7aa9573f418070"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaActivityCalculator.java",
+    "sha256": "a512f903bd950e23a3971226dc1e081efca0eb78acffebdfdbb4399efe5dc440",
+    "snapshot_sha256": "a512f903bd950e23a3971226dc1e081efca0eb78acffebdfdbb4399efe5dc440"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaActivityContext.java",
+    "sha256": "487a23a12f7592cf2138a3c2a7dd95e25bcc2f21e729385ae2718fa332a276db",
+    "snapshot_sha256": "487a23a12f7592cf2138a3c2a7dd95e25bcc2f21e729385ae2718fa332a276db"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaActivityDelta.java",
+    "sha256": "c5700ecf2de6f24be8fb2f7168b25f8d2691f19f665b7be13ca4c86c16f998c4",
+    "snapshot_sha256": "c5700ecf2de6f24be8fb2f7168b25f8d2691f19f665b7be13ca4c86c16f998c4"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaActivitySampler.java",
+    "sha256": "d4bd39ab8de48dc581493c5071611101e4cc19bc66f236a748c49fd1ba8ac8e1",
+    "snapshot_sha256": "d4bd39ab8de48dc581493c5071611101e4cc19bc66f236a748c49fd1ba8ac8e1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaRuntime.java",
+    "sha256": "5d69bdee1fcc3732f641089a17ad533b3fc14713e2609fcb0d9a978c591baec1",
+    "snapshot_sha256": "5d69bdee1fcc3732f641089a17ad533b3fc14713e2609fcb0d9a978c591baec1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoStaminaService.java",
+    "sha256": "7e9b2b65778091ddc73120c62dc15b3dd39a4b5dcec7b2075554538f579a7197",
+    "snapshot_sha256": "7e9b2b65778091ddc73120c62dc15b3dd39a4b5dcec7b2075554538f579a7197"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoWaterPurificationItemResolver.java",
+    "sha256": "c14aad18d771f854224ef7351530c34a25d1583f9a626789024df8556f3bf88e",
+    "snapshot_sha256": "c14aad18d771f854224ef7351530c34a25d1583f9a626789024df8556f3bf88e"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoWaterPurificationMethod.java",
+    "sha256": "d7ff8dfab5cf7ad7178f3aa6ccb5ba65a7eede4248b676cae6b5f2e75c3dae66",
+    "snapshot_sha256": "d7ff8dfab5cf7ad7178f3aa6ccb5ba65a7eede4248b676cae6b5f2e75c3dae66"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoWaterPurificationService.java",
+    "sha256": "872481494d2a7fb549aa36694df8e1271894092c5e3480988facfa0fbea75c66",
+    "snapshot_sha256": "872481494d2a7fb549aa36694df8e1271894092c5e3480988facfa0fbea75c66"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoWaterQuality.java",
+    "sha256": "3cb38afcdce372e95084948927ce262cc51c1189f6ae44986ab1470e450ffb9e",
+    "snapshot_sha256": "3cb38afcdce372e95084948927ce262cc51c1189f6ae44986ab1470e450ffb9e"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/physiology/EgoWeightedStack.java",
+    "sha256": "bbf39c448e9f217546aa5bfc6528095a343349c2a621954988a5cf9dd03bf596",
+    "snapshot_sha256": "bbf39c448e9f217546aa5bfc6528095a343349c2a621954988a5cf9dd03bf596"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoInjuryMemory.java",
+    "sha256": "9207687416674eb16d4af5c8f05426ad87ba04e5f6ef5ef9a6688af859b8174f",
+    "snapshot_sha256": "9207687416674eb16d4af5c8f05426ad87ba04e5f6ef5ef9a6688af859b8174f"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoInjuryMemoryCodecs.java",
+    "sha256": "d3c317113d724b805a71d1d1d9952c7115ea5897217f3f927672c9a2c3834a51",
+    "snapshot_sha256": "d3c317113d724b805a71d1d1d9952c7115ea5897217f3f927672c9a2c3834a51"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoInjuryMemoryContext.java",
+    "sha256": "9c5008fe7ca5a4b367420b26795653d9d2527ceb285d5d4c4c5c14c07160f18a",
+    "snapshot_sha256": "9c5008fe7ca5a4b367420b26795653d9d2527ceb285d5d4c4c5c14c07160f18a"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoInjuryMemoryService.java",
+    "sha256": "55da286e7af4b93dcadf3537aeb3a67887337ac40037d1dee9720e0b751baea5",
+    "snapshot_sha256": "55da286e7af4b93dcadf3537aeb3a67887337ac40037d1dee9720e0b751baea5"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyCalculator.java",
+    "sha256": "4d2cc9e4fa8e98f6c8b7d63af4ad31e01c39c82e2d7209ff5f14aba06aba8cfe",
+    "snapshot_sha256": "4d2cc9e4fa8e98f6c8b7d63af4ad31e01c39c82e2d7209ff5f14aba06aba8cfe"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyContext.java",
+    "sha256": "fb868b82efb62941a86beef4f38bc373d7c35cd4bdf9ddb4b0bc4252b074e896",
+    "snapshot_sha256": "fb868b82efb62941a86beef4f38bc373d7c35cd4bdf9ddb4b0bc4252b074e896"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyDelta.java",
+    "sha256": "b5f8aad2a84ab84596f577f066db70424377bb1b98059b7caf5d61a709e50df1",
+    "snapshot_sha256": "b5f8aad2a84ab84596f577f066db70424377bb1b98059b7caf5d61a709e50df1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyModule.java",
+    "sha256": "59ace06d566d2597214943aa987768c64fabaf2b8439ddb9516196c610c08bcc",
+    "snapshot_sha256": "59ace06d566d2597214943aa987768c64fabaf2b8439ddb9516196c610c08bcc"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyRuntime.java",
+    "sha256": "a94a77cf85d1154f28a5952998db9ac47093f086299e64c78b757a9a84fcd066",
+    "snapshot_sha256": "a94a77cf85d1154f28a5952998db9ac47093f086299e64c78b757a9a84fcd066"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyService.java",
+    "sha256": "5103b529140eb14fcf31e2148e987b7ac2a0aa6d7ec3b6caa6d1c5eba8d0a1af",
+    "snapshot_sha256": "5103b529140eb14fcf31e2148e987b7ac2a0aa6d7ec3b6caa6d1c5eba8d0a1af"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/psychology/EgoRecoveryBudget.java",
+    "sha256": "593e22e4d12ebd231bfcc7c3f5ee21ffa784e2fa2f3eeccdb397b889363a7e37",
+    "snapshot_sha256": "593e22e4d12ebd231bfcc7c3f5ee21ffa784e2fa2f3eeccdb397b889363a7e37"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSimulationFrameCalculator.java",
+    "sha256": "e8455d1eabe8c613742de3fce5492a33d3cfc94620c51926fbc6728dabea9f97",
+    "snapshot_sha256": "e8455d1eabe8c613742de3fce5492a33d3cfc94620c51926fbc6728dabea9f97"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoCircadianPhase.java",
+    "sha256": "51fee6e051453a09fd266b54f1237ab816c84084bba5b762847651363a610460",
+    "snapshot_sha256": "51fee6e051453a09fd266b54f1237ab816c84084bba5b762847651363a610460"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepCalculator.java",
+    "sha256": "9267466f8af9c952f961e06402fb5cc7ec2b0261b94d0c9c1913c84a4b8b8463",
+    "snapshot_sha256": "9267466f8af9c952f961e06402fb5cc7ec2b0261b94d0c9c1913c84a4b8b8463"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepContext.java",
+    "sha256": "ccac3f3afeb1c3a49c1c26e17083bcaa4654b897903914a4b1a4a44d4229a68b",
+    "snapshot_sha256": "ccac3f3afeb1c3a49c1c26e17083bcaa4654b897903914a4b1a4a44d4229a68b"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepDelta.java",
+    "sha256": "f60a41880b4afa51ecc9d2f64597dbd059fb9841991763f8b6df012147ea2567",
+    "snapshot_sha256": "f60a41880b4afa51ecc9d2f64597dbd059fb9841991763f8b6df012147ea2567"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepInput.java",
+    "sha256": "96800a00c8ba5f185e37f79a52c61dd37bcd85faef427b7dacb21af74b2f638c",
+    "snapshot_sha256": "96800a00c8ba5f185e37f79a52c61dd37bcd85faef427b7dacb21af74b2f638c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepModule.java",
+    "sha256": "bbbee6e3a4d7fa003b43ea1ba61c0a6e4dce384cc20b60f4e8eaa6c766fa295c",
+    "snapshot_sha256": "bbbee6e3a4d7fa003b43ea1ba61c0a6e4dce384cc20b60f4e8eaa6c766fa295c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepRuntime.java",
+    "sha256": "0c843b0c06b26e827d0344048db6d21c1a8c68dc7fdf6a41e7821ec7566724df",
+    "snapshot_sha256": "0c843b0c06b26e827d0344048db6d21c1a8c68dc7fdf6a41e7821ec7566724df"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepSampler.java",
+    "sha256": "8c8411947092606db08fe85fcbbc76e2b37912f3822de1f8e9e04815845bb1db",
+    "snapshot_sha256": "8c8411947092606db08fe85fcbbc76e2b37912f3822de1f8e9e04815845bb1db"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/sleep/EgoSleepService.java",
+    "sha256": "e420b7a0cc4c2e3841d719106607bc9290b20303572af55d703323ab9f07cfd1",
+    "snapshot_sha256": "e420b7a0cc4c2e3841d719106607bc9290b20303572af55d703323ab9f07cfd1"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/environment/EgoClimateProfileTest.java",
+    "sha256": "e4d9fcc7a88521019fdd24a60412e8d5ca8e48ff4e86155219beaf55265bd290",
+    "snapshot_sha256": "e4d9fcc7a88521019fdd24a60412e8d5ca8e48ff4e86155219beaf55265bd290"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentCacheTest.java",
+    "sha256": "18a13252f705b31f1f049602bc1cd26751d8350dc716d660ccfabe3f8077f342",
+    "snapshot_sha256": "18a13252f705b31f1f049602bc1cd26751d8350dc716d660ccfabe3f8077f342"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/environment/EgoEnvironmentSamplerTest.java",
+    "sha256": "348b85c850e840d1ad34ce1c6766909f86cca206e68e6a6359c0675ee191ebab",
+    "snapshot_sha256": "348b85c850e840d1ad34ce1c6766909f86cca206e68e6a6359c0675ee191ebab"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/environment/EgoThermalSnapshotCalculatorTest.java",
+    "sha256": "481f5e51efa6c9197020e46639952391460dc1baab51c2363d3a9cd0997f82dd",
+    "snapshot_sha256": "481f5e51efa6c9197020e46639952391460dc1baab51c2363d3a9cd0997f82dd"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/nutrition/EgoDietaryMemoryTest.java",
+    "sha256": "caa5aec69e7f1b270cdf406cd0ab4eabe536aba0cd1549e69d4bff9cac535193",
+    "snapshot_sha256": "caa5aec69e7f1b270cdf406cd0ab4eabe536aba0cd1549e69d4bff9cac535193"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/nutrition/EgoMealQualityCalculatorTest.java",
+    "sha256": "12f64f64f1acd947a2a8a8e1ad9f357bb70960432b141888abea8433d37630cf",
+    "snapshot_sha256": "12f64f64f1acd947a2a8a8e1ad9f357bb70960432b141888abea8433d37630cf"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionGroupTest.java",
+    "sha256": "b04f32d45fc67253b47d779380771908e25f077d38ad9dfef8256c3512a1053c",
+    "snapshot_sha256": "b04f32d45fc67253b47d779380771908e25f077d38ad9dfef8256c3512a1053c"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/nutrition/EgoNutritionServiceTest.java",
+    "sha256": "b084238866a09987e3c7916b73a52acede23965095463d9c527d4a1922859af0",
+    "snapshot_sha256": "b084238866a09987e3c7916b73a52acede23965095463d9c527d4a1922859af0"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/nutrition/EgoVanillaFoodNutritionCatalogTest.java",
+    "sha256": "3f049143fdf079d50084b14e3d57acc2fadbda8f98874b8bd7c3b8e8834b5983",
+    "snapshot_sha256": "3f049143fdf079d50084b14e3d57acc2fadbda8f98874b8bd7c3b8e8834b5983"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/origins/EgoOriginsServiceTest.java",
+    "sha256": "3505169ba7cb5dfc6d7f4c1314ccd5274c009e0db072abe4ae856857bb7d97d9",
+    "snapshot_sha256": "3505169ba7cb5dfc6d7f4c1314ccd5274c009e0db072abe4ae856857bb7d97d9"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoEncumbranceLoadCalculatorTest.java",
+    "sha256": "ed862f156e63558009a5b06f172893e9d06c883c353e6a7a3c132b6225616a99",
+    "snapshot_sha256": "ed862f156e63558009a5b06f172893e9d06c883c353e6a7a3c132b6225616a99"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoHydrationDemandCalculatorTest.java",
+    "sha256": "bf0cbaff3c38c2a888c5da5b5f23de26e9b3452d438d47715732af7bc18ecf75",
+    "snapshot_sha256": "bf0cbaff3c38c2a888c5da5b5f23de26e9b3452d438d47715732af7bc18ecf75"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoHydrationServiceTest.java",
+    "sha256": "f53114dfd6899dcd1575366b30e74bf3e2295095c8070204fe40ddebbc09997a",
+    "snapshot_sha256": "f53114dfd6899dcd1575366b30e74bf3e2295095c8070204fe40ddebbc09997a"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightCacheTest.java",
+    "sha256": "d8bb019aa39f3447a7e32742b1d1813214c59493978dfbb43cd73c13437a6d66",
+    "snapshot_sha256": "d8bb019aa39f3447a7e32742b1d1813214c59493978dfbb43cd73c13437a6d66"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoInventoryWeightCalculatorTest.java",
+    "sha256": "9c8350a387e85756fda636290d78250e1dc38572c49b37870c45995e95f80bbd",
+    "snapshot_sha256": "9c8350a387e85756fda636290d78250e1dc38572c49b37870c45995e95f80bbd"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoRespiratoryStrainCalculatorTest.java",
+    "sha256": "1f0f6e91cd60ca7fcbb8eb988ab133936ebced92f9ea41f65dc0112d431884a5",
+    "snapshot_sha256": "1f0f6e91cd60ca7fcbb8eb988ab133936ebced92f9ea41f65dc0112d431884a5"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoStaminaActivityCalculatorTest.java",
+    "sha256": "ec1e2c49ac2778785e631830acc92e8772df5c87298c6875c9ec71c6c2117739",
+    "snapshot_sha256": "ec1e2c49ac2778785e631830acc92e8772df5c87298c6875c9ec71c6c2117739"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/physiology/EgoWaterPurificationServiceTest.java",
+    "sha256": "051a395d1ad3166f5d0dbb0be5966cab754b180357c86b0a4fcc56f48423c71f",
+    "snapshot_sha256": "051a395d1ad3166f5d0dbb0be5966cab754b180357c86b0a4fcc56f48423c71f"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/psychology/EgoInjuryMemoryServiceTest.java",
+    "sha256": "2124efb8b746163d58a4e4016dbe3b171e4bc95f9762467fb0808ac7f0697d9a",
+    "snapshot_sha256": "2124efb8b746163d58a4e4016dbe3b171e4bc95f9762467fb0808ac7f0697d9a"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/psychology/EgoPsychologyServiceTest.java",
+    "sha256": "5bbb27077d238d38f4d4819b5918d3b50ee6f366bfe8e784d1674ec5672f7d5e",
+    "snapshot_sha256": "5bbb27077d238d38f4d4819b5918d3b50ee6f366bfe8e784d1674ec5672f7d5e"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoAttributeMirrorServiceTest.java",
+    "sha256": "b5f1dd7203355b7dd0158e88d1de2f06262c934b84f1121a3faaae68ca580f23",
+    "snapshot_sha256": "b5f1dd7203355b7dd0158e88d1de2f06262c934b84f1121a3faaae68ca580f23"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/sleep/EgoSleepCalculatorTest.java",
+    "sha256": "1806aa09e7b0b58fbd3d5f9262c7da379afc68aace259a80e2236ff29674b70c",
+    "snapshot_sha256": "1806aa09e7b0b58fbd3d5f9262c7da379afc68aace259a80e2236ff29674b70c"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "b1d1bfae7a5a0a2111d6b0daa52e9cf65b5df092dd2421dd8377dec99ed889cd",
+    "snapshot_sha256": "b1d1bfae7a5a0a2111d6b0daa52e9cf65b5df092dd2421dd8377dec99ed889cd"
+  },
+  {
+    "path": ".github/workflows/build.yml",
+    "sha256": "35be9dc5f51f961f3489ca71dac840c6191a2bb5ecd0e0d3c9481359bd4fde0b",
+    "snapshot_sha256": "35be9dc5f51f961f3489ca71dac840c6191a2bb5ecd0e0d3c9481359bd4fde0b"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "9587f3ba9ee2cd6de8545c2aea70881faa38734187d16fd993346ef44656f73d",
+    "snapshot_sha256": "5fa53ab27ed55fa6b2a40bebf2ddc9ec349eca7b71f61016b05245f1f70ef7f9"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "f5b638bc4c32a46b35e97b93368a1d21c6e99ede20c495da75ea71f2307a8e4b",
+    "snapshot_sha256": "f5b638bc4c32a46b35e97b93368a1d21c6e99ede20c495da75ea71f2307a8e4b"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "sha256": "9c31a14cc613ca2ce4bd66cfb70336e2a064a6e7e5680e33cf42ad0e98eee71e",
+    "snapshot_sha256": "9c31a14cc613ca2ce4bd66cfb70336e2a064a6e7e5680e33cf42ad0e98eee71e"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "192de78f61a6a67fe5228fcaa307b099dbbbb48de8500c41a7be7f36705120d8",
+    "snapshot_sha256": "192de78f61a6a67fe5228fcaa307b099dbbbb48de8500c41a7be7f36705120d8"
+  },
+  {
+    "path": "README.md",
+    "sha256": "5f6a7e915e09f2880376e065f3701261c853d79d32f7d8c857feff57a5fc6557",
+    "snapshot_sha256": "5f6a7e915e09f2880376e065f3701261c853d79d32f7d8c857feff57a5fc6557"
+  },
+  {
+    "path": "README_FR.md",
+    "sha256": "79bb3971594055d5ce265f7973f65e780d31a27fdd7116493603094cf72c9b86",
+    "snapshot_sha256": "79bb3971594055d5ce265f7973f65e780d31a27fdd7116493603094cf72c9b86"
+  },
+  {
+    "path": "TASKS.md",
+    "sha256": "a36abb8eb1a8d865e9eec656cdb066752827bc78e7df3e15d88d6beb804b50e7",
+    "snapshot_sha256": "5506948f34c98541e1815f8c52328dc49a2afc52c33aa50d6de0ef28ba244877"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "sha256": "46e57a885ebde9b62fb4b688c86785c6f55fa9118a376d94f51f1962198f43f5",
+    "snapshot_sha256": "46e57a885ebde9b62fb4b688c86785c6f55fa9118a376d94f51f1962198f43f5"
+  },
+  {
+    "path": "build.gradle",
+    "sha256": "4d9969b5f61afeba248c7149654ba813b43f3def8d9d557c8ae676726a6c21e4",
+    "snapshot_sha256": "4d9969b5f61afeba248c7149654ba813b43f3def8d9d557c8ae676726a6c21e4"
+  },
+  {
+    "path": "docs/APOTHEOSIS_COMPAT.md",
+    "sha256": "314d397ab9c48975622a7659355a639e899ee358a3f2653fb3210f561dbe93c9",
+    "snapshot_sha256": "314d397ab9c48975622a7659355a639e899ee358a3f2653fb3210f561dbe93c9"
+  },
+  {
+    "path": "docs/APOTHIC_INTEGRATION.md",
+    "sha256": "1faf308aeb2ac0e8c833ea8cf4797ecfaadccf61e005b20ca5da801c480e8dc2",
+    "snapshot_sha256": "1faf308aeb2ac0e8c833ea8cf4797ecfaadccf61e005b20ca5da801c480e8dc2"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "87351edcd7f0f1aa37bc098a738995627fabe465084a68cdcfae1ce751e37b2f",
+    "snapshot_sha256": "87351edcd7f0f1aa37bc098a738995627fabe465084a68cdcfae1ce751e37b2f"
+  },
+  {
+    "path": "docs/ASSET_POLICY.md",
+    "sha256": "674512674a45e600ecb2a3e5f467fe756e61652fafff92b55a0108df5969249e",
+    "snapshot_sha256": "674512674a45e600ecb2a3e5f467fe756e61652fafff92b55a0108df5969249e"
+  },
+  {
+    "path": "docs/CODEX_HANDOFF.md",
+    "sha256": "519f0acf63ab6beb925de8b76f889d0e7236a14d8b7b04a7cae59beaea457363",
+    "snapshot_sha256": "3ef589e5cb85c63ed85e4a3ceaad043c19c607f4b35534e7157d1537cb81a105"
+  },
+  {
+    "path": "docs/CONFIG_REFERENCE.md",
+    "sha256": "1333fd8bc18f859e9e5c024e1f580615a401fd05c002c12274d52ec39d2683f1",
+    "snapshot_sha256": "1333fd8bc18f859e9e5c024e1f580615a401fd05c002c12274d52ec39d2683f1"
+  },
+  {
+    "path": "docs/CREDITS.md",
+    "sha256": "7d3772b00457884102cd11cf00e9c0bb4a8e8d72f1cf451980ac625edafbe1d8",
+    "snapshot_sha256": "7d3772b00457884102cd11cf00e9c0bb4a8e8d72f1cf451980ac625edafbe1d8"
+  },
+  {
+    "path": "docs/CURSEFORGE_DESCRIPTION.md",
+    "sha256": "7787175359fc2cb8f32ee6ab23bd528c0d992f4c5c3faabdb4e2dfba9fda2c57",
+    "snapshot_sha256": "7787175359fc2cb8f32ee6ab23bd528c0d992f4c5c3faabdb4e2dfba9fda2c57"
+  },
+  {
+    "path": "docs/DECISIONS.md",
+    "sha256": "3655f5f10862603a36951348129866006137dc2cca19bb37eb9c37013bd7af0a",
+    "snapshot_sha256": "3655f5f10862603a36951348129866006137dc2cca19bb37eb9c37013bd7af0a"
+  },
+  {
+    "path": "docs/DEPENDENCY_AUDIT.md",
+    "sha256": "3a7bfc715f00905fb74ea7925de77acebaf3b146ae4f14e0e32592bbd5dd3ffb",
+    "snapshot_sha256": "3a7bfc715f00905fb74ea7925de77acebaf3b146ae4f14e0e32592bbd5dd3ffb"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_LOG.md",
+    "sha256": "ccead154f79249e40965b656ba59c747ac9762d820aa2eb84bf427d325c35d65",
+    "snapshot_sha256": "d6e57b64adf5137c38bf7dd51a908dc35a5101a967f9c615e65a5bdeadce0ae2"
+  },
+  {
+    "path": "docs/LICENSE_MATRIX.md",
+    "sha256": "8b4ad5fa3d78fc3310f6ba2031b3f4495179bfdcf62a0e8c1b5bb5a9b4d26cf4",
+    "snapshot_sha256": "8b4ad5fa3d78fc3310f6ba2031b3f4495179bfdcf62a0e8c1b5bb5a9b4d26cf4"
+  },
+  {
+    "path": "docs/MARIESLIB_INTEGRATION.md",
+    "sha256": "e81b431400080335bbd316e8f4eb8e308c1908fb758e922621a0affd5873f71b",
+    "snapshot_sha256": "e81b431400080335bbd316e8f4eb8e308c1908fb758e922621a0affd5873f71b"
+  },
+  {
+    "path": "docs/MODPACK_GUIDE.md",
+    "sha256": "177815e5c6b1ee3493ab973311808f922692c0ca9d91f074ed4793067bd93dc7",
+    "snapshot_sha256": "177815e5c6b1ee3493ab973311808f922692c0ca9d91f074ed4793067bd93dc7"
+  },
+  {
+    "path": "docs/PERFORMANCE.md",
+    "sha256": "423b6eb9a183bfad65e0351876080d787bc33ee16158772f17d0a0cbc226e0aa",
+    "snapshot_sha256": "423b6eb9a183bfad65e0351876080d787bc33ee16158772f17d0a0cbc226e0aa"
+  },
+  {
+    "path": "docs/SOURCE_PROVENANCE.md",
+    "sha256": "66f85e2602e0d9a11230470a15babb0a51c881e9faaf2c4b1351186aec39b349",
+    "snapshot_sha256": "9d534dad48a0d897d31e04dd6e7e9d0d2f5bc3eabea80e6d959a872d213476e1"
+  },
+  {
+    "path": "docs/TEST_PLAN.md",
+    "sha256": "2277ad9821d78ec04e29f8f6bca30f973491e7036fbe677fa1794fd0cfc9823a",
+    "snapshot_sha256": "2277ad9821d78ec04e29f8f6bca30f973491e7036fbe677fa1794fd0cfc9823a"
+  },
+  {
+    "path": "docs/USER_GUIDE.md",
+    "sha256": "20a23fc76cfba38c14a37d7553f835cf53bc75ebd906109f7b7e522ce394753f",
+    "snapshot_sha256": "20a23fc76cfba38c14a37d7553f835cf53bc75ebd906109f7b7e522ce394753f"
+  },
+  {
+    "path": "docs/upstream/NEOFORGE_MDK_TEMPLATE_LICENSE.txt",
+    "sha256": "dac9ce41f6f46e455f31aea51c366f6ffd2a4be8486eb1b1cb4bd99afb584297",
+    "snapshot_sha256": "dac9ce41f6f46e455f31aea51c366f6ffd2a4be8486eb1b1cb4bd99afb584297"
+  },
+  {
+    "path": "gradle.properties",
+    "sha256": "7148d2fd746577e0af1d955e81fd36d36056cd0e166100bbc09794891d5d8ebb",
+    "snapshot_sha256": "7148d2fd746577e0af1d955e81fd36d36056cd0e166100bbc09794891d5d8ebb"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.jar",
+    "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172",
+    "snapshot_sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+  },
+  {
+    "path": "gradle/wrapper/gradle-wrapper.properties",
+    "sha256": "12477f32fffa5c8d0de945ce81005a4a7a19a55182d916644a0fcfe0fab946a6",
+    "snapshot_sha256": "12477f32fffa5c8d0de945ce81005a4a7a19a55182d916644a0fcfe0fab946a6"
+  },
+  {
+    "path": "gradlew",
+    "sha256": "28d2c82e7f9cca986ee8da10ba939cf9260d682f73936b2b6d2545e35360ce7b",
+    "snapshot_sha256": "28d2c82e7f9cca986ee8da10ba939cf9260d682f73936b2b6d2545e35360ce7b"
+  },
+  {
+    "path": "gradlew.bat",
+    "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b",
+    "snapshot_sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+  },
+  {
+    "path": "scripts/install-mod.ps1",
+    "sha256": "764ed1b0c69fead3a657b90ba3f13a255086e531734e9c0eaec3e12245cc6662",
+    "snapshot_sha256": "8418d1e233555253c1eedb123dda032320b767c2e15f01f4efdc68f95d14ff69"
+  },
+  {
+    "path": "scripts/install-runtime-deps.ps1",
+    "sha256": "2b2b7e07ea9d8e76126d167a9cd1f17fae5991557a03754dce554a56e21e8bbd",
+    "snapshot_sha256": "30187089051a7e44a815a514a3b584958d5d1b6db66990b171abf99fcbd2f02f"
+  },
+  {
+    "path": "settings.gradle",
+    "sha256": "348573bcd6c03affe016475cbca60254ea7c7602c46573a77548e2b5b61f4fd1",
+    "snapshot_sha256": "348573bcd6c03affe016475cbca60254ea7c7602c46573a77548e2b5b61f4fd1"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/ImmersiveEgo.java",
+    "sha256": "7682f6a3d9a68918a1350b9f9e3c05d451841302fa316822e3e9127a5dfff2ff",
+    "snapshot_sha256": "7682f6a3d9a68918a1350b9f9e3c05d451841302fa316822e3e9127a5dfff2ff"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/command/EgoCommands.java",
+    "sha256": "b5d34b3ffb0476e6ec3013df4d24712eefdd34dc9e82166d39a731169a85caa0",
+    "snapshot_sha256": "b5d34b3ffb0476e6ec3013df4d24712eefdd34dc9e82166d39a731169a85caa0"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoClientConfig.java",
+    "sha256": "f8371dc0aafca2332d4457cf50a97f5d7eea8ff93b1c5fe475381009e27486ea",
+    "snapshot_sha256": "f8371dc0aafca2332d4457cf50a97f5d7eea8ff93b1c5fe475381009e27486ea"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoCoreConfig.java",
+    "sha256": "0551d74c9a477cace4b9cdfdcc5c75d2d29f12b6eb47d0c501efae6a110543d3",
+    "snapshot_sha256": "0551d74c9a477cace4b9cdfdcc5c75d2d29f12b6eb47d0c501efae6a110543d3"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoDynamicServerConfig.java",
+    "sha256": "a2a875c3cb61d0c12b84afc57127ddd6dfa87a5f91fbab5e5d3486428c129a06",
+    "snapshot_sha256": "a2a875c3cb61d0c12b84afc57127ddd6dfa87a5f91fbab5e5d3486428c129a06"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoDynamicServerConfigLoader.java",
+    "sha256": "d4a038d1777d0f74ce2ba2f8a0e5a797deb229e8788596061305a27aced2e909",
+    "snapshot_sha256": "d4a038d1777d0f74ce2ba2f8a0e5a797deb229e8788596061305a27aced2e909"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoDynamicSynergyConfig.java",
+    "sha256": "7f54c8516be1072df3a9fc7c71a00db679824c5ece5f8cc2767d5e6608a46db9",
+    "snapshot_sha256": "7f54c8516be1072df3a9fc7c71a00db679824c5ece5f8cc2767d5e6608a46db9"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoDynamicSynergyConfigLoader.java",
+    "sha256": "d0487b5d8cee47bfd8ffc097430d9d282b6db2354fec7de90166a9fa0a2b9e74",
+    "snapshot_sha256": "d0487b5d8cee47bfd8ffc097430d9d282b6db2354fec7de90166a9fa0a2b9e74"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoServerModuleConfigCatalog.java",
+    "sha256": "43e6a385bf2c9bb73fd331c329985d87494ab7ed66d986c96dae9c0680045b41",
+    "snapshot_sha256": "43e6a385bf2c9bb73fd331c329985d87494ab7ed66d986c96dae9c0680045b41"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/config/EgoServerModuleConfigs.java",
+    "sha256": "c49a439e29542bdb60a24408ca1b392458d6f30858daa5f18ca0e10d91783aea",
+    "snapshot_sha256": "c49a439e29542bdb60a24408ca1b392458d6f30858daa5f18ca0e10d91783aea"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/data/EgoState.java",
+    "sha256": "e5fa069cba3b516a5da4869552f84642cc6e1d532aa4e843898a0f1304a9e17d",
+    "snapshot_sha256": "e5fa069cba3b516a5da4869552f84642cc6e1d532aa4e843898a0f1304a9e17d"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/data/EgoStateCodecs.java",
+    "sha256": "365c40052eeb24c612b81279ce03d7646b37c66881cc86c41ee32733eb868ac5",
+    "snapshot_sha256": "365c40052eeb24c612b81279ce03d7646b37c66881cc86c41ee32733eb868ac5"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/derived/EgoDerivedStateCalculator.java",
+    "sha256": "c3369c40a6a7cb27b464285737ab29c0d311d3365bb90274c9ff8a381eab2fbb",
+    "snapshot_sha256": "c3369c40a6a7cb27b464285737ab29c0d311d3365bb90274c9ff8a381eab2fbb"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/derived/EgoLoadCalculator.java",
+    "sha256": "b6ab3661d790dc3ccc0362aab35f41899d6d9cae0f581b3d751b4ab933491a5c",
+    "snapshot_sha256": "b6ab3661d790dc3ccc0362aab35f41899d6d9cae0f581b3d751b4ab933491a5c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/gametest/EgoGameTests.java",
+    "sha256": "cd23377dfd6be756510ed6669fbe346ea3b6a2f8ff920074c1d6141bffb20886",
+    "snapshot_sha256": "cd23377dfd6be756510ed6669fbe346ea3b6a2f8ff920074c1d6141bffb20886"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttachments.java",
+    "sha256": "59a6839c21d5ad0a9fb3c0dce2a46f6c61ce3162f19461c234e638ce10e3cb57",
+    "snapshot_sha256": "59a6839c21d5ad0a9fb3c0dce2a46f6c61ce3162f19461c234e638ce10e3cb57"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributeCatalog.java",
+    "sha256": "a3a90188ff56dc4d744f08e4d91f9aa8a523bc484f0c0e5d9c8b15da508e738b",
+    "snapshot_sha256": "a3a90188ff56dc4d744f08e4d91f9aa8a523bc484f0c0e5d9c8b15da508e738b"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributeRole.java",
+    "sha256": "64a1768d9ec63acedd3c5cd1a140b57001f38e599fa7e2c0911d75976331ef81",
+    "snapshot_sha256": "64a1768d9ec63acedd3c5cd1a140b57001f38e599fa7e2c0911d75976331ef81"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributeSentiment.java",
+    "sha256": "694f030a307334a3cba82a515a06604fb666db6342b4926a43342f2077b569b7",
+    "snapshot_sha256": "694f030a307334a3cba82a515a06604fb666db6342b4926a43342f2077b569b7"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributeSpec.java",
+    "sha256": "5130624ceabe5b2547c774632549b6b09d89f6a2673bf2b3b99e248b831b643a",
+    "snapshot_sha256": "5130624ceabe5b2547c774632549b6b09d89f6a2673bf2b3b99e248b831b643a"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributeTags.java",
+    "sha256": "113b820c98d9f282c43e635e55bf67a3e84785e4da1f37d1729c13bd38ede213",
+    "snapshot_sha256": "113b820c98d9f282c43e635e55bf67a3e84785e4da1f37d1729c13bd38ede213"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/registry/EgoAttributes.java",
+    "sha256": "eee409fbf7f35f8554e26b58af5951959b4e5497342529def0e5a17878e69265",
+    "snapshot_sha256": "eee409fbf7f35f8554e26b58af5951959b4e5497342529def0e5a17878e69265"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoAttributeMirrorService.java",
+    "sha256": "b99cf0579ffbaee121cf806d785b7a6a9a9dae9e58f0d511193024351e3e9422",
+    "snapshot_sha256": "b99cf0579ffbaee121cf806d785b7a6a9a9dae9e58f0d511193024351e3e9422"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoCurve.java",
+    "sha256": "edcb6ec0472c8c47265cb1fa74d3989cef557f549132f14340c70998d14ee17b",
+    "snapshot_sha256": "edcb6ec0472c8c47265cb1fa74d3989cef557f549132f14340c70998d14ee17b"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoCurvePoint.java",
+    "sha256": "3c6483eda23369b90422903c7eb38b59d45a427006f6fe47097ade5ded6638ef",
+    "snapshot_sha256": "3c6483eda23369b90422903c7eb38b59d45a427006f6fe47097ade5ded6638ef"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoMath.java",
+    "sha256": "efacb32562e9731e6301a1c79b6eaebbee559681a2ecee7145f6a43ee0f8cda4",
+    "snapshot_sha256": "efacb32562e9731e6301a1c79b6eaebbee559681a2ecee7145f6a43ee0f8cda4"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSimulationFrame.java",
+    "sha256": "02894b85f43e196b0bf4a8b83053d8eba6c8741a8d19409e0e1f2c00a0f88589",
+    "snapshot_sha256": "02894b85f43e196b0bf4a8b83053d8eba6c8741a8d19409e0e1f2c00a0f88589"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSimulationSchedule.java",
+    "sha256": "1e991480b6d93ff0dfc51a300a2dbaa6d8a140f1f291bff6137f93eeeb86697a",
+    "snapshot_sha256": "1e991480b6d93ff0dfc51a300a2dbaa6d8a140f1f291bff6137f93eeeb86697a"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSimulationScheduler.java",
+    "sha256": "e901c5f189c84a973496d7c5610d4f8583c7bf4d3f2d6976300cc5f80916c6d7",
+    "snapshot_sha256": "e901c5f189c84a973496d7c5610d4f8583c7bf4d3f2d6976300cc5f80916c6d7"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyCycleDetector.java",
+    "sha256": "66e0f619354d5e621f93586e96a1c887651c0d8eacb466d053a1fc867d74fa4c",
+    "snapshot_sha256": "66e0f619354d5e621f93586e96a1c887651c0d8eacb466d053a1fc867d74fa4c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEdge.java",
+    "sha256": "bd5e268b4950f1a08d4c50412505db6ff85e2b7d5e16aeb8263af61ad8d67ed8",
+    "snapshot_sha256": "bd5e268b4950f1a08d4c50412505db6ff85e2b7d5e16aeb8263af61ad8d67ed8"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEdgeParser.java",
+    "sha256": "fcbbd20db10867ef2a7943636796d96c6b4b08d3e1fb7fe77da674d8530a5e5c",
+    "snapshot_sha256": "fcbbd20db10867ef2a7943636796d96c6b4b08d3e1fb7fe77da674d8530a5e5c"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEvaluationResult.java",
+    "sha256": "38bf767f7cee7d53fd9462314323b00fdd55ab3af469d34d8c3a7ee53a2c4bf8",
+    "snapshot_sha256": "38bf767f7cee7d53fd9462314323b00fdd55ab3af469d34d8c3a7ee53a2c4bf8"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEvaluationStep.java",
+    "sha256": "fafa337ea84b244ba916dc47418e2ba44f21eec45a20ac4639f6fe26af0566ca",
+    "snapshot_sha256": "fafa337ea84b244ba916dc47418e2ba44f21eec45a20ac4639f6fe26af0566ca"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEvaluator.java",
+    "sha256": "537f1289b81843e6bc0f36dcfdb1b02bf3970a395da7c091e9a9310996b2ea43",
+    "snapshot_sha256": "537f1289b81843e6bc0f36dcfdb1b02bf3970a395da7c091e9a9310996b2ea43"
+  },
+  {
+    "path": "src/main/java/com/oblixorprime/immersiveego/simulation/EgoSynergyValidator.java",
+    "sha256": "ad4eddf3679523dcfda415b9173f0f04bfb0d2722441ca8a54761659cc2ca602",
+    "snapshot_sha256": "ad4eddf3679523dcfda415b9173f0f04bfb0d2722441ca8a54761659cc2ca602"
+  },
+  {
+    "path": "src/main/resources/assets/immersive_ego/lang/en_us.json",
+    "sha256": "b6f008a25ae70d075910737506950b84c5b44ed520abe34cc3c1c2cf5b0d28b5",
+    "snapshot_sha256": "b6f008a25ae70d075910737506950b84c5b44ed520abe34cc3c1c2cf5b0d28b5"
+  },
+  {
+    "path": "src/main/resources/assets/immersive_ego/lang/fr_fr.json",
+    "sha256": "4f85b45166758b29a1396312543b25407c39c2aceceb651bc726989f8bfcf5fb",
+    "snapshot_sha256": "4f85b45166758b29a1396312543b25407c39c2aceceb651bc726989f8bfcf5fb"
+  },
+  {
+    "path": "src/main/resources/data/immersive_ego/structure/empty.nbt",
+    "sha256": "e62fabd8265d6d0ef28170088622c009746fea7426186cbccbd997de64de0381",
+    "snapshot_sha256": "e62fabd8265d6d0ef28170088622c009746fea7426186cbccbd997de64de0381"
+  },
+  {
+    "path": "src/main/resources/data/immersive_ego/tags/attribute/capability.json",
+    "sha256": "0ad7e8da333f8e6e438e9f44b5072f7f859924785ecd07815e090af0fb84b6eb",
+    "snapshot_sha256": "0ad7e8da333f8e6e438e9f44b5072f7f859924785ecd07815e090af0fb84b6eb"
+  },
+  {
+    "path": "src/main/resources/data/immersive_ego/tags/attribute/display_only.json",
+    "sha256": "5dfb075acb66671f754c415490d82a8674ee062a02d26da0049263fa35ecb044",
+    "snapshot_sha256": "5dfb075acb66671f754c415490d82a8674ee062a02d26da0049263fa35ecb044"
+  },
+  {
+    "path": "src/main/resources/immersive_ego_logo_1024.png",
+    "sha256": "38be3f9b162b03dd67f63c01ab7ee5045f62560db9b18eb481aabc71d7d057d6",
+    "snapshot_sha256": "38be3f9b162b03dd67f63c01ab7ee5045f62560db9b18eb481aabc71d7d057d6"
+  },
+  {
+    "path": "src/main/templates/META-INF/neoforge.mods.toml",
+    "sha256": "9068550c59dcf3dce61343273e87f34f5494351de5f7e30f17c7b7fbf6d4721a",
+    "snapshot_sha256": "9068550c59dcf3dce61343273e87f34f5494351de5f7e30f17c7b7fbf6d4721a"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/EgoProjectBoundaryTest.java",
+    "sha256": "1437e57e2279c02d5903a29f1596dcb5057516095fbd62c19497b6ea9743dc46",
+    "snapshot_sha256": "1437e57e2279c02d5903a29f1596dcb5057516095fbd62c19497b6ea9743dc46"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/config/EgoDynamicServerConfigLoaderTest.java",
+    "sha256": "3c355862db248503f6e5bb928ca7c3b880420956c41358bf6c992c9ce3b950c3",
+    "snapshot_sha256": "3c355862db248503f6e5bb928ca7c3b880420956c41358bf6c992c9ce3b950c3"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/config/EgoDynamicSynergyConfigLoaderTest.java",
+    "sha256": "d5a8d38bd22839aae3979cfd12922870c709ca5b2a6ca86c96fed051613ae466",
+    "snapshot_sha256": "d5a8d38bd22839aae3979cfd12922870c709ca5b2a6ca86c96fed051613ae466"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/config/EgoServerModuleConfigsTest.java",
+    "sha256": "0aa61e6ab0a5051d76b3f08052bb242032e4f8f07b7b50321a3fe257acdb68df",
+    "snapshot_sha256": "0aa61e6ab0a5051d76b3f08052bb242032e4f8f07b7b50321a3fe257acdb68df"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/data/EgoStateTest.java",
+    "sha256": "8b2ca00684c501d4d9931166b6c116af1298339203650e3469f3ab474ad214b0",
+    "snapshot_sha256": "8b2ca00684c501d4d9931166b6c116af1298339203650e3469f3ab474ad214b0"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/derived/EgoDerivedStateCalculatorTest.java",
+    "sha256": "cc9170ab7d95fea53863a0266d9579da2d20f962cc8a7d57af169109d12fefd4",
+    "snapshot_sha256": "cc9170ab7d95fea53863a0266d9579da2d20f962cc8a7d57af169109d12fefd4"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/derived/EgoLoadCalculatorTest.java",
+    "sha256": "14bbf6149f3c4fb07d004a3832bf49a77867d10b9dbbf7b8e7efd9380261783a",
+    "snapshot_sha256": "14bbf6149f3c4fb07d004a3832bf49a77867d10b9dbbf7b8e7efd9380261783a"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/registry/EgoAttributesTest.java",
+    "sha256": "a07704a517fc8883395ffe527e9de8fa7596467697fc6cc0f3042329d3584d22",
+    "snapshot_sha256": "a07704a517fc8883395ffe527e9de8fa7596467697fc6cc0f3042329d3584d22"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoCurveTest.java",
+    "sha256": "fd63e835da097d916e5786dda8e900fe7129eb30111e2fb2944302fce72b9a39",
+    "snapshot_sha256": "fd63e835da097d916e5786dda8e900fe7129eb30111e2fb2944302fce72b9a39"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoMathTest.java",
+    "sha256": "708f72f764939397a37572a826c2ae264513657e9447dddf3896776a9a484ad3",
+    "snapshot_sha256": "708f72f764939397a37572a826c2ae264513657e9447dddf3896776a9a484ad3"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSimulationFrameTest.java",
+    "sha256": "73557bba22b936b2419b2ba07224c5b79cfa7e7ef5ca35add0128506aebb0a26",
+    "snapshot_sha256": "73557bba22b936b2419b2ba07224c5b79cfa7e7ef5ca35add0128506aebb0a26"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSimulationScheduleTest.java",
+    "sha256": "1c438b1b98ab915b9ff792592b93e4f86f161832a1999e068750c795076c3462",
+    "snapshot_sha256": "1c438b1b98ab915b9ff792592b93e4f86f161832a1999e068750c795076c3462"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSynergyCycleDetectorTest.java",
+    "sha256": "a8bc67c604975f6c907be7be50d4874d3b329ec0ccfab86c9fe2b176131df392",
+    "snapshot_sha256": "a8bc67c604975f6c907be7be50d4874d3b329ec0ccfab86c9fe2b176131df392"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEdgeParserTest.java",
+    "sha256": "cc7a2518222f36ee660e62eff985cc4c1317e0c1dd793420caf2c667d4b67a70",
+    "snapshot_sha256": "cc7a2518222f36ee660e62eff985cc4c1317e0c1dd793420caf2c667d4b67a70"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSynergyEvaluatorTest.java",
+    "sha256": "08bf4c4ae99d1839c7cc796569acc0a651540ae5b1310de3c465e4d7ff474cf8",
+    "snapshot_sha256": "08bf4c4ae99d1839c7cc796569acc0a651540ae5b1310de3c465e4d7ff474cf8"
+  },
+  {
+    "path": "src/test/java/com/oblixorprime/immersiveego/simulation/EgoSynergyValidatorTest.java",
+    "sha256": "2ad9deca34266eea29d7f0f49b6ae23c03b867d39f456240a482055021b35fd8",
+    "snapshot_sha256": "2ad9deca34266eea29d7f0f49b6ae23c03b867d39f456240a482055021b35fd8"
+  }
+]

@@ -3,6 +3,10 @@ package com.oblixorprime.immersiveego.registry;
 import com.oblixorprime.immersiveego.ImmersiveEgo;
 import com.oblixorprime.immersiveego.data.EgoState;
 import com.oblixorprime.immersiveego.data.EgoStateCodecs;
+import com.oblixorprime.immersiveego.origins.EgoOriginState;
+import com.oblixorprime.immersiveego.origins.EgoOriginStateCodecs;
+import com.oblixorprime.immersiveego.psychology.EgoInjuryMemory;
+import com.oblixorprime.immersiveego.psychology.EgoInjuryMemoryCodecs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -16,6 +20,18 @@ public final class EgoAttachments {
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<EgoState>> EGO_STATE =
             ATTACHMENT_TYPES.register("ego_state", () -> AttachmentType.builder(EgoState::defaultState)
                     .serialize(EgoStateCodecs.EGO_STATE)
+                    .copyOnDeath()
+                    .build());
+
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<EgoOriginState>> EGO_ORIGIN_STATE =
+            ATTACHMENT_TYPES.register("ego_origin_state", () -> AttachmentType.builder(EgoOriginState::defaultState)
+                    .serialize(EgoOriginStateCodecs.EGO_ORIGIN_STATE)
+                    .copyOnDeath()
+                    .build());
+
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<EgoInjuryMemory>> EGO_INJURY_MEMORY =
+            ATTACHMENT_TYPES.register("ego_injury_memory", () -> AttachmentType.builder(EgoInjuryMemory::defaultState)
+                    .serialize(EgoInjuryMemoryCodecs.EGO_INJURY_MEMORY)
                     .copyOnDeath()
                     .build());
 

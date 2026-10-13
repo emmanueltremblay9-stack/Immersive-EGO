@@ -1,0 +1,10 @@
+schemaVersion = 1
+
+[hud]
+contextualWarnings = true
+debugOverlay = false
+
+[accessibility]
+useLowMotionWarnings = true
+warningSoundVolume = 0.5
+colorBlindSafeText = true

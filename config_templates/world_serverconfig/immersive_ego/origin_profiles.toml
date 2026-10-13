@@ -1,0 +1,30 @@
+schemaVersion = 1
+
+[[origins]]
+id = "desertborn"
+displayNameKey = "origin.immersive_ego.desertborn"
+descriptionKey = "origin.immersive_ego.desertborn.desc"
+matchBiomeTags = ["minecraft:is_desert"]
+preferredClimateFamilies = ["HOT_DRY"]
+heatToleranceModifier = 0.15
+coldToleranceModifier = -0.05
+hydrationEfficiencyModifier = 0.08
+oxygenEfficiencyModifier = 0.00
+wetnessResistanceModifier = 0.00
+sleepEfficiencyModifier = 0.02
+metabolicModifier = 0.02
+stressComfortModifier = 0.05
+acclimationSpeedModifier = 0.03
+dietaryPreferences = ["fruits", "grains"]
+
+[[origins]]
+id = "alpine"
+displayNameKey = "origin.immersive_ego.alpine"
+descriptionKey = "origin.immersive_ego.alpine.desc"
+matchBiomeTags = ["minecraft:is_mountain"]
+preferredClimateFamilies = ["COLD", "ALPINE"]
+heatToleranceModifier = -0.05
+coldToleranceModifier = 0.15
+oxygenEfficiencyModifier = 0.08
+acclimationSpeedModifier = 0.03
+dietaryPreferences = ["proteins", "dairy"]

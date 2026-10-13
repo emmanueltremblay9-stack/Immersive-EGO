@@ -1,0 +1,11 @@
+schemaVersion = 1
+
+[mirrors]
+enabled = true
+updateEpsilon = 0.001
+repairOnLogin = true
+displayOnlyTag = "immersive_ego:display_only"
+
+[clientIntegration]
+categoryFilterMixinEnabled = false
+safeMixinFailure = true

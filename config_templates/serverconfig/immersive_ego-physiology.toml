@@ -1,0 +1,25 @@
+schemaVersion = 1
+
+[hydration]
+baselineLossPerMinute = 0.004
+sprintMultiplier = 1.8
+heatDemandMultiplier = 1.6
+dryClimateMultiplier = 1.25
+
+[thermal]
+enableDamage = false
+mildStrain = 0.25
+moderateStrain = 0.50
+severeStrain = 0.75
+
+[respiration]
+enableAltitudeStrain = true
+enableDepthStrain = true
+normalStrainFloor = 0.0
+
+[stamina]
+maxDefault = 100.0
+regenPerSecond = 3.0
+sprintCostPerSecond = 4.0
+jumpCost = 3.0
+exhaustionHysteresis = 0.05

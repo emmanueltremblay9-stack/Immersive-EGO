@@ -36,6 +36,7 @@ Audit date: 2026-06-19.
 - MariesLib resolves from Modrinth Maven and remains a separate mod dependency.
 - Cloth Config is not a compile dependency of Immersive EGO, but it is installed in Prism LAB because MariesLib declares `cloth_config` as a client-side dependency.
 - Apotheosis is not on the compile classpath yet because no optional compat API is implemented in this phase.
+- `EgoProjectBoundaryTest.apotheosisMetadataStaysOptionalAndSourcesDoNotRequireIt` guards that Apotheosis remains optional in metadata and is not required by main source imports.
 - Curios repository is configured only because Apothic Attributes pulls Curios transitively.
 
 ## API Surface Used
@@ -45,7 +46,7 @@ Audit date: 2026-06-19.
 - NeoForge attributes: `DeferredRegister<Attribute>`, `PercentageAttribute`, `EntityAttributeModificationEvent`, and attribute tags for local metadata.
 - NightConfig: `CommentedFileConfig` and `CommentedConfig` for the dynamic per-world serverconfig loader.
 - Placebo: no direct API calls.
-- MariesLib: no direct API calls yet.
+- MariesLib: direct API calls are isolated to `com.oblixorprime.immersiveego.compat.marieslib.EgoMariesLibFacade`, which registers a delegate-backed `MarieLibContext`, nutrition values/source classifications, food-consumption triggers, and the expected scanner-spec config fallback.
 - Cloth Config: no direct API calls.
 - Apotheosis: no direct API calls yet.
 - Curios: no direct API calls.
@@ -54,5 +55,5 @@ Audit date: 2026-06-19.
 
 - Client-smoke the Apothic Attributes GUI path after the display mirror foundation.
 - Inspect modifier source integration before implementing mirror update tooltips or client mixins.
-- Inspect MariesLib stable API annotations before implementing `MarieLibFacade`.
-- Inspect Apotheosis data formats before adding optional examples or compatibility code.
+- Keep future MariesLib use restricted to the inspected stable API surface unless the pinned jar/source is re-audited first.
+- Inspect Apotheosis data formats before adding optional examples, presence smoke tests, or compatibility code.

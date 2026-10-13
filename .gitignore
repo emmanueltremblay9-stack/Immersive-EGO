@@ -38,3 +38,9 @@ run/
 **/src/generated/**/.cache/
 repo/
 !**/src/**/repo/
+
+### Local-only preservation exclusions ###
+docs/proof/
+.codegraph/
+.agents/
+.codex/
