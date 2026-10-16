@@ -1,5 +1,13 @@
 # Implementation Log
 
+## 2026-10-16 — PR2 cloud implementation
+
+Implemented persistent server surface wetness on `feat/persistent-wetness`, based on merged PR1/main `9eb621b684791162862f2262fa586b8ddcc35f4d`. Alpha.62 is a local development identity, with no mod release or user installation. One separate versioned attachment, pure exponential acquisition/drying, ordered per-tick observation/write before thermal, explicit mode/core/environment/scheduler pause and death policy, current-W thermal projection, FR/EN discreet notices and read-only diagnostics. Added 19 JUnit tests and 11 server GameTests plus GameTest execution in the existing CI workflow. See [design/coefficients/limits](WETNESS.md) and [validation matrix](WETNESS_VALIDATION.md).
+
+The real development client exposed a translation-argument bug in the new debug command (raw enum argument rejected by Minecraft). Corrected to enum names; a GameTest now actually executes and serializes all diagnostic output and checks mutation-free opt-out. Earlier failed fixtures and client logs are retained; they are not represented as successful runs. The original alpha.61 jar/hash, 156 JUnit and 23 GameTests remain historical proofs, separately preserved, not PR2 validation.
+
+No cloud configuration, network policy, new dependency/install, other machine, production world, merge or release was changed. Final verification and remote availability are recorded in the linked validation report.
+
 ## 2026-07-07
 
 ### Version-Only LAB Sync

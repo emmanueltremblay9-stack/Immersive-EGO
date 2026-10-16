@@ -1,6 +1,7 @@
 package com.oblixorprime.immersiveego.simulation;
 
 import com.oblixorprime.immersiveego.config.EgoCoreConfig;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessRuntime;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfig;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfigLoader;
 import com.oblixorprime.immersiveego.data.EgoState;
@@ -199,6 +200,7 @@ public final class EgoSimulationScheduler {
         if (!(entity instanceof ServerPlayer player)) {
             return;
         }
+        EgoWetnessRuntime.advancePlayerTick(player);
         if (!EgoCoreConfig.ENABLE_SIMULATION.get()) {
             return;
         }
@@ -256,6 +258,7 @@ public final class EgoSimulationScheduler {
         }
 
         UUID playerId = event.getEntity().getUUID();
+        EgoWetnessRuntime.remove(playerId);
         EgoEnvironmentService.remove(playerId);
         EgoInventoryWeightService.remove(playerId);
         EgoEncumbranceRuntime.remove(playerId);

@@ -1,5 +1,16 @@
 # Immersive EGO Tasks
 
+## PR2 — persistent wetness and drying (cloud, 2026-10-16)
+
+- [x] Reconcile merged PR1/main and preserve alpha.61 proofs.
+- [x] Implement one server-owned versioned wetness attachment, pure model and per-tick observation/write path.
+- [x] Preserve pause/death/dimension/logout semantics; replace only the thermal liquid branch.
+- [x] Add read-only debug, FR/EN notices, hysteresis and opt-out.
+- [x] Add unit and server integration/GameTest matrix; include GameTests in CI.
+- [x] Finalize local runtime/validation evidence: [qualification](docs/WETNESS_VALIDATION.md).
+- [ ] Create/confirm draft PR and same-commit remote CI (GitHub API 403 remains a possible external blocker).
+- [ ] Balance validation / large-player-count profiling (not claimed by the bounded PR2 implementation).
+
 ## Phase 0 - Audit and Bootstrap
 
 - [x] Inspect repository state.

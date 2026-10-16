@@ -2,6 +2,7 @@ package com.oblixorprime.immersiveego;
 
 import com.mojang.logging.LogUtils;
 import com.oblixorprime.immersiveego.command.EgoCommands;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessRuntime;
 import com.oblixorprime.immersiveego.config.EgoClientConfig;
 import com.oblixorprime.immersiveego.config.EgoCoreConfig;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfigLoader;
@@ -44,6 +45,7 @@ public final class ImmersiveEgo {
         EgoDynamicSynergyConfigLoader.register(NeoForge.EVENT_BUS);
         EgoAttributeMirrorService.register(NeoForge.EVENT_BUS);
         EgoSimulationScheduler.register(NeoForge.EVENT_BUS);
+        EgoWetnessRuntime.register(NeoForge.EVENT_BUS);
         EgoHydrationEvents.register(NeoForge.EVENT_BUS);
         EgoNutritionEvents.register(NeoForge.EVENT_BUS);
         NeoForge.EVENT_BUS.register(this);
@@ -59,6 +61,7 @@ public final class ImmersiveEgo {
 
     private void registerGameTests(RegisterGameTestsEvent event) {
         event.register(EgoGameTests.class);
+        event.register(com.oblixorprime.immersiveego.gametest.EgoWetnessGameTests.class);
     }
 
     @SubscribeEvent

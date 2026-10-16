@@ -20,6 +20,11 @@ public final class EgoCoreConfig {
             .comment("Current persisted EgoState schema version. Migrations must update this intentionally.")
             .defineInRange("stateSchemaVersion", 1, 1, Integer.MAX_VALUE);
 
+    public static final ModConfigSpec.BooleanValue SHOW_WETNESS_NOTICES = BUILDER
+            .translation("config.immersive_ego.core.show_wetness_notices")
+            .comment("Allow discreet wetness state notices; players can mute them for their current connection.")
+            .define("showWetnessNotices", true);
+
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     private EgoCoreConfig() {
