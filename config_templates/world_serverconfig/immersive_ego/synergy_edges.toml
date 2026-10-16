@@ -1,0 +1,46 @@
+schemaVersion = 1
+
+[[edges]]
+id = "heat_increases_hydration_demand"
+enabled = true
+source = "thermal_strain"
+target = "hydration_demand"
+operation = "MULTIPLY"
+curve = "LINEAR"
+coefficient = 0.60
+sourceThreshold = 0.20
+minimumEffect = 0.00
+maximumEffect = 0.80
+smoothingTicks = 20
+priority = 100
+debugLabel = "Heat increases hydration demand"
+
+[[edges]]
+id = "encumbrance_increases_stamina_cost"
+enabled = true
+source = "load_ratio"
+target = "stamina_cost"
+operation = "MULTIPLY"
+curve = "QUADRATIC"
+coefficient = 0.75
+sourceThreshold = 0.50
+minimumEffect = 0.00
+maximumEffect = 1.25
+smoothingTicks = 10
+priority = 100
+debugLabel = "Load increases stamina cost"
+
+[[edges]]
+id = "ego_load_reduces_readiness"
+enabled = true
+source = "ego_load"
+target = "readiness"
+operation = "ADD"
+curve = "INVERSE"
+coefficient = -0.85
+sourceThreshold = 0.10
+minimumEffect = -0.85
+maximumEffect = 0.00
+smoothingTicks = 20
+priority = 200
+debugLabel = "EGO Load reduces Readiness"

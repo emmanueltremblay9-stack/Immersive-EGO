@@ -1,0 +1,17 @@
+schemaVersion = 1
+
+[[exact]]
+item = "minecraft:stone"
+weight = 0.30
+
+[[exact]]
+item = "minecraft:water_bucket"
+weight = 3.00
+
+[[tag]]
+tag = "minecraft:planks"
+weight = 0.20
+
+[[namespace]]
+namespace = "minecraft"
+defaultWeight = 0.10

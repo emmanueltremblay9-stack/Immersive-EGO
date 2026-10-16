@@ -15,6 +15,11 @@ public final class EgoMath {
         if (values.length != weights.length) {
             throw new IllegalArgumentException("values and weights must have the same length");
         }
+        for (double value : values) {
+            if (!Double.isFinite(value)) {
+                throw new IllegalArgumentException("values must be finite");
+            }
+        }
         double maxWeight = 0.0D;
         for (double weight : weights) {
             if (!Double.isFinite(weight) || weight < 0.0D) {

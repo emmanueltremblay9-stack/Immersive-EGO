@@ -1,0 +1,15 @@
+schemaVersion = 1
+
+[stress]
+enabled = true
+darknessGainPerMinute = 0.010
+safeShelterRecoveryPerMinute = 0.025
+severeEffectsEnabled = false
+
+[fear]
+hostileThreatGainPerMinute = 0.020
+decayPerMinute = 0.030
+
+[accessibility]
+screenDistortion = false
+audioIntensity = "LOW"

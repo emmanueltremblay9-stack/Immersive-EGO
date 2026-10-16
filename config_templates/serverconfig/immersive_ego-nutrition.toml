@@ -1,0 +1,20 @@
+schemaVersion = 1
+
+[groups]
+grains = true
+proteins = true
+vegetables = true
+fruits = true
+dairy = true
+sugars = true
+
+[dietaryMemory]
+windowTicks = 144000
+exactItemRepetitionCap = 0.35
+familyRepetitionCap = 0.25
+
+[gutHealth]
+enabled = true
+recoveryPerMinute = 0.003
+unsafeFoodPenalty = 0.08
+dirtyWaterPenalty = 0.10

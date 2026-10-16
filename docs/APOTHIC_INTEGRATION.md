@@ -1,6 +1,6 @@
 # Apothic Attributes Integration
 
-Status: first attribute registration and display mirror foundation implemented.
+Status: first attribute registration and display mirror foundation implemented and live-client-proven in Apothic Attributes.
 
 Apothic Attributes is required and pinned to `2.9.1` for the initial baseline. The dependency resolves in Gradle and is declared in mod metadata.
 
@@ -28,8 +28,8 @@ Apothic Attributes is required and pinned to `2.9.1` for the initial baseline. T
 - Display-only attributes are metadata and UI mirrors; gameplay state must remain server-authoritative.
 - `EgoAttributeMirrorService` applies server-side display mirror values through stable transient modifier IDs under `immersive_ego:mirror/*`.
 - GameTests prove all EGO attributes are present on player suppliers and repeated mirror updates do not duplicate modifiers.
+- Live LAB proof on 2026-06-22 opened the native Apothic `Attributes` panel from the survival inventory and showed EGO rows including `EGO Acclimation Gain`, `EGO Hydration Efficiency`, and `EGO Load`; screenshot: `docs/proof/apothic-live-ui-alpha56-20260622-060914.png`.
 
 ## Next Work
 
-- Verify the attributes in the Apothic GUI during a client smoke pass.
 - Inspect modifier source integration before adding richer Apothic tooltip/source metadata.

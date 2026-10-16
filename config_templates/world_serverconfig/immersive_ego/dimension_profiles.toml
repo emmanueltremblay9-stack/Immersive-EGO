@@ -1,0 +1,16 @@
+schemaVersion = 1
+
+[[dimensions]]
+id = "minecraft:overworld"
+enabled = true
+baselineRespiratoryStrain = 0.0
+altitudeStrainEnabled = true
+depthStrainEnabled = true
+
+[[dimensions]]
+id = "minecraft:the_nether"
+enabled = true
+baselineRespiratoryStrain = 0.18
+altitudeStrainEnabled = false
+depthStrainEnabled = false
+heatMultiplier = 1.35

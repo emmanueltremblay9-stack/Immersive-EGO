@@ -68,6 +68,11 @@
   "command.immersive_ego.status": "EGO : Charge %s, Disponibilite %s, Hydratation %s, Endurance %s, Fatigue %s",
   "command.immersive_ego.debug.state.header": "Schema d'etat EGO %s",
   "command.immersive_ego.debug.state.line": "%s : %s",
+  "command.immersive_ego.debug.environment.header": "Cache environnement EGO : actif %s, requetes %s, rafraichissements %s, hits %s, skips %s, erreurs %s, evictions %s",
+  "command.immersive_ego.debug.environment.sample": "Echantillon @ %s : profil %s, saison %s, ciel %s, abri %s, humidite %s",
+  "command.immersive_ego.debug.environment.thermal": "Thermique : mode %s, chaleur %s, froid %s, humidite %s, exposition %s, contrainte %s",
+  "command.immersive_ego.debug.origin.header": "Origine EGO : %s, schema %s",
+  "command.immersive_ego.debug.origin.acclimation": "Acclimatation : chaleur %s, froid %s, altitude %s, humidite %s",
   "command.immersive_ego.synergy.trace.header": "Trace de synergie EGO (%s liens)",
   "command.immersive_ego.synergy.trace.line": "%s -> %s : source %s x poids %s = delta %s, %s -> %s",
   "command.immersive_ego.synergy.trace.result": "Resultat de trace : Charge EGO %s, Disponibilite %s"

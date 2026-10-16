@@ -1,0 +1,19 @@
+schemaVersion = 1
+
+[[profiles]]
+id = "minecraft:desert"
+matchBiomeTags = ["minecraft:is_desert"]
+climateFamily = "HOT_DRY"
+baseHeat = 0.75
+baseCold = 0.00
+humidity = 0.10
+windExposure = 0.30
+
+[[profiles]]
+id = "minecraft:snowy"
+matchBiomeTags = ["minecraft:is_snowy"]
+climateFamily = "COLD"
+baseHeat = 0.00
+baseCold = 0.70
+humidity = 0.35
+windExposure = 0.45

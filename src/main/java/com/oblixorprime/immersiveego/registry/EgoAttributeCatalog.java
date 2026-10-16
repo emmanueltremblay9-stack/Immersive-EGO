@@ -67,7 +67,7 @@ public final class EgoAttributeCatalog {
     }
 
     private static EgoAttributeSpec capability(String path) {
-        return new EgoAttributeSpec(path, EgoAttributeRole.CAPABILITY, 1.0D, 0.0D, 4.0D, EgoAttributeSentiment.POSITIVE);
+        return new EgoAttributeSpec(path, EgoAttributeRole.CAPABILITY, 1.0D, 0.25D, 4.0D, EgoAttributeSentiment.POSITIVE);
     }
 
     private static EgoAttributeSpec display(String path, double defaultValue, EgoAttributeSentiment sentiment) {

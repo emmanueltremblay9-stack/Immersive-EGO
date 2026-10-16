@@ -1,0 +1,7 @@
+schemaVersion = 1
+rejectCurrentFrameCycles = true
+allowPreviousFrameEdges = true
+debugTraceEnabled = true
+
+[defaults]
+smoothingTicks = 20

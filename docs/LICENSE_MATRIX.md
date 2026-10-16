@@ -4,6 +4,8 @@
 | --- | --- | --- | --- |
 | Immersive EGO original code/docs | MIT | Project code and docs | May be distributed under project LICENSE |
 | User-provided Immersive EGO logo | Project asset supplied for this repo | Mod logo | Keep provenance recorded; do not treat as third-party mod asset |
+| Complementary missing project pack | Local Emmanuel-provided reference material; embedded hash mismatch documented | Governance docs, Codex prompts, templates, planning references, placeholder branding | Keep as reference material unless reviewed into active release files; do not package reference folders into runtime jar |
+| Branding placeholder SVGs/prompts | Local project placeholder/reference material from complementary pack | Logo/banner concept work | Do not treat as final third-party assets; record final generated/commissioned assets before release use |
 | NeoForge MDK template | MIT | Build scaffold | Preserve notice in THIRD_PARTY_NOTICES.md |
 | NeoForge | LGPL-2.1-only | Loader/API dependency | Runtime/compile dependency only |
 | Apothic Attributes code | MIT | Required dependency | Use public APIs only; do not copy assets |

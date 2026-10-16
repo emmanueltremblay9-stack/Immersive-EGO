@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.neoforged.net/releases' }
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenLocal()
+        maven { url = 'https://maven.neoforged.net/releases' }
+        mavenCentral()
+
+        // Add official dependency Maven repositories after audit.
+        // Examples only; verify exact repositories before use:
+        // maven { url = 'https://maven.shadowsoffire.dev/releases' }
+        // maven { url = 'https://cursemaven.com' }
+        // maven { url = 'https://api.modrinth.com/maven' }
+    }
+}
+
+rootProject.name = 'immersive-ego'

@@ -1,0 +1,38 @@
+You are working in the Immersive EGO repository after PHASE 0.
+
+First, read:
+- AGENTS.md
+- TASKS.md
+- docs/DEPENDENCY_AUDIT.md
+- docs/ARCHITECTURE.md
+- docs/APOTHIC_INTEGRATION.md
+- docs/CONFIG_REFERENCE.md
+- docs/CODEX_HANDOFF.md
+
+Goal: implement PHASE 1 — Core state, config, and attributes.
+
+Required actions:
+1. Implement NeoForge data attachment for EgoState with versioned serialization.
+2. Clamp and validate state on load.
+3. Implement death/respawn policy controlled by config.
+4. Implement server config specs and dynamic TOML loader scaffolding.
+5. Register capability attributes.
+6. Register display-only mirror attributes.
+7. Attach attributes to players without duplicate modifiers.
+8. Implement mirror update service with stable modifier IDs and epsilon checks.
+9. Implement `/ego status` and `/ego debug state`.
+10. Add/update en_us and fr_fr translations.
+11. Verify Apothic Attributes visibility.
+12. Add unit/integration tests where possible.
+13. Run build/tests and record exact commands.
+
+Do not implement full simulation modules yet. Use safe disabled or deterministic placeholder paths only where TASKS.md explicitly tracks them.
+
+Final report exactly:
+1. IMPLEMENTED
+2. FILES CHANGED
+3. BUILD AND TESTS
+4. DEPENDENCIES
+5. LICENSE/ASSET CHECK
+6. REMAINING WORK
+7. NEXT ACTION

@@ -1,0 +1,35 @@
+You are working in the Immersive EGO repository after PHASES 0–2 are done or sufficiently stable.
+
+Goal: implement the first playable vertical slice.
+
+Scenario:
+A Desertborn player enters a hot, dry biome while carrying a heavy inventory, sprints, becomes hot and dehydrated, rests in a safe shelter, eats a balanced meal, and sleeps.
+
+Required demonstrations:
+1. origin attached and visible in Apothic modifier sources;
+2. environment snapshot;
+3. heat strain;
+4. hydration demand;
+5. stamina cost;
+6. encumbrance;
+7. fatigue;
+8. sleep pressure;
+9. sleep quality;
+10. recovery budget;
+11. EGO Load;
+12. Readiness;
+13. all relevant mirror attributes in Apothic;
+14. config-driven coefficients;
+15. `/ego synergy trace` explaining the result;
+16. save/reload persistence.
+
+Do not call the slice complete unless it is playable and build-tested.
+
+Final report exactly:
+1. IMPLEMENTED
+2. FILES CHANGED
+3. BUILD AND TESTS
+4. DEPENDENCIES
+5. LICENSE/ASSET CHECK
+6. REMAINING WORK
+7. NEXT ACTION

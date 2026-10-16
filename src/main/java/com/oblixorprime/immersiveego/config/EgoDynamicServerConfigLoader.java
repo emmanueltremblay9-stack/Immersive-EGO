@@ -2,6 +2,7 @@ package com.oblixorprime.immersiveego.config;
 
 import com.electronwill.nightconfig.core.CommentedConfig;
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
+import com.electronwill.nightconfig.core.io.ParsingException;
 import com.oblixorprime.immersiveego.ImmersiveEgo;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -41,6 +42,25 @@ public final class EgoDynamicServerConfigLoader {
             }
         } catch (IOException exception) {
             throw new IllegalStateException("Unable to prepare Immersive EGO dynamic config at " + configPath, exception);
+        }
+
+        try (CommentedFileConfig fileConfig = CommentedFileConfig.of(configPath)) {
+            try {
+                fileConfig.load();
+            } catch (ParsingException exception) {
+                return resetAndLoadDefaults(configPath);
+            }
+            EgoDynamicServerConfig loaded = readAndRepair(fileConfig);
+            fileConfig.save();
+            return loaded;
+        }
+    }
+
+    private static EgoDynamicServerConfig resetAndLoadDefaults(Path configPath) {
+        try {
+            Files.writeString(configPath, "");
+        } catch (IOException exception) {
+            throw new IllegalStateException("Unable to reset malformed Immersive EGO dynamic config at " + configPath, exception);
         }
 
         try (CommentedFileConfig fileConfig = CommentedFileConfig.of(configPath)) {
@@ -89,10 +109,23 @@ public final class EgoDynamicServerConfigLoader {
     private static int readClampedInt(CommentedConfig config, String path, int defaultValue, int min, int max, String comment) {
         config.setComment(path, comment);
         Object value = config.get(path);
-        int parsed = value instanceof Number number ? number.intValue() : defaultValue;
-        int clamped = Math.clamp(parsed, min, max);
+        int clamped = value instanceof Number number ? clampNumberToInt(number, defaultValue, min, max) : defaultValue;
         config.set(path, clamped);
         return clamped;
+    }
+
+    private static int clampNumberToInt(Number number, int defaultValue, int min, int max) {
+        double parsed = number.doubleValue();
+        if (Double.isNaN(parsed)) {
+            return defaultValue;
+        }
+        if (parsed <= min) {
+            return min;
+        }
+        if (parsed >= max) {
+            return max;
+        }
+        return (int) parsed;
     }
 
     private static double readClampedDouble(CommentedConfig config, String path, double defaultValue, double min, double max, String comment) {

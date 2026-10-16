@@ -1,0 +1,12 @@
+schemaVersion = 1
+
+[weights]
+globalDefault = 0.10
+stackSizeMultiplier = 1.0
+nestedContainerRecursionDepth = 1
+nestedContainerMultiplier = 0.75
+shulkerLikeHandling = "CONFIGURED_RECURSION"
+
+[cache]
+fingerprintEnabled = true
+validationScanIntervalTicks = 200

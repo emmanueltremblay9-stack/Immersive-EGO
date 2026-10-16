@@ -1,5 +1,5 @@
 param(
-    [string]$ModsDir = "C:\Users\Emmanuel Tremblay\AppData\Roaming\PrismLauncher\instances\1.21.1 TesT LaB\minecraft\mods",
+    [string]$ModsDir = (Join-Path $env:APPDATA "PrismLauncher\instances\1.21.1 TesT LaB\minecraft\mods"),
     [string]$BuildDir = "",
     [string]$ModId = "immersive_ego",
     [switch]$SkipRuntimeDependencies
@@ -72,14 +72,41 @@ function Get-JarMetadata {
             $reader.Dispose()
         }
 
-        $modIdMatch = [regex]::Match($content, 'modId\s*=\s*"([^"]+)"')
-        $versionMatch = [regex]::Match($content, 'version\s*=\s*"([^"]+)"')
-        $nameMatch = [regex]::Match($content, 'displayName\s*=\s*"([^"]+)"')
+        $modSections = @([regex]::Matches($content, '(?ms)^\s*\[\[mods\]\]\s*(.*?)(?=^\s*\[\[|\z)') | ForEach-Object { $_.Groups[1].Value })
+        $modIds = @()
+        $version = $null
+        $displayName = $null
+
+        foreach ($section in $modSections) {
+            $modIdMatch = [regex]::Match($section, 'modId\s*=\s*"([^"]+)"')
+            if (-not $modIdMatch.Success) {
+                continue
+            }
+
+            $modIds += $modIdMatch.Groups[1].Value
+            if ($null -eq $version) {
+                $versionMatch = [regex]::Match($section, 'version\s*=\s*"([^"]+)"')
+                if ($versionMatch.Success) {
+                    $version = $versionMatch.Groups[1].Value
+                }
+            }
+            if ($null -eq $displayName) {
+                $nameMatch = [regex]::Match($section, 'displayName\s*=\s*"([^"]+)"')
+                if ($nameMatch.Success) {
+                    $displayName = $nameMatch.Groups[1].Value
+                }
+            }
+        }
+
+        if ($modIds.Count -eq 0) {
+            return $null
+        }
 
         [pscustomobject]@{
-            modId = if ($modIdMatch.Success) { $modIdMatch.Groups[1].Value } else { $null }
-            version = if ($versionMatch.Success) { $versionMatch.Groups[1].Value } else { $null }
-            displayName = if ($nameMatch.Success) { $nameMatch.Groups[1].Value } else { $null }
+            modId = if ($modIds.Count -gt 0) { $modIds[0] } else { $null }
+            modIds = $modIds
+            version = $version
+            displayName = $displayName
         }
     }
     finally {
@@ -92,6 +119,23 @@ function Get-Sha256 {
     (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
 }
 
+function Test-JarMetadataHasModId {
+    param(
+        [Parameter(Mandatory = $false)]$Metadata,
+        [Parameter(Mandatory = $true)][string]$ExpectedModId
+    )
+
+    if ($null -eq $Metadata) {
+        return $false
+    }
+
+    if ($Metadata.PSObject.Properties.Name -contains "modIds") {
+        return @($Metadata.modIds) -contains $ExpectedModId
+    }
+
+    return $Metadata.modId -eq $ExpectedModId
+}
+
 $excludedNamePattern = '(?i)(sources|javadoc|dev|plain|test|api)'
 $runtimeCandidates = Get-ChildItem -LiteralPath $BuildDir -Filter "*.jar" -File |
     Where-Object { $_.BaseName -notmatch $excludedNamePattern } |
@@ -102,7 +146,7 @@ $runtimeCandidates = Get-ChildItem -LiteralPath $BuildDir -Filter "*.jar" -File 
             metadata = $metadata
         }
     } |
-    Where-Object { $null -ne $_.metadata -and $_.metadata.modId -eq $ModId }
+    Where-Object { Test-JarMetadataHasModId -Metadata $_.metadata -ExpectedModId $ModId }
 
 if ($runtimeCandidates.Count -ne 1) {
     $candidateNames = $runtimeCandidates | ForEach-Object { $_.file.FullName }
@@ -125,7 +169,7 @@ Get-ChildItem -LiteralPath $ModsDir -Filter "*.jar" -File | ForEach-Object {
     }
     try {
         $metadata = Get-JarMetadata -JarPath $jar.FullName
-        if ($null -ne $metadata -and $metadata.modId -eq $ModId) {
+        if (Test-JarMetadataHasModId -Metadata $metadata -ExpectedModId $ModId) {
             $matchedBy += "mod metadata"
         }
     }
@@ -168,7 +212,7 @@ $remaining = @()
 Get-ChildItem -LiteralPath $ModsDir -Filter "*.jar" -File | ForEach-Object {
     try {
         $metadata = Get-JarMetadata -JarPath $_.FullName
-        if ($null -ne $metadata -and $metadata.modId -eq $ModId) {
+        if (Test-JarMetadataHasModId -Metadata $metadata -ExpectedModId $ModId) {
             $remaining += $_.FullName
         }
     }

@@ -7,7 +7,10 @@ import com.oblixorprime.immersiveego.config.EgoCoreConfig;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfigLoader;
 import com.oblixorprime.immersiveego.config.EgoDynamicSynergyConfigLoader;
 import com.oblixorprime.immersiveego.config.EgoServerModuleConfigs;
+import com.oblixorprime.immersiveego.compat.marieslib.EgoMariesLibFacade;
 import com.oblixorprime.immersiveego.gametest.EgoGameTests;
+import com.oblixorprime.immersiveego.nutrition.EgoNutritionEvents;
+import com.oblixorprime.immersiveego.physiology.EgoHydrationEvents;
 import com.oblixorprime.immersiveego.registry.EgoAttachments;
 import com.oblixorprime.immersiveego.registry.EgoAttributes;
 import com.oblixorprime.immersiveego.simulation.EgoAttributeMirrorService;
@@ -31,6 +34,8 @@ public final class ImmersiveEgo {
     public ImmersiveEgo(IEventBus modEventBus, ModContainer modContainer) {
         EgoAttachments.register(modEventBus);
         EgoAttributes.register(modEventBus);
+        EgoMariesLibFacade.attach(MOD_ID, modEventBus);
+        EgoMariesLibFacade.registerNutritionValuesAndSources();
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerGameTests);
@@ -39,6 +44,8 @@ public final class ImmersiveEgo {
         EgoDynamicSynergyConfigLoader.register(NeoForge.EVENT_BUS);
         EgoAttributeMirrorService.register(NeoForge.EVENT_BUS);
         EgoSimulationScheduler.register(NeoForge.EVENT_BUS);
+        EgoHydrationEvents.register(NeoForge.EVENT_BUS);
+        EgoNutritionEvents.register(NeoForge.EVENT_BUS);
         NeoForge.EVENT_BUS.register(this);
 
         modContainer.registerConfig(ModConfig.Type.SERVER, EgoCoreConfig.SPEC, "immersive_ego-core.toml");

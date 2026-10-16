@@ -4,6 +4,7 @@
 
 - Immersive EGO concept, prompt, and logo: Emmanuel Tremblay
 - Initial implementation: Codex, guided by Emmanuel's master prompt
+- Complementary governance, prompt, template, and placeholder branding material: imported from Emmanuel's local `immersive_ego_missing_project_pack.zip`; provenance warning recorded in `docs/SOURCE_PROVENANCE.md` and `docs/project_pack/immersive_ego_missing_project_pack/IMPORT_NOTES.md`.
 
 ## Required Dependencies
 

@@ -1,0 +1,29 @@
+{
+  "project": "Immersive EGO",
+  "mod_id": "immersive_ego",
+  "target": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.x",
+    "java": 21,
+    "mod_license": "MIT"
+  },
+  "generated_on": "2026-06-21",
+  "source": {
+    "notion_page": "<PRIVATE_NOTION_REFERENCE>",
+    "notion_child_page": "IMMERSIVE_EGO_CODEX_MASTER_PROMPT",
+    "official_reference_urls": [
+      "https://github.com/Shadows-of-Fire/Apothic-Attributes/tree/1.21",
+      "https://raw.githubusercontent.com/Shadows-of-Fire/Apothic-Attributes/1.21/gradle.properties",
+      "https://raw.githubusercontent.com/Shadows-of-Fire/Placebo/1.21/gradle.properties",
+      "https://raw.githubusercontent.com/Shadows-of-Fire/Apotheosis/1.21/gradle.properties",
+      "https://github.com/kgbcupcake/MarieLib",
+      "https://raw.githubusercontent.com/kgbcupcake/MarieLib/master/gradle.properties",
+      "https://docs.neoforged.net/docs/1.21.1/gettingstarted/",
+      "https://docs.neoforged.net/docs/1.21.1/datastorage/attachments/",
+      "https://docs.neoforged.net/docs/1.21.1/networking/payload/",
+      "https://docs.neoforged.net/docs/1.21.1/misc/config/"
+    ]
+  },
+  "pack_purpose": "Drop-in missing project governance, documentation, config templates, language keys, branding prompts, and Codex handoff prompts. This is not a compiled mod JAR.",
+  "copy_strategy": "Copy repo_patch/* into the repository root, review build templates, then run Codex with codex_prompts/01_phase0_bootstrap_and_audit.txt."
+}
