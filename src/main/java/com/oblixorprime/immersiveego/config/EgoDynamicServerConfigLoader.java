@@ -137,11 +137,16 @@ public final class EgoDynamicServerConfigLoader {
         return clamped;
     }
 
+    /** Reload the selected server configuration, also used by isolated server qualification. */
+    public static void reload(Path serverConfigRoot) {
+        current = load(serverConfigRoot);
+    }
+
     private static void onServerStarting(ServerStartingEvent event) {
         Path serverConfigRoot = event.getServer()
                 .getWorldPath(LevelResource.ROOT)
                 .resolve("serverconfig");
-        current = load(serverConfigRoot);
+        reload(serverConfigRoot);
         ImmersiveEgo.LOGGER.info("Loaded Immersive EGO dynamic server config from {}", serverConfigRoot.resolve(ImmersiveEgo.MOD_ID).resolve(FILE_NAME));
     }
 }

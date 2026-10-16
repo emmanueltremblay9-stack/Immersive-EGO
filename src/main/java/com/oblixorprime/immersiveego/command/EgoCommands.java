@@ -1,25 +1,30 @@
 package com.oblixorprime.immersiveego.command;
 
 import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.arguments.BoolArgumentType;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.oblixorprime.immersiveego.config.EgoDynamicSynergyConfigLoader;
 import com.oblixorprime.immersiveego.data.EgoState;
 import com.oblixorprime.immersiveego.environment.EgoEnvironmentDebugCounters;
+import com.oblixorprime.immersiveego.environment.EgoEnvironmentSampler;
 import com.oblixorprime.immersiveego.environment.EgoEnvironmentService;
 import com.oblixorprime.immersiveego.environment.EgoEnvironmentSnapshot;
 import com.oblixorprime.immersiveego.environment.EgoExposureSample;
 import com.oblixorprime.immersiveego.environment.EgoThermalSnapshot;
+import com.oblixorprime.immersiveego.environment.EgoThermalSnapshotCalculator;
 import com.oblixorprime.immersiveego.origins.EgoOriginState;
+import com.oblixorprime.immersiveego.registry.EgoAttachments;
 import com.oblixorprime.immersiveego.registry.EgoAttributeCatalog;
 import com.oblixorprime.immersiveego.registry.EgoAttributeSpec;
-import com.oblixorprime.immersiveego.registry.EgoAttachments;
 import com.oblixorprime.immersiveego.simulation.EgoAttributeMirrorService;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEdge;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEvaluationResult;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEvaluationStep;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEvaluator;
-import java.util.Locale;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessRuntime;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessState;
 import java.util.List;
+import java.util.Locale;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
@@ -45,10 +50,22 @@ public final class EgoCommands {
         dispatcher.register(Commands.literal("ego")
                 .then(Commands.literal("status")
                         .executes(context -> showStatus(context.getSource())))
+                .then(Commands.literal("wetness")
+                        .then(Commands.literal("notices")
+                                .then(Commands.argument("enabled", BoolArgumentType.bool())
+                                        .executes(context -> {
+                                            boolean enabled = BoolArgumentType.getBool(context, "enabled");
+                                            EgoWetnessRuntime.setNotices(context.getSource().getPlayerOrException(), enabled);
+                                            context.getSource().sendSuccess(() -> Component.translatable(
+                                                    "command.immersive_ego.wetness.notices", enabled), false);
+                                            return 1;
+                                        }))))
                 .then(Commands.literal("debug")
                         .requires(source -> source.hasPermission(2))
                         .then(Commands.literal("state")
                                 .executes(context -> showDebugState(context.getSource())))
+                        .then(Commands.literal("wetness")
+                                .executes(context -> showDebugWetness(context.getSource())))
                         .then(Commands.literal("environment")
                                 .executes(context -> showDebugEnvironment(context.getSource())))
                         .then(Commands.literal("origin")
@@ -126,6 +143,35 @@ public final class EgoCommands {
                 decimal(thermal.exposurePressure()),
                 decimal(thermal.thermalStrain())), false);
 
+        return 1;
+    }
+
+    private static int showDebugWetness(CommandSourceStack source) throws CommandSyntaxException {
+        ServerPlayer player = source.getPlayerOrException();
+        EgoWetnessState state = player.getData(EgoAttachments.EGO_WETNESS.get());
+        // A fresh observation/thermal preview, never a simulation step or attachment write.
+        EgoExposureSample sample = EgoEnvironmentSampler.sample(player);
+        EgoThermalSnapshot preview = EgoThermalSnapshotCalculator.calculate(sample,
+                EgoWetnessRuntime.thermalWetness(player));
+        source.sendSuccess(() -> Component.translatable("command.immersive_ego.wetness.state",
+                decimal(state.wetness()), state.schemaVersion(), state.quarantined(),
+                EgoWetnessRuntime.activity(player)), false);
+        source.sendSuccess(() -> Component.translatable("command.immersive_ego.wetness.preview",
+                EgoWetnessRuntime.exposure(player).name(), sample.climateProfile().id(),
+                decimal(preview.wetnessPressure()), decimal(preview.thermalStrain())), false);
+        EgoWetnessRuntime.Applied applied = EgoWetnessRuntime.lastApplied(player);
+        if (applied == null) {
+            source.sendSuccess(() -> Component.translatable("command.immersive_ego.wetness.none"), false);
+        } else {
+            boolean fresh = EgoWetnessRuntime.activity(player).equals("active")
+                    && applied.playerTick() == player.tickCount
+                    && applied.dimension().equals(player.level().dimension().location().toString());
+            source.sendSuccess(() -> Component.translatable("command.immersive_ego.wetness.applied",
+                    applied.dimension(), applied.playerTick(), fresh, applied.exposure().name(), applied.climate(),
+                    decimal(applied.before()), decimal(applied.step().state().wetness()),
+                    decimal(applied.step().seconds()), decimal(applied.step().acquisition()),
+                    decimal(applied.step().drying()), decimal(applied.step().rate()), applied.consumedTicks()), false);
+        }
         return 1;
     }
 

@@ -7,6 +7,8 @@ import com.oblixorprime.immersiveego.origins.EgoOriginState;
 import com.oblixorprime.immersiveego.origins.EgoOriginStateCodecs;
 import com.oblixorprime.immersiveego.psychology.EgoInjuryMemory;
 import com.oblixorprime.immersiveego.psychology.EgoInjuryMemoryCodecs;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessSerializer;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -33,6 +35,11 @@ public final class EgoAttachments {
             ATTACHMENT_TYPES.register("ego_injury_memory", () -> AttachmentType.builder(EgoInjuryMemory::defaultState)
                     .serialize(EgoInjuryMemoryCodecs.EGO_INJURY_MEMORY)
                     .copyOnDeath()
+                    .build());
+
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<EgoWetnessState>> EGO_WETNESS =
+            ATTACHMENT_TYPES.register("wetness", () -> AttachmentType.builder(EgoWetnessState::dry)
+                    .serialize(new EgoWetnessSerializer())
                     .build());
 
     private EgoAttachments() {

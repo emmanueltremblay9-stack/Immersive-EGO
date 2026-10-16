@@ -75,5 +75,14 @@
   "command.immersive_ego.debug.origin.acclimation": "Acclimatation : chaleur %s, froid %s, altitude %s, humidite %s",
   "command.immersive_ego.synergy.trace.header": "Trace de synergie EGO (%s liens)",
   "command.immersive_ego.synergy.trace.line": "%s -> %s : source %s x poids %s = delta %s, %s -> %s",
-  "command.immersive_ego.synergy.trace.result": "Resultat de trace : Charge EGO %s, Disponibilite %s"
+  "command.immersive_ego.synergy.trace.result": "Resultat de trace : Charge EGO %s, Disponibilite %s",
+  "message.immersive_ego.wetness.soaked": "Vous vous sentez trempé.",
+  "message.immersive_ego.wetness.damp": "Vous vous sentez humide.",
+  "message.immersive_ego.wetness.dry": "Vous vous sentez de nouveau sec.",
+  "config.immersive_ego.core.show_wetness_notices": "Afficher les indications d’humidité de surface",
+  "command.immersive_ego.wetness.notices": "Indications d’humidité pour cette session : %s",
+  "command.immersive_ego.wetness.state": "Surface W=%s ; schéma=%s ; quarantaine=%s ; activité=%s",
+  "command.immersive_ego.wetness.preview": "Observation fraîche / PRÉVISUALISATION thermique : exposition=%s ; climat=%s ; pression=%s ; contrainte=%s",
+  "command.immersive_ego.wetness.none": "Aucun pas d’humidité appliqué dans cette session.",
+  "command.immersive_ego.wetness.applied": "DERNIER APPLIQUÉ : dimension=%s ; tick=%s ; frais=%s ; exposition=%s ; climat=%s ; W=%s -> %s ; dt=%ss ; acquis=%s ; séché=%s ; taux=%s/s ; ticks consommés=%s"
 }

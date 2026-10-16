@@ -9,12 +9,20 @@ public final class EgoThermalSnapshotCalculator {
     }
 
     public static EgoThermalSnapshot calculate(EgoExposureSample sample) {
+        return calculate(sample, sample.wetness());
+    }
+
+    /** Replace the one liquid branch only; climatic pressure is not stored body wetness. */
+    public static EgoThermalSnapshot calculate(EgoExposureSample sample, double bodyWetness) {
+        if (!Double.isFinite(bodyWetness) || bodyWetness < 0.0D || bodyWetness > 1.0D) {
+            throw new IllegalArgumentException("Thermal body wetness must be finite and normalized");
+        }
         EgoClimateProfile profile = sample.climateProfile();
         double exposure = sample.unshelteredExposure();
         double shelterRelief = sample.shelter() * profile.shelterDemand() * 0.45D;
         double exposureAmplifier = 0.5D + (exposure * 0.5D);
         double wetnessPressure = EgoMath.clamp01(Math.max(
-                sample.wetness(),
+                bodyWetness,
                 profile.wetnessPressure() * exposure));
 
         double heatPressure = EgoMath.clamp01(

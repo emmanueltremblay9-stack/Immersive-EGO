@@ -54,3 +54,8 @@ Per-world dynamic synergy graph config. Created and repaired on server startup.
 - Duplicate source-target pairs, unknown endpoints, unsafe weights, and cyclic graphs are repaired to an empty graph.
 
 Origin profiles, acclimation tuning, injury-memory tuning, and beta presets are still code-defined; additional dynamic TOML maps under `serverconfig/immersive_ego/` remain future work.
+
+
+## PR2 alpha.62 surface wetness
+
+`immersive_ego-core.toml`: `showWetnessNotices=true` enables the discreet FR/EN actionbar messages; individual session opt-out `/ego wetness notices false`. W requires core `enableSimulation=true`, environment module `enabled=true`, and the existing world's `serverconfig/immersive_ego/simulation.toml` `scheduler.enabled=true`. All three gates must be active; defaults remain opt-in. Only Survival/Adventure advance or apply W. Other modes or any gate disabled preserve W without catch-up. Do not enable all unrelated modules to test W. Model rates are intentionally not exposed as an unqualified new configuration surface; see [WETNESS.md](WETNESS.md).

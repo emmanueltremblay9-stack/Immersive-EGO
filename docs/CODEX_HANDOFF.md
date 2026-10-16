@@ -1,8 +1,12 @@
 # Codex Handoff
 
+## PR2 cloud cycle — 2026-10-16
+
+The current work is `feat/persistent-wetness`, based on merged PR1/main `9eb621b684791162862f2262fa586b8ddcc35f4d`. The new local build identity is alpha.62; this does not authorize a release or user installation. See [wetness design](WETNESS.md) and [qualification matrix](WETNESS_VALIDATION.md). User's complete PR2 mandate supersedes historical planning-only instructions. No environment configuration/network permissions were changed. Historical alpha.61 JAR/JUnit/GameTest/Desertborn proofs remain under `/workspace/cloud-setup/`, with the old JAR and JUnit reports copied to `pr2-alpha61-preserved` before the new clean build.
+
 ## Current State
 
-Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.61`.
+Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.62` (PR2 development build).
 
 Complementary material from `<USER_HOME>\Downloads\immersive_ego_missing_project_pack.zip` has been installed without overwriting live alpha files. Additive content is in `branding/`, `codex_prompts/`, `config_templates/`, root `*.template` files, `scripts/verify_ego_repo.ps1`, and missing planning docs. Pack metadata, the resource TOML template, and older language catalogs are preserved under `docs/project_pack/immersive_ego_missing_project_pack/` as reference material.
 

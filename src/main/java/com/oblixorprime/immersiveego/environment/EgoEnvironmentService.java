@@ -3,6 +3,7 @@ package com.oblixorprime.immersiveego.environment;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfig;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfigLoader;
 import com.oblixorprime.immersiveego.config.EgoServerModuleConfigs;
+import com.oblixorprime.immersiveego.wetness.EgoWetnessRuntime;
 import java.util.Optional;
 import java.util.UUID;
 import net.minecraft.server.level.ServerPlayer;
@@ -30,7 +31,7 @@ public final class EgoEnvironmentService {
     }
 
     public static Optional<EgoEnvironmentSnapshot> latest(ServerPlayer player) {
-        return CACHE.latest(player.getUUID());
+        return CACHE.latest(player.getUUID()).map(snapshot -> currentThermal(player, snapshot));
     }
 
     public static void remove(UUID playerId) {
@@ -45,10 +46,16 @@ public final class EgoEnvironmentService {
         return EgoServerModuleConfigs.isEnabled(ENVIRONMENT_MODULE_KEY);
     }
 
+    private static EgoEnvironmentSnapshot currentThermal(ServerPlayer player, EgoEnvironmentSnapshot raw) {
+        return new EgoEnvironmentSnapshot(raw.gameTime(), raw.exposureSample(),
+                EgoThermalSnapshotCalculator.calculate(raw.exposureSample(), EgoWetnessRuntime.thermalWetness(player)));
+    }
+
     private static EgoEnvironmentSnapshot snapshotFor(ServerPlayer player, long gameTime) {
-        return CACHE.snapshotFor(
+        EgoEnvironmentSnapshot raw = CACHE.snapshotFor(
                 player.getUUID(),
                 gameTime,
                 () -> EgoEnvironmentSampler.sample(player));
+        return currentThermal(player, raw);
     }
 }
