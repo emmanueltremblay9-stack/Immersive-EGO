@@ -1,0 +1,11 @@
+{
+  "commit": "0b8b49c0d0a43424a73997e294d8fc3a2a9f4dc0",
+  "tree": "2b7627001e2ac653e9aec857f2affb1da330648f",
+  "jar": "immersive_ego-0.1.0-alpha.62.jar",
+  "size": 511707,
+  "sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+  "tests": 189,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0
+}

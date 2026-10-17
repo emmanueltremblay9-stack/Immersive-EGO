@@ -1,0 +1,53 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+issueTrackerURL="https://github.com/emmanueltremblay9-stack/Immersive-EGO/issues"
+
+[[mods]]
+modId="immersive_ego"
+version="0.1.0-alpha.62"
+displayName="Immersive EGO"
+displayURL="https://github.com/emmanueltremblay9-stack/Immersive-EGO"
+logoFile="immersive_ego_logo_1024.png"
+credits="Inspired by survival simulation mods and powered by separate Apothic Attributes and MariesLib installs. No affiliation or endorsement is implied."
+authors="Emmanuel Tremblay"
+description='''Configurable survival-RPG body, mind, and adaptation simulation for Minecraft 1.21.1.'''
+
+[[dependencies.immersive_ego]]
+    modId="neoforge"
+    type="required"
+    reason="Immersive EGO targets the NeoForge 1.21.1 loader and APIs."
+    versionRange="[21.1.228,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.immersive_ego]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.immersive_ego]]
+    modId="apothic_attributes"
+    type="required"
+    reason="Immersive EGO exposes important character statistics through Apothic Attributes."
+    versionRange="[2.9.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.immersive_ego]]
+    modId="marieslib"
+    type="required"
+    reason="Immersive EGO uses MariesLib as a separate runtime library for slow, memory-based source values."
+    versionRange="[0.1.0-beta.5,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.immersive_ego]]
+    modId="apotheosis"
+    type="optional"
+    reason="Optional compatibility only; the core mod must load when Apotheosis is absent."
+    versionRange="[8.5.4,)"
+    ordering="AFTER"
+    side="BOTH"

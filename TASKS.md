@@ -4,7 +4,8 @@
 
 - [x] Record the owner's B decision (10:44 UTC) and implement snapshot heat/cold division by effective server tolerance; preserve PR2 and all other tuning.
 - [x] Add golden heat/cold, safety, hydration/acclimation and runtime cache/diagnostic/scheduler coverage; targeted 14 JUnit pass and initial 37 GameTests pass. Independent static review found no corrective finding; effective attribute-modifier coverage added following its suggestion.
-- [ ] Complete clean build, exact packaged-JAR retest, draft PR and exact-commit CI. See [approved contract](docs/THERMAL_TOLERANCE.md); historical qualification evidence remains unchanged.
+- [x] Complete candidate clean build (189 JUnit), final 37 GameTests including modifier coverage, independent review and ten packaged-client scenarios. See [validation and exact JAR identity](docs/THERMAL_TOLERANCE_VALIDATION.md).
+- [x] Prepare the targeted draft-PR changes and reviewable qualification evidence. The draft PR maintains the exact final head and remote CI receipt, separately from the tested source candidate.
 
 ## Packaged Desertborn qualification — 2026-10-17
 
@@ -13,7 +14,7 @@
 - [x] Build the exact alpha.62 JAR, verify SHA-256/metadata/single installed copy and execute it through production `forgeclient`.
 - [x] Execute bounded Desertborn T0/T1, Apothic capability comparisons, PR2 lifecycle/pause/thermal/equipment-neutrality scenarios, including actual sleep and process restart.
 - [x] Record fresh 175 JUnit, 76 client samples, logs/screenshots, PASS/FAIL/NOT_RUN and cleanup in [packaged qualification](docs/DESERTBORN_PACKAGED_QUALIFICATION.md).
-- [ ] Close the complete Desertborn gate: decide the undefined `thermal_tolerance` formula (options A/B/C in the follow-up). Assets and digital audio are now verified; optional Apotheosis presence is blocked by Maven 403, while multiplayer/load/long-duration and unimplemented integrations retain their explicit limits.
+- [ ] Close the complete Desertborn gate: the owner selected B and the new thermal correction passes its bounded packaged-client cases. Assets and digital audio are verified; optional Apotheosis presence is blocked by Maven 403, while multiplayer/load/long-duration and unimplemented integrations retain their explicit limits.
 - [ ] Proceed to shelters without active recovery, then equipment, only within their subsequent scope. No new mechanics were implemented by this qualification.
 
 ## PR2 — persistent wetness and drying (cloud, 2026-10-16)
@@ -150,7 +151,7 @@
 - [x] Refresh the standard verification workflow and reinstall the alpha.60 LAB test build.
 - [ ] Add remaining runtime progression GameTests.
 - [ ] Run live Desertborn hot-biome vertical-slice client proof.
-  - 2026-10-17: production packaged-client proof now exists for the bounded scenario and PR2 invariants; the full gate remains open for the preexisting `thermal_tolerance` gap and documented limits. See [qualification](docs/DESERTBORN_PACKAGED_QUALIFICATION.md). The earlier 34 GameTests are not new tests of this run.
+  - 2026-10-17: production packaged-client proof now exists for the bounded scenario and PR2 invariants; the historical matrix preserves the original thermal failure; the later approved B correction resolves it for the new JAR, while the documented broader limits remain. See [qualification](docs/DESERTBORN_PACKAGED_QUALIFICATION.md). The earlier 34 GameTests are not new tests of this run.
   - 2026-06-22 attempt: LAB alpha.56 launch was verified, module gates and world scheduler were temporarily enabled then restored default-off, and a temporary datapack/quick-launch probe was tried and then removed. Gate remains open because the Codex desktop session could not focus/control the live Minecraft window, and no desert biome / arid origin / hot-dry environment readback was captured.
 - [ ] Complete documentation and CurseForge metadata.
 - [x] Complete source provenance and credits review.

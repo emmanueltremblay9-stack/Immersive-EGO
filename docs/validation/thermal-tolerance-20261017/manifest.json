@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "file": "07-hot-t2-adjusted.png",
+      "size": 60185,
+      "sha256": "7d8b749177b0594bc5d887836005c7b312177565085acea8b6455c658732ff68"
+    },
+    {
+      "file": "08-current-scaled-thermal.png",
+      "size": 61029,
+      "sha256": "d480bcec20ba38800809387f5c8b1eb19d38823a4081df7101647d92430f028b"
+    },
+    {
+      "file": "09-cold-scaled-thermal.png",
+      "size": 61042,
+      "sha256": "68975011b4f1072f5702086fd2713447c5313efea37512b71f1e949056ab173f"
+    },
+    {
+      "file": "14-apothic-thermal-description.png",
+      "size": 48693,
+      "sha256": "29fa0854b70fde914b3bae1e8b36fed4eade428b9e614f5d371581791744e073"
+    },
+    {
+      "file": "README.md",
+      "size": 1895,
+      "sha256": "01d0cce6f614c49cfb6a04743257e85e0285321c945a941247df7f0fe1f490ff"
+    },
+    {
+      "file": "candidate-identity.json",
+      "size": 319,
+      "sha256": "83816e435f27b96d8d8eb896e8ba3b9082fc7d30f6ef4dee31a1737de2ab2d24"
+    },
+    {
+      "file": "clean-build.log",
+      "size": 3346,
+      "sha256": "df625b602b02b156b035b081461912b92040173694f7a7d93795d0bbb0037dea"
+    },
+    {
+      "file": "cleanup-and-preservation.json",
+      "size": 669,
+      "sha256": "0a8e3bf915c52cf734ea8a4827a84d181eff138839f5a9f3bb0c266f7c218934"
+    },
+    {
+      "file": "client-log-excerpts.txt",
+      "size": 30313,
+      "sha256": "f835464bc09f97476f99471d60d6612a4b7dddc1daeaa8ab7b8344abd1da88f6"
+    },
+    {
+      "file": "client-numeric-checks.json",
+      "size": 36380,
+      "sha256": "f7db7f0ec4b489d5cf31a81cafe843848a6857bb76b49edee6a8020b5312dc30"
+    },
+    {
+      "file": "client-samples.json",
+      "size": 27196,
+      "sha256": "c3fe54d76ac65d041a42bf15181d5d2e4e96f197e9def1caf9aa9d9b45d2ee3b"
+    },
+    {
+      "file": "gametest.log",
+      "size": 144150,
+      "sha256": "a7ebce07d964de81e37326035eff9669eba88d33edea560c391448ab7a1a4398"
+    },
+    {
+      "file": "independent-review.md",
+      "size": 1187,
+      "sha256": "2bf30c2487ceb1b2aad49403727c1a9ea53722efc336bb0042f55dc53dff2d7e"
+    },
+    {
+      "file": "neoforge.mods.toml",
+      "size": 1699,
+      "sha256": "88b70805990d443d8b5946f5dbcf74c0bc73d6933266e146d1d3c4cc1e2cad49"
+    },
+    {
+      "file": "packaged-class-loading.log",
+      "size": 21260,
+      "sha256": "5d0f9db0065cd33bcfa07b1339af971b078e7bc8eb38d68ebd4c4637963b39a9"
+    },
+    {
+      "file": "verify-client.py",
+      "size": 3249,
+      "sha256": "18ed2860c3b63734d5efc060001c0cef26636e9d92727d60607853b0a1795b75"
+    }
+  ]
+}
