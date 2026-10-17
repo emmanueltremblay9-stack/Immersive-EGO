@@ -32,7 +32,7 @@
   "immersive_ego:respiration_efficiency": "EGO Respiration Efficiency",
   "immersive_ego:respiration_efficiency.desc": "Multiplier for respiration strain resistance once respiration simulation is active.",
   "immersive_ego:thermal_tolerance": "EGO Thermal Tolerance",
-  "immersive_ego:thermal_tolerance.desc": "Multiplier for heat and cold tolerance once environment simulation is active.",
+  "immersive_ego:thermal_tolerance.desc": "Divides heat and cold pressure when environment simulation is active, including thermal hydration demand and acclimation exposure. 1 is neutral.",
   "immersive_ego:load_tolerance": "EGO Load Tolerance",
   "immersive_ego:load_tolerance.desc": "Multiplier for inventory and equipment load tolerance once encumbrance simulation is active.",
   "immersive_ego:sleep_recovery": "EGO Sleep Recovery",
@@ -70,7 +70,8 @@
   "command.immersive_ego.debug.state.line": "%s: %s",
   "command.immersive_ego.debug.environment.header": "EGO environment cache: enabled %s, requests %s, refreshes %s, hits %s, skips %s, errors %s, evictions %s",
   "command.immersive_ego.debug.environment.sample": "Sample @ %s: profile %s, season %s, sky %s, shelter %s, wetness %s",
-  "command.immersive_ego.debug.environment.thermal": "Thermal: mode %s, heat %s, cold %s, wetness %s, exposure %s, strain %s",
+  "command.immersive_ego.debug.environment.thermal.raw": "Thermal before tolerance: raw heat %s, raw cold %s, tolerance %s",
+  "command.immersive_ego.debug.environment.thermal": "Adjusted thermal: mode %s, heat %s, cold %s, wetness %s, exposure %s, strain %s (before origin relief)",
   "command.immersive_ego.debug.origin.header": "EGO origin: %s, schema %s",
   "command.immersive_ego.debug.origin.acclimation": "Acclimation: heat %s, cold %s, altitude %s, humidity %s",
   "command.immersive_ego.synergy.trace.header": "EGO synergy trace (%s edges)",
@@ -82,7 +83,7 @@
   "config.immersive_ego.core.show_wetness_notices": "Show surface wetness notices",
   "command.immersive_ego.wetness.notices": "Surface wetness notices for this session: %s",
   "command.immersive_ego.wetness.state": "Surface W=%s; schema=%s; quarantined=%s; activity=%s",
-  "command.immersive_ego.wetness.preview": "Fresh observation / thermal PREVIEW: exposure=%s; climate=%s; pressure=%s; strain=%s",
+  "command.immersive_ego.wetness.preview": "Fresh observation / thermal PREVIEW: exposure=%s; climate=%s; wetness pressure=%s; tolerance-adjusted strain=%s (before origin relief)",
   "command.immersive_ego.wetness.none": "No applied wetness step in this session.",
   "command.immersive_ego.wetness.applied": "LAST APPLIED: dimension=%s; tick=%s; fresh=%s; exposure=%s; climate=%s; W=%s -> %s; dt=%ss; acquired=%s; dried=%s; rate=%s/s; consumed ticks=%s"
 }

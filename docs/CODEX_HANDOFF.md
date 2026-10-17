@@ -1,12 +1,34 @@
 # Codex Handoff
 
-## PR2 cloud cycle — 2026-10-16
+## Active correction — approved option B, 2026-10-17
+
+The owner explicitly selected B at 10:44 UTC. This supersedes the undecided A/B/C state in the historical follow-up below. Branch `fix/thermal-tolerance-snapshot`, based on verified merged main `3f7734cc4bbd6802c12c09b5990544b86faac47a`, implements adjusted snapshot pressures feeding existing hydration/acclimation consumers. See [exact contract and diagnostics](THERMAL_TOLERANCE.md). All 4,821 files inventoried across prior proof directories are preserved; previous reports remain historical, not rewritten results. Only an isolated cloud client is authorized. Clean-build, packaged retest and draft PR/CI evidence are being collected; no merge/release/user-PC action is authorized.
+
+## Current follow-up — 2026-10-17
+
+The same original alpha.62 JAR/commit remains the candidate; no gameplay source or binary change. The original 199 inventoried evidence files and ZIP are unchanged. Read the [self-contained follow-up](THERMAL_TOLERANCE_FOLLOWUP.md) for exact DEV/GOV contracts, historical pre-PR2 proof, code path, decision options and the disposition of all nine original NOT_RUN groups.
+
+New evidence: **34 freshly executed required GameTests passed, exit 0**, plus 21 additional packaged-client samples. Environment/scheduler-off pause, rain, snow, boat, actual submersion with drowning damage, End and daytime thunderstorm nap are now observed. The ordinary official asset route now returns 200; all 3,888 unique objects (825,818,935 bytes) passed SHA-1/size checks. New clients show no missing-asset exceptions, real panorama and an initialized sound engine. Process-local OpenAL Wave File Writer records actual stereo audio; no physical speaker exists. Maven metadata for optional Apotheosis returns 403 and was not bypassed. Active synergy integration is not implemented; no new integration was fabricated.
+
+`thermal_tolerance` still has no thermal simulation consumer, already at pre-PR2 `50d9e4b9` and with the same qualitative promise present in `789238c`. DEV/GOV do not specify the formula or ordering. Recommend decision option A (scale the thermal state before existing origin relief), but **do not implement it without the gameplay decision**; B changes broader snapshot consumers, C explicitly defers the capacity. No fix PR or new-commit CI exists because no formula was invented. All follow-up clients/display are stopped and 13 temporary TOMLs restored. Existing original clean-build/CI proofs remain attributed separately.
+
+## Earlier handoff — initial packaged qualification, 2026-10-17
+
+The resumed cloud checkout is at merged-main `3f7734cc4bbd6802c12c09b5990544b86faac47a`, advanced cleanly from `50d9e4b9`; PR2 must not be recreated. User-authorized isolated-cloud qualification is executed. The exact alpha.62 production JAR, SHA-256 `064e424232a7ca751ae8594a39573b0d4a426129054bef08dcdbd2a6c46653c6`, was loaded from `mods` by `forgeclient`, with actual controllable singleplayer play and restart. No development `runClient` substitutes for this proof.
+
+Fresh clean build: 175 JUnit passed; no fresh GameTests. Existing exact-main CI 38920721166 is success by metadata readback. Bounded Desertborn and PR2 client scenarios pass; 76 state samples and real screenshots are retained. Seven capabilities showed effects, but `thermal_tolerance` has no consumer in either this commit or the pre-PR2 baseline. Full gate remains OPEN; no arbitrary formula, source fix or new PR was introduced. External assets/audio are incomplete after respected network/environment limits. See [complete qualification and deliverables](DESERTBORN_PACKAGED_QUALIFICATION.md).
+
+All client processes and the private display are stopped; 13 temporary TOMLs are restored to their originals, including disabled core/scheduler. The isolated save and diagnostic datapack remain under `/workspace/ego-qualification-20261017`. Only documentation is changed in this checkout after the candidate build. No merge/release/publication/user-PC install or credential/security change occurred.
+
+Next work must preserve the approved order: finish qualification/resolve the existing thermal-tolerance contract, then shelters without active recovery, then equipment. The historical entries below remain provenance, not current branch status or fresh qualification evidence.
+
+## Historical PR2 cloud cycle — 2026-10-16
 
 The current work is `feat/persistent-wetness`, based on merged PR1/main `9eb621b684791162862f2262fa586b8ddcc35f4d`. The new local build identity is alpha.62; this does not authorize a release or user installation. See [wetness design](WETNESS.md) and [qualification matrix](WETNESS_VALIDATION.md). User's complete PR2 mandate supersedes historical planning-only instructions. No environment configuration/network permissions were changed. Historical alpha.61 JAR/JUnit/GameTest/Desertborn proofs remain under `/workspace/cloud-setup/`, with the old JAR and JUnit reports copied to `pr2-alpha61-preserved` before the new clean build.
 
 ## Current State
 
-Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.62` (PR2 development build).
+Repository is bootstrapped and buildable as a NeoForge 1.21.1 / Java 21 project. The mod id is `immersive_ego`, package root is `com.oblixorprime.immersiveego`, and version is `0.1.0-alpha.62` (merged PR2; bounded packaged-client qualification recorded above, not a release).
 
 Complementary material from `<USER_HOME>\Downloads\immersive_ego_missing_project_pack.zip` has been installed without overwriting live alpha files. Additive content is in `branding/`, `codex_prompts/`, `config_templates/`, root `*.template` files, `scripts/verify_ego_repo.ps1`, and missing planning docs. Pack metadata, the resource TOML template, and older language catalogs are preserved under `docs/project_pack/immersive_ego_missing_project_pack/` as reference material.
 
