@@ -1,0 +1,1380 @@
+{
+  "candidate": {
+    "commit": "0b8b49c0d0a43424a73997e294d8fc3a2a9f4dc0",
+    "tree": "2b7627001e2ac653e9aec857f2affb1da330648f",
+    "jar": "immersive_ego-0.1.0-alpha.62.jar",
+    "size": 511707,
+    "sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+    "tests": 189,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "samples": 20,
+  "scenarios": [
+    {
+      "scenario": "THERMAL_HEAT_T1",
+      "tolerance": 1,
+      "ticks": 100,
+      "raw_heat": 0.87,
+      "raw_cold": 0.195,
+      "adjusted_heat": 0.87,
+      "adjusted_cold": 0.195,
+      "adjusted_strain": 0.87,
+      "hydration_loss": 0.005074593028704666,
+      "heat_acclimation_t0": 0.6427714024159185,
+      "heat_acclimation_t1": 0.6539730337416114,
+      "cold_acclimation_t0": 0.13144461147471392,
+      "cold_acclimation_t1": 0.1343767148065811,
+      "state_strain_t0": 0.8185782878067266,
+      "state_strain_t1": 0.8176821573006712
+    },
+    {
+      "scenario": "THERMAL_HEAT_T2",
+      "tolerance": 2,
+      "ticks": 100,
+      "raw_heat": 0.87,
+      "raw_cold": 0.195,
+      "adjusted_heat": 0.435,
+      "adjusted_cold": 0.0975,
+      "adjusted_strain": 0.435,
+      "hydration_loss": 0.003443343028704665,
+      "heat_acclimation_t0": 0.652479357336712,
+      "heat_acclimation_t1": 0.6452755738076779,
+      "cold_acclimation_t0": 0.13412319422890212,
+      "cold_acclimation_t1": 0.1329005014450002,
+      "state_strain_t0": 0.3828016514130631,
+      "state_strain_t1": 0.38337795409538583
+    },
+    {
+      "scenario": "THERMAL_HEAT_T05",
+      "tolerance": 0.5,
+      "ticks": 100,
+      "raw_heat": 0.87,
+      "raw_cold": 0.195,
+      "adjusted_heat": 1,
+      "adjusted_cold": 0.39,
+      "adjusted_strain": 1,
+      "hydration_loss": 0.005562093028704668,
+      "heat_acclimation_t0": 0.6486322669219857,
+      "heat_acclimation_t1": 0.6648211084204244,
+      "cold_acclimation_t0": 0.1351216954276602,
+      "cold_acclimation_t1": 0.14583419016520274,
+      "state_strain_t0": 0.9481094186462411,
+      "state_strain_t1": 0.9468143113263661
+    },
+    {
+      "scenario": "THERMAL_HEAT_T025",
+      "tolerance": 0.25,
+      "ticks": 100,
+      "raw_heat": 0.87,
+      "raw_cold": 0.195,
+      "adjusted_heat": 1,
+      "adjusted_cold": 0.78,
+      "adjusted_strain": 1,
+      "hydration_loss": 0.005562093028704668,
+      "heat_acclimation_t0": 0.6679432551193794,
+      "heat_acclimation_t1": 0.6830009134524606,
+      "cold_acclimation_t0": 0.1511761798832203,
+      "cold_acclimation_t1": 0.1769398174533791,
+      "state_strain_t0": 0.9465645395904496,
+      "state_strain_t1": 0.9453599269238031
+    },
+    {
+      "scenario": "THERMAL_HEAT_T4",
+      "tolerance": 4,
+      "ticks": 100,
+      "raw_heat": 0.87,
+      "raw_cold": 0.195,
+      "adjusted_heat": 0.2175,
+      "adjusted_cold": 0.04875,
+      "adjusted_strain": 0.2175,
+      "hydration_loss": 0.002627718028704734,
+      "heat_acclimation_t0": 0.679331902491031,
+      "heat_acclimation_t1": 0.6616367975505653,
+      "cold_acclimation_t0": 0.17576603964393855,
+      "cold_acclimation_t1": 0.17010508040092007,
+      "state_strain_t0": 0.16315344780071755,
+      "state_strain_t1": 0.1645690561959548
+    },
+    {
+      "scenario": "THERMAL_COLD_T1",
+      "tolerance": 1,
+      "ticks": 100,
+      "raw_heat": 0.074,
+      "raw_cold": 1.0,
+      "adjusted_heat": 0.074,
+      "adjusted_cold": 1,
+      "adjusted_strain": 1,
+      "hydration_loss": 0.005562093028704668,
+      "heat_acclimation_t0": 0.6570187559799585,
+      "heat_acclimation_t1": 0.6347466147761388,
+      "cold_acclimation_t0": 0.17700381943610902,
+      "cold_acclimation_t1": 0.21027543199542226,
+      "state_strain_t0": 0.9474384995216033,
+      "state_strain_t1": 0.9492202708179089
+    },
+    {
+      "scenario": "THERMAL_COLD_T2",
+      "tolerance": 2,
+      "ticks": 100,
+      "raw_heat": 0.074,
+      "raw_cold": 1.0,
+      "adjusted_heat": 0.037,
+      "adjusted_cold": 0.5,
+      "adjusted_strain": 0.5,
+      "hydration_loss": 0.0036870930287047354,
+      "heat_acclimation_t0": 0.6301404553988251,
+      "heat_acclimation_t1": 0.6079256202808839,
+      "cold_acclimation_t0": 0.2124921268114772,
+      "cold_acclimation_t1": 0.22318292272444326,
+      "state_strain_t0": 0.44958876356809396,
+      "state_strain_t1": 0.4513659503775293
+    },
+    {
+      "scenario": "THERMAL_COLD_T05",
+      "tolerance": 0.5,
+      "ticks": 100,
+      "raw_heat": 0.074,
+      "raw_cold": 1.0,
+      "adjusted_heat": 0.148,
+      "adjusted_cold": 1,
+      "adjusted_strain": 1,
+      "hydration_loss": 0.005562093028704737,
+      "heat_acclimation_t0": 0.6045737128375133,
+      "heat_acclimation_t1": 0.5884079519322741,
+      "cold_acclimation_t0": 0.22944472765174995,
+      "cold_acclimation_t1": 0.2596444998710857,
+      "state_strain_t0": 0.9516341029729989,
+      "state_strain_t1": 0.9529273638454181
+    },
+    {
+      "scenario": "THERMAL_COLD_T025",
+      "tolerance": 0.25,
+      "ticks": 100,
+      "raw_heat": 0.074,
+      "raw_cold": 1.0,
+      "adjusted_heat": 0.296,
+      "adjusted_cold": 1,
+      "adjusted_strain": 1,
+      "hydration_loss": 0.005562093028704737,
+      "heat_acclimation_t0": 0.5865334565090868,
+      "heat_acclimation_t1": 0.577493038376676,
+      "cold_acclimation_t0": 0.26546876587263263,
+      "cold_acclimation_t1": 0.2935583516443813,
+      "state_strain_t0": 0.9530773234792731,
+      "state_strain_t1": 0.9538005569298659
+    },
+    {
+      "scenario": "THERMAL_COLD_T4",
+      "tolerance": 4,
+      "ticks": 100,
+      "raw_heat": 0.074,
+      "raw_cold": 1.0,
+      "adjusted_heat": 0.0185,
+      "adjusted_cold": 0.25,
+      "adjusted_strain": 0.25,
+      "hydration_loss": 0.0027495930287047,
+      "heat_acclimation_t0": 0.5734185219161558,
+      "heat_acclimation_t1": 0.553767723074588,
+      "cold_acclimation_t0": 0.29267565142464874,
+      "cold_acclimation_t1": 0.2884185169588922,
+      "state_strain_t0": 0.20412651824670752,
+      "state_strain_t1": 0.20569858215403297
+    }
+  ],
+  "checks": [
+    {
+      "name": "THERMAL_HEAT_T1 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T0 effective tolerance",
+      "expected": 1000,
+      "observed": 1000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T0 final thermal strain",
+      "expected": 0.8185782878067265,
+      "observed": 0.8185782878067266,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T1 effective tolerance",
+      "expected": 1000,
+      "observed": 1000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 T1 final thermal strain",
+      "expected": 0.8176821573006711,
+      "observed": 0.8176821573006712,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 hydration loss over five frames",
+      "expected": 0.005074593028704706,
+      "observed": 0.005074593028704666,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 heat_acclimation five-frame recurrence",
+      "expected": 0.6539730337416113,
+      "observed": 0.6539730337416114,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 cold_acclimation five-frame recurrence",
+      "expected": 0.1343767148065811,
+      "observed": 0.1343767148065811,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999657541547,
+      "observed": 0.05999999657541547,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T1 humidity_acclimation five-frame recurrence",
+      "expected": 0.13064419514570885,
+      "observed": 0.13064419514570888,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T0 effective tolerance",
+      "expected": 2000,
+      "observed": 2000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T0 final thermal strain",
+      "expected": 0.38280165141306305,
+      "observed": 0.3828016514130631,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T1 effective tolerance",
+      "expected": 2000,
+      "observed": 2000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 T1 final thermal strain",
+      "expected": 0.3833779540953858,
+      "observed": 0.38337795409538583,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 hydration loss over five frames",
+      "expected": 0.003443343028704706,
+      "observed": 0.003443343028704665,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 heat_acclimation five-frame recurrence",
+      "expected": 0.645275573807678,
+      "observed": 0.6452755738076779,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 cold_acclimation five-frame recurrence",
+      "expected": 0.1329005014450002,
+      "observed": 0.1329005014450002,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 altitude_acclimation five-frame recurrence",
+      "expected": 0.059999996814705754,
+      "observed": 0.059999996814705754,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T2 humidity_acclimation five-frame recurrence",
+      "expected": 0.12361175744775832,
+      "observed": 0.12361175744775835,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T0 effective tolerance",
+      "expected": 500.0,
+      "observed": 500,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T0 final thermal strain",
+      "expected": 0.9481094186462411,
+      "observed": 0.9481094186462411,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T1 effective tolerance",
+      "expected": 500.0,
+      "observed": 500,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 T1 final thermal strain",
+      "expected": 0.9468143113263661,
+      "observed": 0.9468143113263661,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 hydration loss over five frames",
+      "expected": 0.005562093028704706,
+      "observed": 0.005562093028704668,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 heat_acclimation five-frame recurrence",
+      "expected": 0.6648211084204244,
+      "observed": 0.6648211084204244,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 cold_acclimation five-frame recurrence",
+      "expected": 0.1458341901652028,
+      "observed": 0.14583419016520274,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 altitude_acclimation five-frame recurrence",
+      "expected": 0.0599999970372758,
+      "observed": 0.05999999703727579,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T05 humidity_acclimation five-frame recurrence",
+      "expected": 0.11707070606278845,
+      "observed": 0.11707070606278845,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T0 effective tolerance",
+      "expected": 250.0,
+      "observed": 250,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T0 final thermal strain",
+      "expected": 0.9465645395904496,
+      "observed": 0.9465645395904496,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T1 effective tolerance",
+      "expected": 250.0,
+      "observed": 250,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 T1 final thermal strain",
+      "expected": 0.9453599269238031,
+      "observed": 0.9453599269238031,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 hydration loss over five frames",
+      "expected": 0.005562093028704706,
+      "observed": 0.005562093028704668,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 heat_acclimation five-frame recurrence",
+      "expected": 0.6830009134524607,
+      "observed": 0.6830009134524606,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 cold_acclimation five-frame recurrence",
+      "expected": 0.17693981745337917,
+      "observed": 0.1769398174533791,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 altitude_acclimation five-frame recurrence",
+      "expected": 0.059999997244293925,
+      "observed": 0.059999997244293925,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T025 humidity_acclimation five-frame recurrence",
+      "expected": 0.1109867057404983,
+      "observed": 0.1109867057404983,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T0 effective tolerance",
+      "expected": 4000,
+      "observed": 4000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T0 final thermal strain",
+      "expected": 0.1631534478007175,
+      "observed": 0.16315344780071755,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T1 effective tolerance",
+      "expected": 4000,
+      "observed": 4000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 T1 final thermal strain",
+      "expected": 0.16456905619595477,
+      "observed": 0.1645690561959548,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 hydration loss over five frames",
+      "expected": 0.002627718028704706,
+      "observed": 0.002627718028704734,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 heat_acclimation five-frame recurrence",
+      "expected": 0.6616367975505653,
+      "observed": 0.6616367975505653,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 cold_acclimation five-frame recurrence",
+      "expected": 0.17010508040092007,
+      "observed": 0.17010508040092007,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999743684682,
+      "observed": 0.05999999743684682,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_HEAT_T4 humidity_acclimation five-frame recurrence",
+      "expected": 0.10532782038046579,
+      "observed": 0.10532782038046581,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T0 effective tolerance",
+      "expected": 1000,
+      "observed": 1000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T0 final thermal strain",
+      "expected": 0.9474384995216033,
+      "observed": 0.9474384995216033,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T1 effective tolerance",
+      "expected": 1000,
+      "observed": 1000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 T1 final thermal strain",
+      "expected": 0.9492202708179089,
+      "observed": 0.9492202708179089,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 hydration loss over five frames",
+      "expected": 0.005562093028704706,
+      "observed": 0.005562093028704668,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 heat_acclimation five-frame recurrence",
+      "expected": 0.6347466147761388,
+      "observed": 0.6347466147761388,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 cold_acclimation five-frame recurrence",
+      "expected": 0.2102754319954223,
+      "observed": 0.21027543199542226,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999761594523,
+      "observed": 0.05999999761594524,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T1 humidity_acclimation five-frame recurrence",
+      "expected": 0.10006434539334806,
+      "observed": 0.10006434539334806,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T0 effective tolerance",
+      "expected": 2000,
+      "observed": 2000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T0 final thermal strain",
+      "expected": 0.44958876356809396,
+      "observed": 0.44958876356809396,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T1 effective tolerance",
+      "expected": 2000,
+      "observed": 2000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 T1 final thermal strain",
+      "expected": 0.4513659503775293,
+      "observed": 0.4513659503775293,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 hydration loss over five frames",
+      "expected": 0.003687093028704706,
+      "observed": 0.0036870930287047354,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 heat_acclimation five-frame recurrence",
+      "expected": 0.6079256202808838,
+      "observed": 0.6079256202808839,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 cold_acclimation five-frame recurrence",
+      "expected": 0.22318292272444332,
+      "observed": 0.22318292272444326,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999778252928,
+      "observed": 0.059999997782529284,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T2 humidity_acclimation five-frame recurrence",
+      "expected": 0.09516865177571754,
+      "observed": 0.09516865177571752,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T0 effective tolerance",
+      "expected": 500.0,
+      "observed": 500,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T0 final thermal strain",
+      "expected": 0.9516341029729989,
+      "observed": 0.9516341029729989,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T1 effective tolerance",
+      "expected": 500.0,
+      "observed": 500,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 T1 final thermal strain",
+      "expected": 0.9529273638454181,
+      "observed": 0.9529273638454181,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 hydration loss over five frames",
+      "expected": 0.005562093028704706,
+      "observed": 0.005562093028704737,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 heat_acclimation five-frame recurrence",
+      "expected": 0.588407951932274,
+      "observed": 0.5884079519322741,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 cold_acclimation five-frame recurrence",
+      "expected": 0.25964449987108573,
+      "observed": 0.2596444998710857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999793747339,
+      "observed": 0.05999999793747339,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T05 humidity_acclimation five-frame recurrence",
+      "expected": 0.0906150410800518,
+      "observed": 0.09061504108005179,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T0 effective tolerance",
+      "expected": 250.0,
+      "observed": 250,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T0 final thermal strain",
+      "expected": 0.9530773234792731,
+      "observed": 0.9530773234792731,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T1 effective tolerance",
+      "expected": 250.0,
+      "observed": 250,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 T1 final thermal strain",
+      "expected": 0.9538005569298659,
+      "observed": 0.9538005569298659,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 hydration loss over five frames",
+      "expected": 0.005562093028704706,
+      "observed": 0.005562093028704737,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 heat_acclimation five-frame recurrence",
+      "expected": 0.5774930383766759,
+      "observed": 0.577493038376676,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 cold_acclimation five-frame recurrence",
+      "expected": 0.2935583516443814,
+      "observed": 0.2935583516443813,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 altitude_acclimation five-frame recurrence",
+      "expected": 0.05999999808159089,
+      "observed": 0.059999998081590886,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T025 humidity_acclimation five-frame recurrence",
+      "expected": 0.08637961051858685,
+      "observed": 0.08637961051858685,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 duration ticks",
+      "expected": 100,
+      "observed": 100,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 phase",
+      "expected": 1,
+      "observed": 1,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T0 effective tolerance",
+      "expected": 4000,
+      "observed": 4000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T0 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T0 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T0 final thermal strain",
+      "expected": 0.20412651824670752,
+      "observed": 0.20412651824670752,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T1 effective tolerance",
+      "expected": 4000,
+      "observed": 4000,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T1 dry W",
+      "expected": 0,
+      "observed": 0.0,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T1 arid origin",
+      "expected": "arid",
+      "observed": "arid",
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 T1 final thermal strain",
+      "expected": 0.20569858215403297,
+      "observed": 0.20569858215403297,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 fatigue stable",
+      "expected": 0.13027710153519312,
+      "observed": 0.13027710153519312,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 raw respiration reconstruction",
+      "expected": 0.1596986607142857,
+      "observed": 0.1596986607142857,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 hydration loss over five frames",
+      "expected": 0.002749593028704706,
+      "observed": 0.0027495930287047,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 heat_acclimation five-frame recurrence",
+      "expected": 0.553767723074588,
+      "observed": 0.553767723074588,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 cold_acclimation five-frame recurrence",
+      "expected": 0.2884185169588922,
+      "observed": 0.2884185169588922,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 altitude_acclimation five-frame recurrence",
+      "expected": 0.059999998215638284,
+      "observed": 0.059999998215638284,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    {
+      "name": "THERMAL_COLD_T4 humidity_acclimation five-frame recurrence",
+      "expected": 0.0824401274929373,
+      "observed": 0.0824401274929373,
+      "tolerance": 1e-12,
+      "pass": true
+    }
+  ],
+  "failed": [],
+  "pass": true
+}

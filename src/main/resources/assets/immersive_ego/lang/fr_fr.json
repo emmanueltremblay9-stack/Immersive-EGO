@@ -32,7 +32,7 @@
   "immersive_ego:respiration_efficiency": "Efficacite respiratoire EGO",
   "immersive_ego:respiration_efficiency.desc": "Multiplicateur de resistance a la contrainte respiratoire lorsque la simulation sera active.",
   "immersive_ego:thermal_tolerance": "Tolerance thermique EGO",
-  "immersive_ego:thermal_tolerance.desc": "Multiplicateur de tolerance a la chaleur et au froid lorsque la simulation environnementale sera active.",
+  "immersive_ego:thermal_tolerance.desc": "Divise les pressions chaude et froide lorsque la simulation environnementale est active, y compris leur effet sur l'hydratation et l'acclimatation. 1 est neutre.",
   "immersive_ego:load_tolerance": "Tolerance de charge EGO",
   "immersive_ego:load_tolerance.desc": "Multiplicateur de tolerance a la charge d'inventaire et d'equipement lorsque l'encombrement sera actif.",
   "immersive_ego:sleep_recovery": "Recuperation par le sommeil EGO",
@@ -70,7 +70,8 @@
   "command.immersive_ego.debug.state.line": "%s : %s",
   "command.immersive_ego.debug.environment.header": "Cache environnement EGO : actif %s, requetes %s, rafraichissements %s, hits %s, skips %s, erreurs %s, evictions %s",
   "command.immersive_ego.debug.environment.sample": "Echantillon @ %s : profil %s, saison %s, ciel %s, abri %s, humidite %s",
-  "command.immersive_ego.debug.environment.thermal": "Thermique : mode %s, chaleur %s, froid %s, humidite %s, exposition %s, contrainte %s",
+  "command.immersive_ego.debug.environment.thermal.raw": "Thermique avant tolerance : chaleur brute %s, froid brut %s, tolerance %s",
+  "command.immersive_ego.debug.environment.thermal": "Thermique ajuste : mode %s, chaleur %s, froid %s, humidite %s, exposition %s, contrainte %s (avant benefice d'origine)",
   "command.immersive_ego.debug.origin.header": "Origine EGO : %s, schema %s",
   "command.immersive_ego.debug.origin.acclimation": "Acclimatation : chaleur %s, froid %s, altitude %s, humidite %s",
   "command.immersive_ego.synergy.trace.header": "Trace de synergie EGO (%s liens)",
@@ -82,7 +83,7 @@
   "config.immersive_ego.core.show_wetness_notices": "Afficher les indications d’humidité de surface",
   "command.immersive_ego.wetness.notices": "Indications d’humidité pour cette session : %s",
   "command.immersive_ego.wetness.state": "Surface W=%s ; schéma=%s ; quarantaine=%s ; activité=%s",
-  "command.immersive_ego.wetness.preview": "Observation fraîche / PRÉVISUALISATION thermique : exposition=%s ; climat=%s ; pression=%s ; contrainte=%s",
+  "command.immersive_ego.wetness.preview": "Observation fraîche / PRÉVISUALISATION thermique : exposition=%s ; climat=%s ; pression d'humidité=%s ; contrainte ajustée par tolérance=%s (avant bénéfice d'origine)",
   "command.immersive_ego.wetness.none": "Aucun pas d’humidité appliqué dans cette session.",
   "command.immersive_ego.wetness.applied": "DERNIER APPLIQUÉ : dimension=%s ; tick=%s ; frais=%s ; exposition=%s ; climat=%s ; W=%s -> %s ; dt=%ss ; acquis=%s ; séché=%s ; taux=%s/s ; ticks consommés=%s"
 }

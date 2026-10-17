@@ -3,6 +3,7 @@ package com.oblixorprime.immersiveego.environment;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfig;
 import com.oblixorprime.immersiveego.config.EgoDynamicServerConfigLoader;
 import com.oblixorprime.immersiveego.config.EgoServerModuleConfigs;
+import com.oblixorprime.immersiveego.registry.EgoAttributes;
 import com.oblixorprime.immersiveego.wetness.EgoWetnessRuntime;
 import java.util.Optional;
 import java.util.UUID;
@@ -48,7 +49,8 @@ public final class EgoEnvironmentService {
 
     private static EgoEnvironmentSnapshot currentThermal(ServerPlayer player, EgoEnvironmentSnapshot raw) {
         return new EgoEnvironmentSnapshot(raw.gameTime(), raw.exposureSample(),
-                EgoThermalSnapshotCalculator.calculate(raw.exposureSample(), EgoWetnessRuntime.thermalWetness(player)));
+                EgoThermalSnapshotCalculator.calculate(raw.exposureSample(), EgoWetnessRuntime.thermalWetness(player),
+                        player.getAttributeValue(EgoAttributes.THERMAL_TOLERANCE)));
     }
 
     private static EgoEnvironmentSnapshot snapshotFor(ServerPlayer player, long gameTime) {

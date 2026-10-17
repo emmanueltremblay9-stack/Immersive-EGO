@@ -16,6 +16,7 @@ import com.oblixorprime.immersiveego.origins.EgoOriginState;
 import com.oblixorprime.immersiveego.registry.EgoAttachments;
 import com.oblixorprime.immersiveego.registry.EgoAttributeCatalog;
 import com.oblixorprime.immersiveego.registry.EgoAttributeSpec;
+import com.oblixorprime.immersiveego.registry.EgoAttributes;
 import com.oblixorprime.immersiveego.simulation.EgoAttributeMirrorService;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEdge;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEvaluationResult;
@@ -135,6 +136,11 @@ public final class EgoCommands {
                 decimal(exposure.shelter()),
                 decimal(exposure.wetness())), false);
         source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.environment.thermal.raw",
+                decimal(thermal.rawHeatPressure()),
+                decimal(thermal.rawColdPressure()),
+                decimal(thermal.thermalTolerance())), false);
+        source.sendSuccess(() -> Component.translatable(
                 "command.immersive_ego.debug.environment.thermal",
                 thermal.mode().name().toLowerCase(Locale.ROOT),
                 decimal(thermal.heatPressure()),
@@ -152,7 +158,7 @@ public final class EgoCommands {
         // A fresh observation/thermal preview, never a simulation step or attachment write.
         EgoExposureSample sample = EgoEnvironmentSampler.sample(player);
         EgoThermalSnapshot preview = EgoThermalSnapshotCalculator.calculate(sample,
-                EgoWetnessRuntime.thermalWetness(player));
+                EgoWetnessRuntime.thermalWetness(player), player.getAttributeValue(EgoAttributes.THERMAL_TOLERANCE));
         source.sendSuccess(() -> Component.translatable("command.immersive_ego.wetness.state",
                 decimal(state.wetness()), state.schemaVersion(), state.quarantined(),
                 EgoWetnessRuntime.activity(player)), false);
