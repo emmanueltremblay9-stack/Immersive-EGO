@@ -1,0 +1,192 @@
+{
+  "scope": "standalone actual-method micro-measurement; not Minecraft gameplay",
+  "jvm_forks": 8,
+  "pairs": 4,
+  "order": "AB, BA, AB, BA",
+  "warmup_seconds_per_case_per_fork": 5,
+  "batches_per_case_per_fork": 12,
+  "operations_per_batch": 2000000,
+  "allocation_measure": "ThreadMXBean current-thread allocated bytes",
+  "jit": "normal tiered JIT and escape analysis; no forced escape, compiler exclusion or optimization disable",
+  "jvm_flags": [
+    "-Xms512m",
+    "-Xmx512m",
+    "-XX:ActiveProcessorCount=4",
+    "-XX:+PrintCompilation"
+  ],
+  "java": "Temurin 21.0.8+9",
+  "cpu_quota": 4,
+  "memory_limit_gib": 16,
+  "baseline_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+  "candidate_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+  "checksum_equivalence_all_pairs": true,
+  "results": {
+    "monotonic_ticks": {
+      "baseline": {
+        "forks": [
+          {
+            "pair": 1,
+            "median_ns_per_operation": 3.2033544999999997,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 2,
+            "median_ns_per_operation": 4.19697825,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 3,
+            "median_ns_per_operation": 3.28561025,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 4,
+            "median_ns_per_operation": 3.24286975,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          }
+        ],
+        "median_of_fork_medians_ns_per_operation": 3.26424,
+        "median_allocated_bytes_per_operation": 32.0
+      },
+      "candidate": {
+        "forks": [
+          {
+            "pair": 1,
+            "median_ns_per_operation": 2.31572725,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 2,
+            "median_ns_per_operation": 2.336496,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 3,
+            "median_ns_per_operation": 2.2047100000000004,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 4,
+            "median_ns_per_operation": 2.2833495,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          }
+        ],
+        "median_of_fork_medians_ns_per_operation": 2.299538375,
+        "median_allocated_bytes_per_operation": 0.0
+      },
+      "paired_differences": [
+        {
+          "pair": 1,
+          "baseline_minus_candidate_ns_per_operation": 0.8876272499999995
+        },
+        {
+          "pair": 2,
+          "baseline_minus_candidate_ns_per_operation": 1.86048225
+        },
+        {
+          "pair": 3,
+          "baseline_minus_candidate_ns_per_operation": 1.0809002499999996
+        },
+        {
+          "pair": 4,
+          "baseline_minus_candidate_ns_per_operation": 0.9595202500000002
+        }
+      ]
+    },
+    "mixed_extremes": {
+      "baseline": {
+        "forks": [
+          {
+            "pair": 1,
+            "median_ns_per_operation": 3.44996625,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 2,
+            "median_ns_per_operation": 3.62802175,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 3,
+            "median_ns_per_operation": 3.58834425,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 4,
+            "median_ns_per_operation": 3.7008715,
+            "allocated_bytes_per_operation": 32.0,
+            "operations": 24000000
+          }
+        ],
+        "median_of_fork_medians_ns_per_operation": 3.608183,
+        "median_allocated_bytes_per_operation": 32.0
+      },
+      "candidate": {
+        "forks": [
+          {
+            "pair": 1,
+            "median_ns_per_operation": 2.43188625,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 2,
+            "median_ns_per_operation": 2.4802395,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 3,
+            "median_ns_per_operation": 2.4138355000000002,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          },
+          {
+            "pair": 4,
+            "median_ns_per_operation": 2.3703905,
+            "allocated_bytes_per_operation": 0.0,
+            "operations": 24000000
+          }
+        ],
+        "median_of_fork_medians_ns_per_operation": 2.422860875,
+        "median_allocated_bytes_per_operation": 0.0
+      },
+      "paired_differences": [
+        {
+          "pair": 1,
+          "baseline_minus_candidate_ns_per_operation": 1.0180800000000003
+        },
+        {
+          "pair": 2,
+          "baseline_minus_candidate_ns_per_operation": 1.1477822499999997
+        },
+        {
+          "pair": 3,
+          "baseline_minus_candidate_ns_per_operation": 1.1745087499999998
+        },
+        {
+          "pair": 4,
+          "baseline_minus_candidate_ns_per_operation": 1.3304809999999998
+        }
+      ]
+    }
+  },
+  "limits": [
+    "Custom probe using existing JDK, not JMH",
+    "Timing includes loop, input selection and checksum overhead",
+    "Full JVM and GC costs can affect timing; allocation counts are for the measured application thread",
+    "Shared cloud CPU noise and four pairs do not establish stable production speedup",
+    "No game run, no per-tick series, no p95, no MNN benefit or multiplayer claim"
+  ]
+}

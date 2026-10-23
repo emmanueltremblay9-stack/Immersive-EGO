@@ -1,0 +1,10 @@
+{
+  "existing_runtime_files_identical": 191,
+  "original_world_source_all_files_unchanged": true,
+  "baseline_JFR_sha256_unchanged": "fe38c0f84ab169daef2b5762d1c17ecadc6d9ea8a5c34c850533e87ea7cdb622",
+  "baseline_report_sha256_unchanged": "1280ba2866fa1e58a74053740ef877d3fca665e2f7c497a5b33729aa835b7a1f",
+  "installed_jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+  "java_xorg_remaining": 0,
+  "new_game_sessions": 0,
+  "files_restored": "No runtime file modification was made; no restoration needed"
+}
