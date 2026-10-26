@@ -1,0 +1,14 @@
+{
+  "tests": 193,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "sampler_suite": {
+    "name": "com.oblixorprime.immersiveego.environment.EgoEnvironmentSamplerTest",
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "fresh_clean_build": true
+}

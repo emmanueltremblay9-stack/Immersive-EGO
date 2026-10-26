@@ -10,7 +10,9 @@ public final class EgoEnvironmentSampler {
     private static final long MINECRAFT_DAY_TICKS = 24000L;
     private static final long SEASON_LENGTH_DAYS = 8L;
     private static final long SEASON_LENGTH_TICKS = MINECRAFT_DAY_TICKS * SEASON_LENGTH_DAYS;
-    private static final long SEASON_CYCLE_TICKS = SEASON_LENGTH_TICKS * EgoSeasonPhase.values().length;
+    // Private lookup only: never expose or mutate this array, and still read the current world time.
+    private static final EgoSeasonPhase[] SEASON_PHASES = EgoSeasonPhase.values();
+    private static final long SEASON_CYCLE_TICKS = SEASON_LENGTH_TICKS * SEASON_PHASES.length;
 
     private EgoEnvironmentSampler() {
     }
@@ -35,7 +37,7 @@ public final class EgoEnvironmentSampler {
     static EgoSeasonPhase seasonPhase(long dayTime) {
         long cycleTick = Math.floorMod(dayTime, SEASON_CYCLE_TICKS);
         int seasonIndex = (int) (cycleTick / SEASON_LENGTH_TICKS);
-        return EgoSeasonPhase.values()[seasonIndex];
+        return SEASON_PHASES[seasonIndex];
     }
 
     static EgoClimateProfile selectClimateProfile(float temperature, float downfall, boolean snow) {

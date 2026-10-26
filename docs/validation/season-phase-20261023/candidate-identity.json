@@ -1,0 +1,12 @@
+{
+  "baseline_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+  "candidate_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+  "candidate_bytes": 511738,
+  "jar_entry_diff": {
+    "added": [],
+    "removed": [],
+    "changed_entries": [
+      "com/oblixorprime/immersiveego/environment/EgoEnvironmentSampler.class"
+    ]
+  }
+}

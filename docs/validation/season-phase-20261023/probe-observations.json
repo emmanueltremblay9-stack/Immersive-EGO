@@ -1,0 +1,1738 @@
+[
+  {
+    "pair": 1,
+    "variant": "baseline",
+    "elapsed_seconds": 10.294063148998248,
+    "jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5005578222,
+        "operations": 1498000000,
+        "compilation_time_ms": 18
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5003880586,
+        "operations": 1346000000,
+        "compilation_time_ms": 56
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 7149527,
+        "allocated_bytes": 64000000,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6226383,
+        "allocated_bytes": 64000000,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6787273,
+        "allocated_bytes": 64000000,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 6377420,
+        "allocated_bytes": 64000000,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 6325322,
+        "allocated_bytes": 64000000,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 7938460,
+        "allocated_bytes": 64000000,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 6214155,
+        "allocated_bytes": 64000000,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 6435998,
+        "allocated_bytes": 64000000,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 6329668,
+        "allocated_bytes": 64000000,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6181666,
+        "allocated_bytes": 64000000,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 7284500,
+        "allocated_bytes": 64000000,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 6463358,
+        "allocated_bytes": 64000000,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 6751777,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6805758,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6821270,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 7676842,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 6803294,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 7164383,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 7112806,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 6805837,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 8049479,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6978595,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 7028691,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 6807049,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "35e35df404b5d440d630f321ecb62f81e5a3215edb77e0ef88c2f3514ed0c17a",
+    "compilation_log_sha256": "ec0664e6ebf3921447eedb9a35359c63c1f4d7f01a6e9d615f2e6743624d9a89"
+  },
+  {
+    "pair": 1,
+    "variant": "candidate",
+    "elapsed_seconds": 10.241908159994637,
+    "jar_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5003616713,
+        "operations": 2200000000,
+        "compilation_time_ms": 20
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5000824771,
+        "operations": 2038000000,
+        "compilation_time_ms": 60
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4741133,
+        "allocated_bytes": 0,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4615656,
+        "allocated_bytes": 0,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4833913,
+        "allocated_bytes": 0,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4437829,
+        "allocated_bytes": 0,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4400053,
+        "allocated_bytes": 0,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4365862,
+        "allocated_bytes": 0,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4590147,
+        "allocated_bytes": 0,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4869526,
+        "allocated_bytes": 0,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4901625,
+        "allocated_bytes": 0,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4487284,
+        "allocated_bytes": 0,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4647253,
+        "allocated_bytes": 0,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 5136986,
+        "allocated_bytes": 0,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4687613,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4732331,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4586042,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4862366,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4905900,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 6061422,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 5084748,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4831049,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 5173020,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4760693,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4865179,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 5011629,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "b874ac53be4d92a82f44b5a5260542528300ede48c3490606c165e5b76606465",
+    "compilation_log_sha256": "d65615b2c43589c1156a70515859dc576b88c8619a119126eb66302f7128767b"
+  },
+  {
+    "pair": 2,
+    "variant": "candidate",
+    "elapsed_seconds": 10.243238178998581,
+    "jar_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5000441729,
+        "operations": 2182000000,
+        "compilation_time_ms": 22
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5002861469,
+        "operations": 1988000000,
+        "compilation_time_ms": 65
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4622411,
+        "allocated_bytes": 0,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4786376,
+        "allocated_bytes": 0,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4546157,
+        "allocated_bytes": 0,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4894838,
+        "allocated_bytes": 0,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4850792,
+        "allocated_bytes": 0,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4656262,
+        "allocated_bytes": 0,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4458366,
+        "allocated_bytes": 0,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4689722,
+        "allocated_bytes": 0,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4768539,
+        "allocated_bytes": 0,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4848298,
+        "allocated_bytes": 0,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4490333,
+        "allocated_bytes": 0,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 4482421,
+        "allocated_bytes": 0,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 5224494,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4761381,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 5463021,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4810805,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 5290873,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 5392234,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4929082,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4847741,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4991876,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4734610,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 5098375,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 4807691,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "5d9d06b7ea230b781f4796a835882ff2052855d503df70fc7c9efcfe858c2961",
+    "compilation_log_sha256": "d1f666fc4059b2f21fd1a73bdef5855b7d0feb80a033cc8196e1dd74626c3378"
+  },
+  {
+    "pair": 2,
+    "variant": "baseline",
+    "elapsed_seconds": 10.346867766005744,
+    "jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5002966626,
+        "operations": 1362000000,
+        "compilation_time_ms": 19
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5002142879,
+        "operations": 1292000000,
+        "compilation_time_ms": 65
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 6425536,
+        "allocated_bytes": 64000000,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6589191,
+        "allocated_bytes": 64000000,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6162291,
+        "allocated_bytes": 64000000,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 10889702,
+        "allocated_bytes": 64000000,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 9546160,
+        "allocated_bytes": 64000000,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 9844447,
+        "allocated_bytes": 64000000,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 10378997,
+        "allocated_bytes": 64000000,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 7131943,
+        "allocated_bytes": 64000000,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 11515459,
+        "allocated_bytes": 64000000,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 8023088,
+        "allocated_bytes": 64000000,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 8764825,
+        "allocated_bytes": 64000000,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 6175430,
+        "allocated_bytes": 64000000,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 6990469,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6792192,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 7584093,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 7341201,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 6834316,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 7276304,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 7393359,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 7235783,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 8234673,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6939642,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 7033402,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 7368732,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "3bdfe766195857b848e60e6dcb47dc1ce32ed1991a646d7b907ad4331048c505",
+    "compilation_log_sha256": "eacac22b2d6ad0fd7b4ed4b08ee1893f4a12c2bd5ea09d0c7d85bbd0d981d617"
+  },
+  {
+    "pair": 3,
+    "variant": "baseline",
+    "elapsed_seconds": 10.345677320001414,
+    "jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5002879318,
+        "operations": 1446000000,
+        "compilation_time_ms": 20
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5004245227,
+        "operations": 1262000000,
+        "compilation_time_ms": 62
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 8671814,
+        "allocated_bytes": 64000000,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 7705088,
+        "allocated_bytes": 64000000,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6416257,
+        "allocated_bytes": 64000000,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 6683989,
+        "allocated_bytes": 64000000,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 6155447,
+        "allocated_bytes": 64000000,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 6181466,
+        "allocated_bytes": 64000000,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 7147823,
+        "allocated_bytes": 64000000,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 6419833,
+        "allocated_bytes": 64000000,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 6411159,
+        "allocated_bytes": 64000000,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6580194,
+        "allocated_bytes": 64000000,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 6562247,
+        "allocated_bytes": 64000000,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 7161803,
+        "allocated_bytes": 64000000,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 7088831,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 8331473,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6957735,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 7559616,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 7185246,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 7420618,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 8170802,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 6866499,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 7168131,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6784416,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 7151144,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 7986446,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "d35251fa0f24318e411d3d409cc91dde635c299a39b6ffaa06b70e27319428c1",
+    "compilation_log_sha256": "a94e711dad6c5b0b3a3ccafff67a4c9d410cce3174bf71d3f63dfdbed21cce1b"
+  },
+  {
+    "pair": 3,
+    "variant": "candidate",
+    "elapsed_seconds": 10.244087763996504,
+    "jar_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5002412762,
+        "operations": 2108000000,
+        "compilation_time_ms": 21
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5000291272,
+        "operations": 2072000000,
+        "compilation_time_ms": 56
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4456440,
+        "allocated_bytes": 0,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4425925,
+        "allocated_bytes": 0,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4441868,
+        "allocated_bytes": 0,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4456720,
+        "allocated_bytes": 0,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4358284,
+        "allocated_bytes": 0,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4421058,
+        "allocated_bytes": 0,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4353807,
+        "allocated_bytes": 0,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4397782,
+        "allocated_bytes": 0,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4370032,
+        "allocated_bytes": 0,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4383912,
+        "allocated_bytes": 0,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4427767,
+        "allocated_bytes": 0,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 4348057,
+        "allocated_bytes": 0,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 5059493,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4738272,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4803810,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4848568,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4886013,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4941617,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4806774,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4731563,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4947426,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4577602,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4582619,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 5087896,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "cbc4135135d450a271792f9a8b75a1131c5f0ed2539fdc1d4006d07e562978e0",
+    "compilation_log_sha256": "c269ef6cd9bbeaae9d1f7365e1d854bc738293166bce10d10323f1c05966e7fc"
+  },
+  {
+    "pair": 4,
+    "variant": "candidate",
+    "elapsed_seconds": 10.24323847800406,
+    "jar_sha256": "66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5000533311,
+        "operations": 2138000000,
+        "compilation_time_ms": 20
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5003310729,
+        "operations": 2078000000,
+        "compilation_time_ms": 55
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4625873,
+        "allocated_bytes": 0,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 5420933,
+        "allocated_bytes": 0,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 4962797,
+        "allocated_bytes": 0,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4388588,
+        "allocated_bytes": 0,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 4359134,
+        "allocated_bytes": 0,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4348618,
+        "allocated_bytes": 0,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4547826,
+        "allocated_bytes": 0,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4585572,
+        "allocated_bytes": 0,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4788667,
+        "allocated_bytes": 0,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4649679,
+        "allocated_bytes": 0,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4401226,
+        "allocated_bytes": 0,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 4510380,
+        "allocated_bytes": 0,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 4714377,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 4877351,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 5219502,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 4739764,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 5060063,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 4940946,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 4682360,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 4715969,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 4641558,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 4684292,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 4753366,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 4741798,
+        "allocated_bytes": 0,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "dd3a7d23f07134c1cc46fac8cadcdf979cc894252777544dbc14c1be0282c310",
+    "compilation_log_sha256": "4a766f114e24f03fe18b0bf5278a3a1ffee42a87f37a92df2c948bd81afbaf5a"
+  },
+  {
+    "pair": 4,
+    "variant": "baseline",
+    "elapsed_seconds": 10.293950259001576,
+    "jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+    "loaded_jar_confirmed": true,
+    "warmups": [
+      {
+        "mode": "monotonic_ticks",
+        "elapsed_nanos": 5001067740,
+        "operations": 1472000000,
+        "compilation_time_ms": 19
+      },
+      {
+        "mode": "mixed_extremes",
+        "elapsed_nanos": 5007260843,
+        "operations": 1360000000,
+        "compilation_time_ms": 58
+      }
+    ],
+    "batches": [
+      {
+        "mode": "monotonic_ticks",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 6824611,
+        "allocated_bytes": 64000000,
+        "checksum": 5200000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6492154,
+        "allocated_bytes": 64000000,
+        "checksum": 4728000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6403752,
+        "allocated_bytes": 64000000,
+        "checksum": 5248000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 7341364,
+        "allocated_bytes": 64000000,
+        "checksum": 4832000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 6479325,
+        "allocated_bytes": 64000000,
+        "checksum": 4984000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 6201600,
+        "allocated_bytes": 64000000,
+        "checksum": 5232000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 6920886,
+        "allocated_bytes": 64000000,
+        "checksum": 4712000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 6136732,
+        "allocated_bytes": 64000000,
+        "checksum": 5216000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 7204721,
+        "allocated_bytes": 64000000,
+        "checksum": 4864000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 6061639,
+        "allocated_bytes": 64000000,
+        "checksum": 4968000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 6686645,
+        "allocated_bytes": 64000000,
+        "checksum": 5264000
+      },
+      {
+        "mode": "monotonic_ticks",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 6088550,
+        "allocated_bytes": 64000000,
+        "checksum": 4696000
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 0,
+        "operations": 2000000,
+        "elapsed_nanos": 6904429,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 1,
+        "operations": 2000000,
+        "elapsed_nanos": 6764380,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 2,
+        "operations": 2000000,
+        "elapsed_nanos": 6858000,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 3,
+        "operations": 2000000,
+        "elapsed_nanos": 8103583,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 4,
+        "operations": 2000000,
+        "elapsed_nanos": 8465785,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 5,
+        "operations": 2000000,
+        "elapsed_nanos": 7360662,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 6,
+        "operations": 2000000,
+        "elapsed_nanos": 7442824,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 7,
+        "operations": 2000000,
+        "elapsed_nanos": 7445608,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 8,
+        "operations": 2000000,
+        "elapsed_nanos": 6931900,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 9,
+        "operations": 2000000,
+        "elapsed_nanos": 7613941,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 10,
+        "operations": 2000000,
+        "elapsed_nanos": 7193351,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      },
+      {
+        "mode": "mixed_extremes",
+        "batch": 11,
+        "operations": 2000000,
+        "elapsed_nanos": 7780169,
+        "allocated_bytes": 64000000,
+        "checksum": 4991736
+      }
+    ],
+    "data_sha256": "173453a4dca7fb12d3947f8b15f68f77d72ac904b6b4dc319a9bf079cd845769",
+    "compilation_log_sha256": "282a400dad77203bbbfa6237ad2cf3a5a0552d3382debdffbe2e1986ebe2098a"
+  }
+]

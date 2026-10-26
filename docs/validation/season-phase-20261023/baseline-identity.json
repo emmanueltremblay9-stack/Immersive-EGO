@@ -1,0 +1,10 @@
+{
+  "base_commit": "db1f65dfc1a1639974f247c09a463201c0888789",
+  "baseline_tested_source": "0b8b49c0d0a43424a73997e294d8fc3a2a9f4dc0",
+  "baseline_jar_sha256": "bbe4be56ea2e9169cd35dbad10ea91d82baccb7111e77d80da4a04054cf6a163",
+  "baseline_jar_bytes": 511707,
+  "baseline_profile_sha256": "fe38c0f84ab169daef2b5762d1c17ecadc6d9ea8a5c34c850533e87ea7cdb622",
+  "authorized_change": "avoid per-call enum values array copy only; preserve all dynamic reads",
+  "no_game_client_or_server_run": true,
+  "no_dependency_install": true
+}

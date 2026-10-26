@@ -1,5 +1,13 @@
 # Implementation Log
 
+## 2026-10-23 — MNL season lookup experiment
+
+Owner approval covers this one experimental variant and comparison. Added a private, never-exposed `EgoSeasonPhase` table in `EgoEnvironmentSampler`; current day time, floor-modulo calculation and all other dynamic reads remain intact. Added four tests for signed boundaries, time rewinds/extremes, 10,000 full-range oracle comparisons and caller-array isolation.
+
+Fresh Linux-wrapper equivalent of `gradlew.bat clean build` (private helper path redacted): `./gradlew --no-daemon --max-workers=3 --offline --no-build-cache -I <private-classpath-exporter> clean build writeSeasonProbeClasspath` completed with exit 0 in 13 seconds, 193 JUnit tests, no failures/errors/skips. The first invocation stopped before tests in the external classpath helper; its log is preserved, and the corrected helper captures the project classpath during task configuration. No dependencies installed. Only `EgoEnvironmentSampler.class` differs in the new 511738-byte JAR, SHA256 `66781901cbc761f734a6fb597b3874d585cc5583d419e52277aa2b49a74bab1e`.
+
+Existing-JDK probe: eight sequential JVMs, four AB/BA pairs, two cases, five seconds warmup per case, 12 batches of 2,000,000 calls. Actual JAR loading and checksums verified; tier-4 compilation observed. Baseline allocates 32 bytes/call and candidate zero in every measured batch. Median-of-fork-medians times: increasing ticks 3.264 versus 2.300 ns/call; mixed/extreme inputs 3.608 versus 2.423 ns/call. These include harness overhead and do not establish gameplay performance. No game run, local GameTests, JFR, merge, release, installation or MNN. Draft-PR commit and subsequent CI are reported separately. [Report and evidence](SEASON_PHASE_EXPERIMENT.md).
+
 ## 2026-10-17 — approved thermal tolerance option B
 
 Implemented server effective-tolerance projection on the existing thermal snapshot, with separately reported raw/adjusted values. No dependency, version, config-default, wetness model, scheduler-order or unrelated coefficient change. The owner selected B at 10:44 UTC; see [contract](THERMAL_TOLERANCE.md).

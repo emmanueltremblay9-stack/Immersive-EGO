@@ -1,0 +1,21 @@
+{
+  "command": "./gradlew --no-daemon --max-workers=3 --offline --no-build-cache -I <private-classpath-exporter> clean build writeSeasonProbeClasspath",
+  "first_attempt": {
+    "exit": 1,
+    "tests_run": false,
+    "reason": "External classpath helper unknown task property configurations",
+    "log_sha256": "f484d4f81dbf05ffe06f23825eb1086c68cbf193074831c55fa1e877578aa24b"
+  },
+  "corrected_attempt": {
+    "exit": 0,
+    "result": "BUILD SUCCESSFUL in 13s; 9 actionable tasks executed",
+    "tests": 193,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log_sha256": "13675079d735df072a7bb718609d4efa70e57accbeaf0f5583fa8f2d1b679003"
+  },
+  "game_tests": "NOT_RUN in the local experiment; later CI results recorded separately",
+  "gameplay_AB": "NOT_RUN",
+  "command_note": "Underlying Gradle invocation; private helper path redacted. Existing cloud wrapper selected the installed JDK."
+}

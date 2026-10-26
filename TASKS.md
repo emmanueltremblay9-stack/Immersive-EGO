@@ -1,5 +1,12 @@
 # Immersive EGO Tasks
 
+## MNL season lookup experiment — approved 2026-10-23
+
+- [x] Prepare only a private enum lookup table, preserving current world-time and all dynamic environment/W/tolerance reads.
+- [x] Add four equivalence tests and complete a fresh offline clean build: 193 JUnit pass.
+- [x] Compare the actual baseline/candidate methods in eight sequential warmed JVMs: 32 to 0 bytes/call in this probe, with timing and limits documented in [the experiment report](docs/SEASON_PHASE_EXPERIMENT.md).
+- [ ] Integration or in-game gain validation is not performed by this experiment. No MNN, merge, publication or installation.
+
 ## Thermal tolerance — approved option B, 2026-10-17
 
 - [x] Record the owner's B decision (10:44 UTC) and implement snapshot heat/cold division by effective server tolerance; preserve PR2 and all other tuning.
