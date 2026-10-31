@@ -72,6 +72,20 @@ final class EgoDynamicSynergyConfigLoaderTest {
         assertTrue(config.edges().isEmpty());
     }
 
+    @Test
+    void repairsMalformedSynergyTomlToEmpty() throws IOException {
+        Files.createDirectories(configPath().getParent());
+        Files.writeString(configPath(), """
+                [synergies
+                edges = ["fatigue -> stress : 0.25"
+                """);
+
+        EgoDynamicSynergyConfig config = EgoDynamicSynergyConfigLoader.load(tempDir);
+
+        assertTrue(config.edges().isEmpty());
+        assertTrue(EgoDynamicSynergyConfigLoader.load(tempDir).edges().isEmpty());
+    }
+
     private Path configPath() {
         return tempDir.resolve("immersive_ego").resolve(EgoDynamicSynergyConfigLoader.FILE_NAME);
     }

@@ -1,0 +1,11 @@
+schemaVersion = 1
+assignmentMode = "AUTO_BIRTH_BIOME" # AUTO_BIRTH_BIOME | PLAYER_CHOICE | ADMIN_ONLY | DISABLED
+
+[acclimation]
+heatGainPerMinute = 0.002
+coldGainPerMinute = 0.002
+altitudeGainPerMinute = 0.001
+humidityGainPerMinute = 0.001
+darknessGainPerMinute = 0.001
+decayPerDay = 0.01
+maxAcclimation = 0.65

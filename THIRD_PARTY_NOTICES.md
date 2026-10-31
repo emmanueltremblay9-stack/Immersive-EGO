@@ -26,4 +26,10 @@ The original example Java and resource content was removed.
 
 `src/main/resources/immersive_ego_logo_1024.png` is the user-supplied Immersive EGO logo provided for this repository.
 
+## Complementary Reference Pack
+
+Local governance, prompt, template, planning, and placeholder branding material from `immersive_ego_missing_project_pack.zip` was imported as project reference material. The actual downloaded archive SHA-256 and the embedded `SHA256.txt` value do not match; see `docs/SOURCE_PROVENANCE.md` and `docs/project_pack/immersive_ego_missing_project_pack/IMPORT_NOTES.md`.
+
+This pack is not treated as third-party upstream code or as runtime mod assets. Reference folders such as `branding/`, `codex_prompts/`, `config_templates/`, root `*.template` files, and `docs/project_pack/` must not be packaged into the runtime mod jar.
+
 No Apothic Attributes, Apotheosis, Cold Sweat, Tough As Nails, or other third-party textures, sounds, models, language files, GUI atlases, or logos are copied into this repository.

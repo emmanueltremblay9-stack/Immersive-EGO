@@ -8,6 +8,7 @@ Repository rules for Codex and other agents:
 - Keep Apothic Attributes and MariesLib as separate runtime dependencies. Never JarJar MariesLib.
 - Do not add Cold Sweat, Tough As Nails, or copied All Rights Reserved assets.
 - Keep gameplay calculations server-authoritative; never let the client mutate authoritative EGO state.
+- Do not add `src/main/resources/data/immersive_ego/immersive_ego/scanner/scanner_spec.json`; MariesLib scanner setup is handled by creating `config/immersive_ego/scanner_spec.json` at startup.
 - Before claiming completion, run `.\gradlew.bat clean build` and record exact results in `docs/IMPLEMENTATION_LOG.md`.
 - For Prism LAB test installs, use `scripts/install-mod.ps1` and verify hash, metadata, and one remaining installed jar.
 - Keep `TASKS.md`, `docs/CODEX_HANDOFF.md`, and `docs/IMPLEMENTATION_LOG.md` current after each run.

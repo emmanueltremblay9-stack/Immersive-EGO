@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -92,9 +93,15 @@ public final class EgoSynergyEvaluator {
     }
 
     private static Map<String, Double> normalizedExternalValues(Map<String, Double> externalSourceValues) {
+        Objects.requireNonNull(externalSourceValues, "externalSourceValues");
         Map<String, Double> values = new HashMap<>();
         for (Map.Entry<String, Double> entry : externalSourceValues.entrySet()) {
-            values.put(entry.getKey(), EgoMath.clamp01(entry.getValue()));
+            String path = Objects.requireNonNull(entry.getKey(), "external source path");
+            Double value = Objects.requireNonNull(entry.getValue(), "external source value");
+            if (!Double.isFinite(value)) {
+                throw new IllegalArgumentException("external source values must be finite");
+            }
+            values.put(path, EgoMath.clamp01(value));
         }
         return values;
     }

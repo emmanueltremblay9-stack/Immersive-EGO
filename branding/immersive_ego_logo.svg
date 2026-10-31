@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Immersive EGO logo placeholder">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f7f3d7"/>
+      <stop offset="45%" stop-color="#88d8c0"/>
+      <stop offset="100%" stop-color="#1d3b48"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7b46a"/>
+      <stop offset="45%" stop-color="#72c9c3"/>
+      <stop offset="100%" stop-color="#30415d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="120" fill="#0d1117"/>
+  <circle cx="512" cy="512" r="350" fill="none" stroke="url(#ring)" stroke-width="44"/>
+  <circle cx="512" cy="512" r="245" fill="url(#core)" opacity="0.95"/>
+  <path d="M512 198 C590 322 663 394 826 424 C684 471 594 560 544 824 C501 650 405 536 198 512 C384 470 461 369 512 198 Z" fill="none" stroke="#f4e8b2" stroke-width="28" stroke-linejoin="round"/>
+  <path d="M332 636 C407 690 604 698 694 552 C639 582 565 586 512 548 C455 506 406 509 332 636 Z" fill="#0d1117" opacity="0.38"/>
+  <circle cx="512" cy="512" r="70" fill="#0d1117" opacity="0.76"/>
+  <circle cx="512" cy="512" r="34" fill="#f4e8b2"/>
+  <g stroke="#88d8c0" stroke-width="16" stroke-linecap="round">
+    <path d="M512 106 L512 152"/>
+    <path d="M512 872 L512 918"/>
+    <path d="M106 512 L152 512"/>
+    <path d="M872 512 L918 512"/>
+  </g>
+  <text x="512" y="955" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="66" fill="#f4e8b2">EGO</text>
+</svg>

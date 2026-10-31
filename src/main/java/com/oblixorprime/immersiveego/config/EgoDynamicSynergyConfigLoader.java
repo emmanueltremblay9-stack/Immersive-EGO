@@ -2,6 +2,7 @@ package com.oblixorprime.immersiveego.config;
 
 import com.electronwill.nightconfig.core.CommentedConfig;
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
+import com.electronwill.nightconfig.core.io.ParsingException;
 import com.oblixorprime.immersiveego.ImmersiveEgo;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEdge;
 import com.oblixorprime.immersiveego.simulation.EgoSynergyEdgeParser;
@@ -44,6 +45,25 @@ public final class EgoDynamicSynergyConfigLoader {
             }
         } catch (IOException exception) {
             throw new IllegalStateException("Unable to prepare Immersive EGO synergy config at " + configPath, exception);
+        }
+
+        try (CommentedFileConfig fileConfig = CommentedFileConfig.of(configPath)) {
+            try {
+                fileConfig.load();
+            } catch (ParsingException exception) {
+                return resetAndLoadDefaults(configPath);
+            }
+            EgoDynamicSynergyConfig loaded = readAndRepair(fileConfig);
+            fileConfig.save();
+            return loaded;
+        }
+    }
+
+    private static EgoDynamicSynergyConfig resetAndLoadDefaults(Path configPath) {
+        try {
+            Files.writeString(configPath, "");
+        } catch (IOException exception) {
+            throw new IllegalStateException("Unable to reset malformed Immersive EGO synergy config at " + configPath, exception);
         }
 
         try (CommentedFileConfig fileConfig = CommentedFileConfig.of(configPath)) {

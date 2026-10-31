@@ -1,0 +1,13 @@
+schemaVersion = 1
+
+[scheduler]
+fastTicks = 5
+normalTicks = 20
+slowTicks = 120
+environmentCacheTicks = 40
+networkHeartbeatTicks = 100
+
+[failsafe]
+maxPlayersPerTickBatch = 8
+maxEnvironmentSamplesPerTick = 16
+maxNetworkBytesPerPlayerPerMinute = 8192

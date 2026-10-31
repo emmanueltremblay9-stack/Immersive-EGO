@@ -4,6 +4,12 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.oblixorprime.immersiveego.config.EgoDynamicSynergyConfigLoader;
 import com.oblixorprime.immersiveego.data.EgoState;
+import com.oblixorprime.immersiveego.environment.EgoEnvironmentDebugCounters;
+import com.oblixorprime.immersiveego.environment.EgoEnvironmentService;
+import com.oblixorprime.immersiveego.environment.EgoEnvironmentSnapshot;
+import com.oblixorprime.immersiveego.environment.EgoExposureSample;
+import com.oblixorprime.immersiveego.environment.EgoThermalSnapshot;
+import com.oblixorprime.immersiveego.origins.EgoOriginState;
 import com.oblixorprime.immersiveego.registry.EgoAttributeCatalog;
 import com.oblixorprime.immersiveego.registry.EgoAttributeSpec;
 import com.oblixorprime.immersiveego.registry.EgoAttachments;
@@ -42,7 +48,11 @@ public final class EgoCommands {
                 .then(Commands.literal("debug")
                         .requires(source -> source.hasPermission(2))
                         .then(Commands.literal("state")
-                                .executes(context -> showDebugState(context.getSource()))))
+                                .executes(context -> showDebugState(context.getSource())))
+                        .then(Commands.literal("environment")
+                                .executes(context -> showDebugEnvironment(context.getSource())))
+                        .then(Commands.literal("origin")
+                                .executes(context -> showDebugOrigin(context.getSource()))))
                 .then(Commands.literal("synergy")
                         .requires(source -> source.hasPermission(2))
                         .then(Commands.literal("trace")
@@ -81,6 +91,60 @@ public final class EgoCommands {
         }
 
         return EgoAttributeCatalog.displayOnlySpecs().size();
+    }
+
+    private static int showDebugEnvironment(CommandSourceStack source) throws CommandSyntaxException {
+        ServerPlayer player = source.getPlayerOrException();
+        EgoEnvironmentSnapshot snapshot = EgoEnvironmentService.debugSnapshot(player);
+        EgoExposureSample exposure = snapshot.exposureSample();
+        EgoThermalSnapshot thermal = snapshot.thermalSnapshot();
+        EgoEnvironmentDebugCounters counters = EgoEnvironmentService.counters();
+
+        source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.environment.header",
+                EgoEnvironmentService.environmentModuleEnabled(),
+                counters.requests(),
+                counters.refreshes(),
+                counters.hits(),
+                counters.skips(),
+                counters.errors(),
+                counters.evictions()), false);
+        source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.environment.sample",
+                snapshot.gameTime(),
+                exposure.climateProfile().id(),
+                exposure.seasonPhase().name().toLowerCase(Locale.ROOT),
+                decimal(exposure.skyExposure()),
+                decimal(exposure.shelter()),
+                decimal(exposure.wetness())), false);
+        source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.environment.thermal",
+                thermal.mode().name().toLowerCase(Locale.ROOT),
+                decimal(thermal.heatPressure()),
+                decimal(thermal.coldPressure()),
+                decimal(thermal.wetnessPressure()),
+                decimal(thermal.exposurePressure()),
+                decimal(thermal.thermalStrain())), false);
+
+        return 1;
+    }
+
+    private static int showDebugOrigin(CommandSourceStack source) throws CommandSyntaxException {
+        ServerPlayer player = source.getPlayerOrException();
+        EgoOriginState originState = player.getData(EgoAttachments.EGO_ORIGIN_STATE.get());
+
+        source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.origin.header",
+                originState.originId(),
+                originState.schemaVersion()), false);
+        source.sendSuccess(() -> Component.translatable(
+                "command.immersive_ego.debug.origin.acclimation",
+                decimal(originState.heatAcclimation()),
+                decimal(originState.coldAcclimation()),
+                decimal(originState.altitudeAcclimation()),
+                decimal(originState.humidityAcclimation())), false);
+
+        return 1;
     }
 
     private static int showSynergyTrace(CommandSourceStack source) throws CommandSyntaxException {

@@ -1,6 +1,6 @@
 # Modpack Guide
 
-Current release status: technical bootstrap.
+Current release status: alpha foundation, not gameplay-complete or release-ready.
 
 ## Required Mods
 
@@ -16,7 +16,7 @@ Current release status: technical bootstrap.
 
 ## Current Gameplay
 
-No gameplay systems are enabled yet. The bootstrap jar is useful for dependency and load verification only.
+Gameplay remains default-off. Environment, physiology, sleep, encumbrance, nutrition, persistent injury memory, psychology, origins, and acclimation foundations can run only when the server-side core simulation gate and matching module gates are enabled. Dedicated-server startup is covered by the repository smoke script, but pack-facing gameplay still needs live module testing before beta.
 
 ## Future Pack Configuration
 

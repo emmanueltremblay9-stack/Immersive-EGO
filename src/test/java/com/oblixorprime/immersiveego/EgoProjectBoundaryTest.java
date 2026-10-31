@@ -51,11 +51,33 @@ final class EgoProjectBoundaryTest {
             "tough_as_nails",
             "Tough As Nails");
 
+    private static final List<String> CLIENT_ONLY_SOURCE_TOKENS = List.of(
+            "net.minecraft.client",
+            "net.neoforged.api.distmarker.OnlyIn",
+            "net.neoforged.api.distmarker.Dist.CLIENT",
+            "@OnlyIn");
+
     @Test
     void forbiddenCustomResourceDirectoriesDoNotExist() {
         for (Path directory : FORBIDDEN_RESOURCE_DIRECTORIES) {
             assertFalse(Files.exists(PROJECT_ROOT.resolve(directory)), directory.toString());
         }
+    }
+
+    @Test
+    void bundledMariesLibScannerResourcesAreNotPackaged() {
+        Path scannerDirectory = PROJECT_ROOT.resolve(Path.of(
+                "src",
+                "main",
+                "resources",
+                "data",
+                "immersive_ego",
+                "immersive_ego",
+                "scanner"));
+        Path scannerSpec = scannerDirectory.resolve("scanner_spec.json");
+
+        assertFalse(Files.exists(scannerDirectory), PROJECT_ROOT.relativize(scannerDirectory).toString());
+        assertFalse(Files.exists(scannerSpec), PROJECT_ROOT.relativize(scannerSpec).toString());
     }
 
     @Test
@@ -88,6 +110,46 @@ final class EgoProjectBoundaryTest {
         }
 
         assertTrue(violations.isEmpty(), () -> "Banned integration references found:\n" + String.join("\n", violations));
+    }
+
+    @Test
+    void mainSourcesDoNotReferenceClientOnlyClasses() throws IOException {
+        List<String> violations = new ArrayList<>();
+
+        for (Path file : filesUnder("src/main/java", path -> path.toString().endsWith(".java"))) {
+            String text = readString(file);
+            for (String token : CLIENT_ONLY_SOURCE_TOKENS) {
+                if (text.contains(token)) {
+                    violations.add(PROJECT_ROOT.relativize(file) + " contains " + token);
+                }
+            }
+        }
+
+        assertTrue(violations.isEmpty(), () -> "Client-only source references found:\n" + String.join("\n", violations));
+    }
+
+    @Test
+    void apotheosisMetadataStaysOptionalAndSourcesDoNotRequireIt() throws IOException {
+        String metadata = readString(PROJECT_ROOT.resolve(Path.of(
+                "src",
+                "main",
+                "templates",
+                "META-INF",
+                "neoforge.mods.toml")));
+        int apotheosisIndex = metadata.indexOf("modId=\"apotheosis\"");
+        assertTrue(apotheosisIndex >= 0, "Missing Apotheosis optional dependency block");
+        String apotheosisBlock = metadata.substring(apotheosisIndex, Math.min(metadata.length(), apotheosisIndex + 300));
+        assertTrue(apotheosisBlock.contains("type=\"optional\""), "Apotheosis dependency must stay optional");
+
+        List<String> violations = new ArrayList<>();
+        for (Path file : filesUnder("src/main/java", path -> path.toString().endsWith(".java"))) {
+            String text = readString(file).toLowerCase();
+            if (text.contains("apotheosis")) {
+                violations.add(PROJECT_ROOT.relativize(file).toString());
+            }
+        }
+
+        assertTrue(violations.isEmpty(), () -> "Main sources must not require Apotheosis APIs:\n" + String.join("\n", violations));
     }
 
     private static List<Path> filesUnder(String relativeRoot, Predicate<Path> predicate) throws IOException {

@@ -1,0 +1,17 @@
+schemaVersion = 1
+
+[fatigue]
+baselineGainPerMinute = 0.002
+exertionGainMultiplier = 1.5
+
+[sleep]
+allowNaps = true
+napDoesAdvanceTime = false
+minimumRestorativeDurationTicks = 6000
+phantomResetRequiresQuality = true
+minimumPhantomResetQuality = 0.55
+
+[safety]
+reachableThreatCheckEnabled = true
+threatCheckRadius = 12
+cacheTicks = 100

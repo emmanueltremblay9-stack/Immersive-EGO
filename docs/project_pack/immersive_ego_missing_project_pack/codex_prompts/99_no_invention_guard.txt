@@ -1,0 +1,12 @@
+Use this guard before any Codex implementation step.
+
+Rules:
+- Do not invent NeoForge, Apothic Attributes, MariesLib, or Apotheosis API names.
+- Inspect source/JAR/docs first.
+- If an API is unavailable or unclear, isolate behind a facade and record a blocker.
+- Do not fake passed tests.
+- Do not silently add placeholder gameplay behavior.
+- Do not copy ARR/GPL/Cold Sweat assets or code.
+- Do not register custom blocks/items/entities/fluids.
+- Preserve server/client classloading separation.
+- Update TASKS.md and docs/CODEX_HANDOFF.md before ending.

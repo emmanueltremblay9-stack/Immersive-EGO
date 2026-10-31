@@ -77,4 +77,19 @@ final class EgoSynergyEvaluatorTest {
         assertThrows(IllegalArgumentException.class, () -> EgoSynergyEvaluator.evaluate(input, List.of(
                 new EgoSynergyEdge("stamina_capacity", "stamina", 0.4D))));
     }
+
+    @Test
+    void rejectsNonFiniteExternalSourceValues() {
+        EgoState input = EgoState.defaultState();
+        List<EgoSynergyEdge> edges = List.of(new EgoSynergyEdge("stamina_capacity", "stamina", 0.4D));
+
+        assertThrows(IllegalArgumentException.class, () -> EgoSynergyEvaluator.evaluate(
+                input,
+                edges,
+                Map.of("stamina_capacity", Double.NaN)));
+        assertThrows(IllegalArgumentException.class, () -> EgoSynergyEvaluator.evaluate(
+                input,
+                edges,
+                Map.of("stamina_capacity", Double.POSITIVE_INFINITY)));
+    }
 }

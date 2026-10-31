@@ -1,0 +1,16 @@
+schemaVersion = 1
+preset = "IMMERSIVE" # CASUAL | IMMERSIVE | HARDCORE | CUSTOM
+enableSimulation = true
+copyStateOnDeath = false
+adminDebugPermissionLevel = 2
+
+[recovery]
+minimumRecoveryFloor = 0.10
+sharedBudgetEnabled = true
+
+[thresholds]
+mild = 0.25
+moderate = 0.50
+severe = 0.75
+critical = 0.92
+hysteresis = 0.03

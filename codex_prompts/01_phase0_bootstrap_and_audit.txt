@@ -1,0 +1,37 @@
+You are working in the Immersive EGO repository.
+
+First, read:
+- AGENTS.md
+- TASKS.md
+- docs/DEPENDENCY_AUDIT.md
+- docs/LICENSE_MATRIX.md
+- docs/ASSET_POLICY.md
+- docs/CODEX_HANDOFF.md
+
+Goal: complete PHASE 0 only, without pretending any command passed.
+
+Required actions:
+1. Inspect repository root and identify whether a NeoForge 1.21.1 project already exists.
+2. If empty or incomplete, bootstrap/repair using the official NeoForge 1.21.1 MDK/Gradle conventions.
+3. Verify Java 21.
+4. Resolve exact dependency coordinates and repositories for:
+   - Apothic Attributes
+   - Placebo, if direct declaration is needed
+   - MariesLib
+   - optional Apotheosis
+5. Inspect official source/JAR APIs before calling external APIs.
+6. Pin versions in gradle.properties.
+7. Create/update build files, wrapper, CI, metadata, and docs.
+8. Run the available build/test commands.
+9. Update TASKS.md, docs/DEPENDENCY_AUDIT.md, docs/DECISIONS.md, docs/IMPLEMENTATION_LOG.md, and docs/CODEX_HANDOFF.md.
+
+Do not implement gameplay modules yet except minimal mod bootstrap required to compile.
+
+Final report exactly:
+1. IMPLEMENTED
+2. FILES CHANGED
+3. BUILD AND TESTS
+4. DEPENDENCIES
+5. LICENSE/ASSET CHECK
+6. REMAINING WORK
+7. NEXT ACTION

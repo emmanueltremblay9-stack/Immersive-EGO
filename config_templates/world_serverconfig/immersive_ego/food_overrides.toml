@@ -1,0 +1,19 @@
+schemaVersion = 1
+
+[[foods]]
+item = "minecraft:bread"
+groups = ["grains"]
+waterContent = 0.02
+preparation = "baked"
+
+[[foods]]
+item = "minecraft:apple"
+groups = ["fruits", "sugars"]
+waterContent = 0.15
+preparation = "raw"
+
+[[foods]]
+item = "minecraft:cooked_beef"
+groups = ["proteins"]
+waterContent = 0.03
+preparation = "cooked"

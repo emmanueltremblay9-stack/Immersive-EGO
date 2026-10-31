@@ -1,0 +1,17 @@
+schemaVersion = 1
+
+[season]
+enabled = true
+yearLengthDays = 96
+subSeasons = 3
+
+[exposure]
+sampleRadius = 4
+sampleIntervalTicks = 40
+maxBlocksScannedPerSample = 384
+
+[wetness]
+rainGainPerMinute = 0.06
+swimGainPerMinute = 0.25
+shelterDryRatePerMinute = 0.08
+heatDryRateMultiplier = 1.25

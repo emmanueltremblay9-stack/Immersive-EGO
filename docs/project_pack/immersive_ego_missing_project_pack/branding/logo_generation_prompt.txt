@@ -1,0 +1,20 @@
+Create an original logo for a Minecraft NeoForge mod named "Immersive EGO".
+
+Style:
+- high-resolution emblem
+- transparent background
+- bio-organic circuitry + compass/biome motif
+- survival simulation mood
+- readable "EGO" mark
+- subtle heat/water/sleep/nutrition/focus glyph hints
+- no copied Minecraft textures
+- no copied Apothic Attributes / Apotheosis assets
+- no gears from Immersive Engineering
+- no black contour background
+- clean edges, usable at 256x256 and 1024x1024
+
+Deliverables:
+- square logo
+- transparent PNG
+- SVG/source vector if possible
+- CurseForge banner version

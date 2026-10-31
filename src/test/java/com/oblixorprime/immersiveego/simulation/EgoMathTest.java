@@ -45,4 +45,11 @@ class EgoMathTest {
         assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { 1.0D }, new double[] { Double.NaN }));
         assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { 1.0D }, new double[] { Double.POSITIVE_INFINITY }));
     }
+
+    @Test
+    void weightedMeanRejectsNonFiniteValues() {
+        assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { Double.NaN }, new double[] { 1.0D }));
+        assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { Double.POSITIVE_INFINITY }, new double[] { 1.0D }));
+        assertThrows(IllegalArgumentException.class, () -> EgoMath.weightedMean(new double[] { Double.NEGATIVE_INFINITY }, new double[] { 1.0D }));
+    }
 }

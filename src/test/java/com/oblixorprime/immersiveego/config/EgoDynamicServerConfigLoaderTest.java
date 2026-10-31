@@ -55,4 +55,43 @@ final class EgoDynamicServerConfigLoaderTest {
         EgoDynamicServerConfig repaired = EgoDynamicServerConfigLoader.load(temporaryDirectory);
         assertEquals(config, repaired);
     }
+
+    @Test
+    void clampsHugeIntegerValuesBeforeNarrowing() throws IOException {
+        Path generatedConfig = temporaryDirectory
+                .resolve("immersive_ego")
+                .resolve(EgoDynamicServerConfigLoader.FILE_NAME);
+        Files.createDirectories(generatedConfig.getParent());
+        Files.writeString(generatedConfig, """
+                [scheduler]
+                intervalTicks = 9223372036854775807
+                """);
+
+        EgoDynamicServerConfig config = EgoDynamicServerConfigLoader.load(temporaryDirectory);
+
+        assertEquals(EgoDynamicServerConfig.MAX_SCHEDULER_INTERVAL_TICKS, config.schedulerIntervalTicks());
+        EgoDynamicServerConfig repaired = EgoDynamicServerConfigLoader.load(temporaryDirectory);
+        assertEquals(config, repaired);
+    }
+
+    @Test
+    void repairsMalformedSimulationTomlToDefaults() throws IOException {
+        Path generatedConfig = temporaryDirectory
+                .resolve("immersive_ego")
+                .resolve(EgoDynamicServerConfigLoader.FILE_NAME);
+        Files.createDirectories(generatedConfig.getParent());
+        Files.writeString(generatedConfig, """
+                [scheduler
+                intervalTicks = "fast"
+                """);
+
+        EgoDynamicServerConfig config = EgoDynamicServerConfigLoader.load(temporaryDirectory);
+
+        assertFalse(config.schedulerEnabled());
+        assertEquals(EgoDynamicServerConfig.DEFAULT_SCHEDULER_INTERVAL_TICKS, config.schedulerIntervalTicks());
+        assertEquals(EgoDynamicServerConfig.DEFAULT_MIRROR_UPDATE_EPSILON, config.mirrorUpdateEpsilon());
+
+        EgoDynamicServerConfig repaired = EgoDynamicServerConfigLoader.load(temporaryDirectory);
+        assertEquals(config, repaired);
+    }
 }
